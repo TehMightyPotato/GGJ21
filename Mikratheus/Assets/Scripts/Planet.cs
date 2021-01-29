@@ -6,22 +6,23 @@ using Random = UnityEngine.Random;
 
 public class Planet : MonoBehaviour
 {
-    public int inhabitants;
+    public int totalPop;
 
     public int currentFollowers;
 
     public float eventGenerationChance;
 
-    [SerializeField] private bool eventIsActive;
+    public bool eventIsActive;
     [SerializeField] private float lastEventGeneratedTime;
 
     private void Start()
     {
-        GameManager.Instance.PlanetUpdate += UpdatePlanet;
+        GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
     }
 
-    private void UpdatePlanet(object sender, EventArgs e)
+    private void UpdatePlanet()
     {
+        return;
         eventGenerationChance = CalcEventGenerationChance();
         if (!eventIsActive)
         {
@@ -42,4 +43,5 @@ public class Planet : MonoBehaviour
     {
         lastEventGeneratedTime = Time.time;
     }
+    
 }

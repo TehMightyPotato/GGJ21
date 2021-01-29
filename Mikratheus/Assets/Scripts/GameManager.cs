@@ -2,15 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
-    
     public static GameManager Instance;
     public int updateRate;
-    public EventHandler PlanetUpdate;
     private int _currentUpdateCount;
+    
+    //Event Handler
+    public UnityEvent planetUpdate;
 
     private void Awake()
     {
@@ -21,10 +23,10 @@ public class GameManager : MonoBehaviour
     {
         if (_currentUpdateCount == 0)
         {
-            PlanetUpdate?.Invoke(this,EventArgs.Empty);
+            planetUpdate.Invoke();
             _currentUpdateCount = updateRate;
+            return;
         }
-
         _currentUpdateCount -= 1;
     }
 }
