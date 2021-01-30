@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,6 +31,8 @@ public class Anliegen : ScriptableObject
 
     private Coroutine _timeoutRoutine;
 
+    public EventHandler PleaComplete;
+
     private Planet _planet;
 
     public void Init(Planet planet)
@@ -45,6 +48,7 @@ public class Anliegen : ScriptableObject
         _planet.updateFollowerInfluence(approveFollowerMod, approveInfluence);
         GameManager.Instance.payGodPowerCost(approveCost);
         _planet.RemoveEvent();
+        OnPleaComplete();
     }
 
     public void Deny()
@@ -54,6 +58,7 @@ public class Anliegen : ScriptableObject
         _planet.updateFollowerInfluence(denyFollowerMod, denyInfluence);
         GameManager.Instance.payGodPowerCost(denyCost);
         _planet.RemoveEvent();
+        OnPleaComplete();
     }
 
     public void Fail()
@@ -61,6 +66,12 @@ public class Anliegen : ScriptableObject
         Debug.Log("Failed!",_planet);
         _planet.updateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
         _planet.RemoveEvent();
+        OnPleaComplete();
+    }
+
+    private void OnPleaComplete()
+    {
+        PleaComplete?.Invoke(this,EventArgs.Empty);
     }
 
     public IEnumerator PleaTimeout()

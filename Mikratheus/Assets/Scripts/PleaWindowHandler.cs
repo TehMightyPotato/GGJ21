@@ -31,6 +31,8 @@ public class PleaWindowHandler : MonoBehaviour
         //hacky shit, I don't care lol
         pleaApproveButton.onClick.AddListener(ClosePleaPanel);
         pleaDenyButton.onClick.AddListener(ClosePleaPanel);
+        
+        
         pleaApproveButtonText.text = _currentPlea.approveButtonText;
         pleaDenyButton.onClick.RemoveAllListeners();
         pleaDenyButton.onClick.AddListener(_currentPlea.Deny);
