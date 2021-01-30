@@ -14,12 +14,22 @@ public class GameManager : MonoBehaviour
     //Event Handler
     public UnityEvent planetUpdate;
 
-    // Total followers
+    // Spielinfos
     public int totalFollower;
+    public int godPower;
+    public int godPowerBaseIncrease;
+    public int godPowerLimit;
+
 
     private void Awake()
     {
         Instance = this;
+        godPower = 0;
+    }
+
+    private void Start()
+    {
+        StartCoroutine(IncreaseGodPower());
     }
 
     private void FixedUpdate()
@@ -40,5 +50,18 @@ public class GameManager : MonoBehaviour
             totalFollowerCount += planetList[i].GetComponent<Planet>().currentFollowers;
         }
         totalFollower = totalFollowerCount;
+    }
+
+    public IEnumerator IncreaseGodPower()
+    {
+        while (true)
+        {
+            godPower += godPowerBaseIncrease;
+            if (godPower > godPowerLimit)
+            {
+                godPower = godPowerLimit;
+            }
+            yield return new WaitForSeconds(2);
+        }
     }
 }

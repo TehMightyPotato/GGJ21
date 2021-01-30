@@ -2486,6 +2486,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   totalFollower: 0
+  godPower: 0
+  godPowerBaseIncrease: 5
+  godPowerLimit: 100
 --- !u!4 &1347296116
 Transform:
   m_ObjectHideFlags: 0
