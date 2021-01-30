@@ -45,8 +45,8 @@ public class Anliegen : ScriptableObject
     {
         Debug.Log("Approve",_planet);
         _planet.StopCoroutine(_timeoutRoutine);
-        _planet.updateFollowerInfluence(approveFollowerMod, approveInfluence);
-        GameManager.Instance.payGodPowerCost(approveCost);
+        _planet.UpdateFollowerInfluence(approveFollowerMod, approveInfluence);
+        GameManager.Instance.PayGodPowerCost(approveCost);
         _planet.RemoveEvent();
         OnPleaComplete();
     }
@@ -55,8 +55,8 @@ public class Anliegen : ScriptableObject
     {
         Debug.Log("Deny",_planet);
         _planet.StopCoroutine(_timeoutRoutine);
-        _planet.updateFollowerInfluence(denyFollowerMod, denyInfluence);
-        GameManager.Instance.payGodPowerCost(denyCost);
+        _planet.UpdateFollowerInfluence(denyFollowerMod, denyInfluence);
+        GameManager.Instance.PayGodPowerCost(denyCost);
         _planet.RemoveEvent();
         OnPleaComplete();
     }
@@ -64,7 +64,7 @@ public class Anliegen : ScriptableObject
     public void Fail()
     {
         Debug.Log("Failed!",_planet);
-        _planet.updateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
+        _planet.UpdateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
         _planet.RemoveEvent();
         OnPleaComplete();
     }

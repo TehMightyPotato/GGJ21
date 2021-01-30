@@ -9,16 +9,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public int updateRateInSeconds;
-    private float _currentUpdateTime;
-    
+    [SerializeField] private float _currentUpdateTime;
+
     //Event Handler
     public UnityEvent planetUpdate;
 
     // Spielinfos
-    [Header ("Spielinformationen")]
-    public int totalFollower;
-    [Header ("GodPower Settings")]
-    public int godPower;
+    [Header("Spielinformationen")] public int totalFollower;
+    [Header("GodPower Settings")] public int godPower;
     public int godPowerBaseIncrease;
     public int godPowerLimit;
     public float godPowerIntervall;
@@ -40,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_currentUpdateTime == 0)
+        if (_currentUpdateTime <= 0)
         {
             planetUpdate.Invoke();
             _currentUpdateTime = updateRateInSeconds;
@@ -48,7 +46,6 @@ public class GameManager : MonoBehaviour
         }
 
         _currentUpdateTime -= Time.deltaTime;
-
         // Total Follower berechnen
         var planetList = PlanetManager.Instance.planets;
         int totalFollowerCount = 0;
@@ -56,10 +53,11 @@ public class GameManager : MonoBehaviour
         {
             totalFollowerCount += planetList[i].GetComponent<Planet>().currentFollowers;
         }
+
         totalFollower = totalFollowerCount;
     }
 
-    public void payGodPowerCost(int cost)
+    public void PayGodPowerCost(int cost)
     {
         godPower -= cost;
     }
@@ -83,11 +81,13 @@ public class GameManager : MonoBehaviour
                     godPower += threshold1Increase;
                 }
             }
+
             godPower += godPowerBaseIncrease;
             if (godPower > godPowerLimit)
             {
                 godPower = godPowerLimit;
             }
+
             yield return new WaitForSeconds(godPowerIntervall);
         }
     }

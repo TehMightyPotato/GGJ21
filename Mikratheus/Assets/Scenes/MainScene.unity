@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 54532199}
   - component: {fileID: 54532200}
   m_Layer: 0
-  m_Name: Planet0
+  m_Name: borea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ Transform:
   m_GameObject: {fileID: 54532196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -276,7 +276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 74b8d9a33e4b9d54099251b4a236ebb8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f219d2c085785b7459c0116583376874, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -859,6 +859,7 @@ GameObject:
   - component: {fileID: 644964525}
   - component: {fileID: 644964524}
   - component: {fileID: 644964523}
+  - component: {fileID: 644964526}
   m_Layer: 5
   m_Name: PrevButton
   m_TagString: Untagged
@@ -903,7 +904,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -976,6 +977,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644964521}
   m_CullTransparentMesh: 0
+--- !u!95 &644964526
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644964521}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bcd6eda9dc261134c985d9515c482d43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &658550833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1308,7 @@ GameObject:
   - component: {fileID: 862159728}
   - component: {fileID: 862159729}
   m_Layer: 0
-  m_Name: Planet3
+  m_Name: nobola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1333,8 +1353,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 74b8d9a33e4b9d54099251b4a236ebb8, type: 3}
-  m_Color: {r: 0.0852586, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fd3571261857fb14eaf94223519b893b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1353,7 +1373,7 @@ Transform:
   m_GameObject: {fileID: 862159725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1651,6 +1671,7 @@ GameObject:
   - component: {fileID: 1037150381}
   - component: {fileID: 1037150380}
   - component: {fileID: 1037150379}
+  - component: {fileID: 1037150382}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -1695,7 +1716,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1768,6 +1789,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037150377}
   m_CullTransparentMesh: 0
+--- !u!95 &1037150382
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037150377}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bcd6eda9dc261134c985d9515c482d43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1066386902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateRateInSeconds: 5
+  _currentUpdateTime: 0
   planetUpdate:
     m_PersistentCalls:
       m_Calls: []
@@ -2375,7 +2416,7 @@ GameObject:
   - component: {fileID: 1350993543}
   - component: {fileID: 1350993544}
   m_Layer: 0
-  m_Name: Planet2
+  m_Name: konteos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2420,8 +2461,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7fc175e998283f345be00bc75c39d1fb, type: 3}
-  m_Color: {r: 0.038573265, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: df03df86ead646a40b2d868538906849, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2440,7 +2481,7 @@ Transform:
   m_GameObject: {fileID: 1350993540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -2803,7 +2844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8256ce20f5efbfd49bce617e97a17d7d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1eeacf890ff17134ca21625af83f56a2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3369,7 +3410,7 @@ GameObject:
   - component: {fileID: 1943547875}
   - component: {fileID: 1943547876}
   m_Layer: 0
-  m_Name: Planet1
+  m_Name: eco_827
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3384,7 +3425,7 @@ Transform:
   m_GameObject: {fileID: 1943547872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3428,7 +3469,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7fc175e998283f345be00bc75c39d1fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a6a9ebc3a085554baea5e343623f3cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

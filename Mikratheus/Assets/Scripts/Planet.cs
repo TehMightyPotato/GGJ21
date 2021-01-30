@@ -21,10 +21,13 @@ public class Planet : MonoBehaviour
 
     public bool eventIsActive;
 
+
     public EventHandler EventStatusChanged;
     public EventHandler PlanetValuesUpdate;
 
     public Anliegen activeEvent;
+    
+    [SerializeField] private float growthFactor;
     
     //Event generation
     [SerializeField] private float followerCountEventWeight;
@@ -82,7 +85,7 @@ public class Planet : MonoBehaviour
         EventStatusChanged?.Invoke(this,EventArgs.Empty);
     }
 
-    public void updateFollowerInfluence(int followerMod, int influenceMod)
+    public void UpdateFollowerInfluence(int followerMod, int influenceMod)
     {
         // Follower updaten
         if (currentFollowers + followerMod > totalPop)
@@ -116,7 +119,7 @@ public class Planet : MonoBehaviour
     {
         while (true)
         {
-            var maxIncrease = 0.05f * totalPop;
+            var maxIncrease = growthFactor * totalPop;
             float increase = 0;
 
             if (influence < 81 && influence >= 20)

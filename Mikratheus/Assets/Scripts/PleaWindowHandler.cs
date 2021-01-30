@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,10 @@ public class PleaWindowHandler : MonoBehaviour
     
     public void OpenPleaPanel()
     {
+        if (_currentPlea != null)
+        {
+            _currentPlea.PleaComplete -= OnPleaComplete;
+        }
         _currentPlea = PlanetManager.Instance.currentPlanet.GetComponent<Planet>().activeEvent;
         pleaImage.sprite = _currentPlea.sprite;
         pleaText.text = _currentPlea.message;
@@ -28,20 +33,21 @@ public class PleaWindowHandler : MonoBehaviour
         pleaHeaderSubjectText.text = _currentPlea.subject;
         pleaApproveButton.onClick.RemoveAllListeners();
         pleaApproveButton.onClick.AddListener(_currentPlea.Approve);
-        //hacky shit, I don't care lol
-        pleaApproveButton.onClick.AddListener(ClosePleaPanel);
-        pleaDenyButton.onClick.AddListener(ClosePleaPanel);
-        
-        
         pleaApproveButtonText.text = _currentPlea.approveButtonText;
         pleaDenyButton.onClick.RemoveAllListeners();
         pleaDenyButton.onClick.AddListener(_currentPlea.Deny);
         pleaDenyButtonText.text = _currentPlea.denyButtonText;
         pleaPanel.SetActive(true);
+        _currentPlea.PleaComplete += OnPleaComplete;
     }
 
     public void ClosePleaPanel()
     {
         pleaPanel.SetActive(false);
+    }
+
+    private void OnPleaComplete(object sender, EventArgs e)
+    {
+        ClosePleaPanel();
     }
 }
