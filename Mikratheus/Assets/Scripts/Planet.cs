@@ -15,6 +15,8 @@ public class Planet : MonoBehaviour
     public bool eventIsActive;
 
     public EventHandler EventGenerated;
+
+    public Anliegen activeEvent;
     
     //Event generation
     [SerializeField] private float followerCountEventWeight;
