@@ -10,6 +10,9 @@ public class Planet : MonoBehaviour
 
     public int currentFollowers;
 
+    // Zwischen 1 und 100
+    public int influence;
+
     public float eventGenerationChance;
 
     public bool eventIsActive;
@@ -22,6 +25,11 @@ public class Planet : MonoBehaviour
     [SerializeField] private float eventBaseProp = 0.3f;
     private float lastEventGeneratedTime;
 
+    private void Awake()
+    {
+        influence = 50;
+    }
+    
     private void Start()
     {
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);

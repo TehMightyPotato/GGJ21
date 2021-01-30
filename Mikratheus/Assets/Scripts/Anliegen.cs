@@ -9,6 +9,7 @@ public class Anliegen : ScriptableObject
     public string message;
     public string sender;
     public string subject;
+    public string question;
     public int timelimitsec;
 
     // Yay

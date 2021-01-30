@@ -301,6 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalPop: 564213
   currentFollowers: 545
+  influence: 0
   eventGenerationChance: 0
   eventIsActive: 0
   followerCountEventWeight: 0.5
@@ -1546,6 +1547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalPop: 35478
   currentFollowers: 45678
+  influence: 0
   eventGenerationChance: 0
   eventIsActive: 0
   followerCountEventWeight: 0.5
@@ -2489,6 +2491,11 @@ MonoBehaviour:
   godPower: 0
   godPowerBaseIncrease: 5
   godPowerLimit: 100
+  godPowerIntervall: 5
+  followerThreshold1: 20
+  threshold1Increase: 1
+  followerThreshold2: 60
+  threshold2Increase: 1
 --- !u!4 &1347296116
 Transform:
   m_ObjectHideFlags: 0
@@ -2600,6 +2607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalPop: 3458768
   currentFollowers: 453
+  influence: 0
   eventGenerationChance: 0
   eventIsActive: 0
   followerCountEventWeight: 0.5
@@ -3183,6 +3191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalPop: 5437853
   currentFollowers: 4523
+  influence: 0
   eventGenerationChance: 0
   eventIsActive: 0
   followerCountEventWeight: 0.5
