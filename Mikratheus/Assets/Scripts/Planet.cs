@@ -117,13 +117,30 @@ public class Planet : MonoBehaviour
         while (true)
         {
             var maxIncrease = 0.05f * totalPop;
-            var increase = (influence / 100f) * totalPop;
-            if (increase > (int) maxIncrease)
+            float increase = 0;
+
+            if (influence < 81 && influence >= 20)
             {
-                increase = (int) maxIncrease;
+                increase = (maxIncrease / 900) * Mathf.Pow(influence, 2) - 100 * influence + 1600;
+            }
+            else if (influence < 20)
+            {
+                increase = (((20-influence)*5) / 100f) * -maxIncrease;
+            }
+            else if (influence > 80)
+            {
+                increase = (((influence - 80)*5) / 100f) * -maxIncrease;
             }
 
             currentFollowers += (int)increase;
+            if (currentFollowers > totalPop)
+            {
+                currentFollowers = totalPop;
+            }
+            else if (currentFollowers < 0)
+            {
+                currentFollowers = 0;
+            }
 
             yield return new WaitForSeconds(followerGrowthIntervall);
         }
