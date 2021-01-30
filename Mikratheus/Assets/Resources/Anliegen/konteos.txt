@@ -1,0 +1,205 @@
+PLANET: Konetos
+
+TYPE:  Planet
+
+FROM: The people of K'uul Tho
+
+SUBJECT: Make planet stop transforming
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+HEY! YOU! GOD! WE THE PEOPLE OF K'UUL THO NEED HELP. MAKE OUR PLANET STOP MOVING SO WE CAN HAVE PEACE. IF YOU DO SO WE WILL FOLLOW YOU FOREVER
+
+
+
+QUESTION
+
+Mhm do I wanna help those creatures?
+
+
+
+YES
+
+Its always good to have a magma planet on your side!
+
+
+
+-30 GP
+
++60 IP
+
+
+
+NO
+
+NO! FIRST YOU NEED TO LEARN TO DEACTIVATE CAPS LOCK...
+
+Sincerely Mikratheus :)
+
+-2 GP
+
+-10 IP
+
+
+
+TIMEOUT
+
+-40 IP
+
+---------------------------
+
+PLANET: Konetos
+
+TYPE:  Single
+
+FROM: Magnus Amgam
+
+SUBJECT: Craving to see a tree
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR
+
+
+
+QUESTION
+
+Make Magnus wish come true and grow an apple tree in his garden?
+
+
+
+YES
+
+Have some vitamins you symathic magma lump!
+
+-5 GP
+
++8 IP
+
+
+
+NO
+
+How can I grow apples from stone? I am a god but not a magician...
+
+-2 GP
+
+-12 IP
+
+
+
+TIMEOUT
+
+-20 IP
+
+---------------------------
+
+PLANET: Konetos
+
+TYPE: Community
+
+FROM: The Magma Magisters
+
+SUBJECT: Education
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Hello, higher power, if there is one. We, the few intellectuals of our people, would like to build a school to study the magma. The problem is, that the people of K'uul Tho extruded us from the society and we need your help to teach the next generation of young magma trolls.
+
+Best regards, the Magma Magisters
+
+
+
+QUESTION
+
+Help them change the peoples mind?
+
+
+
+YES
+
+Of course! Education is the key for a succesfull society.
+
+-20 GP
+
++20 IP
+
+
+
+NO
+
+Nah.. I get more from the People of K'uul Tho! Screw education! RAAWWRR
+
+-5 GP
+
+-5 IP
+
+
+
+TIMEOUT
+
+-20 IP
+
+---------------------------
+
+PLANET: Konetos
+
+TYPE:  Revival
+
+FROM: UGKRAA
+
+SUBJECT: stone
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+AH HERE I SIT ALONE ON MY STONEY SOFA AND NOTHING WILL EVER CHANGE. NO ONE IS INTERESTED IN US ... IS THERE ANY OTHER LAVA LIFE OUT THERE?
+
+
+
+QUESTION
+
+Send sign
+
+
+
+YES
+
+Here, have a vision of the severals other worlds. But no lava, sorry bro.
+
+-9 GP
+
++10 IP
+
+
+
+NO
+
+More than one planet of this kind is UARRHGH not necessary
+
+-5 GP
+
+-5 IP
+
+
+
+TIMEOUT
+
+-15 IP
