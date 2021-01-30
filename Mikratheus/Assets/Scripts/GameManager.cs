@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     //Event Handler
     public UnityEvent planetUpdate;
 
+    // Total followers
+    public int totalFollower;
+
     private void Awake()
     {
         Instance = this;
@@ -28,5 +31,14 @@ public class GameManager : MonoBehaviour
             return;
         }
         _currentUpdateCount -= 1;
+
+        // Total Follower berechnen
+        var planetList = PlanetManager.Instance.planets;
+        int totalFollowerCount = 0;
+        for (int i = 0; i < planetList.Count; i++)
+        {
+            totalFollowerCount += planetList[i].GetComponent<Planet>().currentFollowers;
+        }
+        totalFollower = totalFollowerCount;
     }
 }
