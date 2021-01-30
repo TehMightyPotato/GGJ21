@@ -116,16 +116,20 @@ public class Planet : MonoBehaviour
     {
         while (true)
         {
+            Debug.Log("Running on ",this);
             var maxIncrease = 0.05f * totalPop;
-            int increase = (influence / 100) * totalPop;
-            if (increase > (int)maxIncrease)
+            Debug.Log("maxincrease: " + maxIncrease);
+            var increase = (influence / 100f) * totalPop;
+            Debug.Log("increase: " + increase);
+            if (increase > (int) maxIncrease)
             {
-                increase = (int)maxIncrease;
+                increase = (int) maxIncrease;
             }
-            currentFollowers += increase;
-            
+
+            currentFollowers += (int)increase;
+
             yield return new WaitForSeconds(followerGrowthIntervall);
-        }      
+        }
     }
 
     public void SetActivePlanet(bool val)
