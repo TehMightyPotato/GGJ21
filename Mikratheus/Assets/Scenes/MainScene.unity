@@ -303,7 +303,9 @@ MonoBehaviour:
   currentFollowers: 545
   eventGenerationChance: 0
   eventIsActive: 0
-  lastEventGeneratedTime: 0
+  followerCountEventWeight: 0.5
+  timeEventWeight: 0.5
+  eventBaseProp: 0.2
 --- !u!95 &54532200
 Animator:
   serializedVersion: 3
@@ -1545,8 +1547,10 @@ MonoBehaviour:
   totalPop: 35478
   currentFollowers: 45678
   eventGenerationChance: 0
-  eventIsActive: 1
-  lastEventGeneratedTime: 0
+  eventIsActive: 0
+  followerCountEventWeight: 0.5
+  timeEventWeight: 0.5
+  eventBaseProp: 0.2
 --- !u!95 &862159729
 Animator:
   serializedVersion: 3
@@ -2598,7 +2602,9 @@ MonoBehaviour:
   currentFollowers: 453
   eventGenerationChance: 0
   eventIsActive: 0
-  lastEventGeneratedTime: 0
+  followerCountEventWeight: 0.5
+  timeEventWeight: 0.5
+  eventBaseProp: 0.2
 --- !u!95 &1350993544
 Animator:
   serializedVersion: 3
@@ -3178,8 +3184,10 @@ MonoBehaviour:
   totalPop: 5437853
   currentFollowers: 4523
   eventGenerationChance: 0
-  eventIsActive: 1
-  lastEventGeneratedTime: 0
+  eventIsActive: 0
+  followerCountEventWeight: 0.5
+  timeEventWeight: 0.5
+  eventBaseProp: 0.2
 --- !u!95 &1943547876
 Animator:
   serializedVersion: 3
