@@ -5,7 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Anliegen/Anliegen")]
 public class Anliegen : ScriptableObject
 {
+    public Sprite sprite;
     public string message;
+    public string sender;
+    public string subject;
     public int timelimitsec;
 
     // Yay
