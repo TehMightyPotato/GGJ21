@@ -119,12 +119,12 @@ public class Planet : MonoBehaviour
     {
         while (true)
         {
-            var maxIncrease = growthFactor * totalPop;
+            var maxIncrease = growthFactor * totalPop * (1 + 3 * (float)currentFollowers / (float)totalPop);
             float increase = 0;
 
             if (influence < 81 && influence >= 20)
             {
-                increase = (maxIncrease / 900) * Mathf.Pow(influence, 2) - 100 * influence + 1600;
+                increase = Mathf.Clamp(((maxIncrease / 900) * Mathf.Pow(influence, 2) - 100 * influence + 1600), 1, currentFollowers);
             }
             else if (influence < 20)
             {
@@ -133,6 +133,11 @@ public class Planet : MonoBehaviour
             else if (influence > 80)
             {
                 increase = (((influence - 80)*5) / 100f) * -maxIncrease;
+            }
+
+            if (totalPop == 564213)
+            {
+                Debug.Log(maxIncrease);
             }
 
             currentFollowers += (int)increase;
