@@ -17,7 +17,7 @@ MonoBehaviour:
   question: Soll ich dieser Katze herunterhelfen?
   sender: "From: Katzenfreund R\xFCdiger"
   subject: 'Subject: Katze auf dem Baum'
-  timelimitsec: 120
+  timelimitsec: 10
   approveButtonText: Na Klar!
   approveCost: 1
   approveFollowerMod: 100

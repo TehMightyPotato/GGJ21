@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 
 public class Planet : MonoBehaviour
 {
+
+    private Animator _animator;
     public int totalPop;
 
     public int currentFollowers;
@@ -30,6 +32,7 @@ public class Planet : MonoBehaviour
     private void Awake()
     {
         influence = 50;
+        _animator = GetComponent<Animator>();
     }
     
     private void Start()
@@ -74,5 +77,20 @@ public class Planet : MonoBehaviour
         eventIsActive = true;
         EventGenerated?.Invoke(this,EventArgs.Empty);
         lastEventGeneratedTime = Time.time;
+    }
+
+    public void SetActivePlanet(bool val)
+    {
+        _animator.SetBool("IsActivePlanet",val);
+    }
+
+    public void PlayEntryAnimation()
+    {
+        _animator.SetTrigger("EntryTrigger");
+    }
+
+    public void PlayExitAnimation()
+    {
+        _animator.SetTrigger("ExitTrigger");
     }
 }

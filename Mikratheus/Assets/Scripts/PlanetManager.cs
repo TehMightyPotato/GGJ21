@@ -17,6 +17,11 @@ public class PlanetManager : MonoBehaviour
     {
         Instance = this;
         currentPlanet = planets[0];
+        currentPlanet.GetComponent<Planet>().SetActivePlanet(true);
+        for (int i = 1; i < planets.Count; i++)
+        {
+            planets[i].GetComponent<Planet>().SetActivePlanet(false);
+        }
     }
 
     public void NextPlanet()
@@ -27,9 +32,13 @@ public class PlanetManager : MonoBehaviour
             lastIndex = -1;
         }
 
-        currentPlanet.SetActive(false);
+        var oldPlanet = currentPlanet.GetComponent<Planet>();
+        oldPlanet.SetActivePlanet(false);
+        oldPlanet.PlayExitAnimation();
         currentPlanet = planets[lastIndex + 1];
-        currentPlanet.SetActive(true);
+        var newPlanet = currentPlanet.GetComponent<Planet>();
+        newPlanet.SetActivePlanet(true);
+        newPlanet.PlayEntryAnimation();
         OnPlanetChanged();
     }
 
@@ -41,9 +50,13 @@ public class PlanetManager : MonoBehaviour
             lastIndex = planets.Count;
         }
 
-        currentPlanet.SetActive(false);
+        var oldPlanet = currentPlanet.GetComponent<Planet>();
+        oldPlanet.SetActivePlanet(false);
+        oldPlanet.PlayExitAnimation();
         currentPlanet = planets[lastIndex - 1];
-        currentPlanet.SetActive(true);
+        var newPlanet = currentPlanet.GetComponent<Planet>();
+        newPlanet.SetActivePlanet(true);
+        newPlanet.PlayEntryAnimation();
         OnPlanetChanged();
     }
 
