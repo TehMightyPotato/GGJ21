@@ -40,6 +40,7 @@ public class Planet : MonoBehaviour
     private void Start()
     {
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
+        StartCoroutine(FollowerGrowth());
     }
 
     private void UpdatePlanet()
@@ -74,7 +75,7 @@ public class Planet : MonoBehaviour
 
     private void GenerateEvent()
     {
-        activeEvent = PleaEventsLoader.Instance.GetRandomPlea();
+        activeEvent = Instantiate(PleaEventsLoader.Instance.GetRandomPlea());
         activeEvent.Init(this);
         eventIsActive = true;
         EventGenerated?.Invoke(this,EventArgs.Empty);
@@ -115,7 +116,7 @@ public class Planet : MonoBehaviour
     {
         while (true)
         {
-            var maxIncrease = 0.05 * totalPop;
+            var maxIncrease = 0.05f * totalPop;
             int increase = (influence / 100) * totalPop;
             if (increase > (int)maxIncrease)
             {
