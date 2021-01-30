@@ -302,6 +302,7 @@ MonoBehaviour:
   totalPop: 564213
   currentFollowers: 545
   influence: 0
+  followerGrowthIntervall: 0
   eventGenerationChance: 0
   eventIsActive: 0
   activeEvent: {fileID: 0}
@@ -1450,6 +1451,7 @@ MonoBehaviour:
   totalPop: 35478
   currentFollowers: 45678
   influence: 0
+  followerGrowthIntervall: 0
   eventGenerationChance: 0
   eventIsActive: 0
   activeEvent: {fileID: 0}
@@ -2695,6 +2697,7 @@ MonoBehaviour:
   totalPop: 3458768
   currentFollowers: 453
   influence: 0
+  followerGrowthIntervall: 0
   eventGenerationChance: 0
   eventIsActive: 0
   activeEvent: {fileID: 0}
@@ -3566,6 +3569,7 @@ MonoBehaviour:
   totalPop: 5437853
   currentFollowers: 4523
   influence: 0
+  followerGrowthIntervall: 0
   eventGenerationChance: 0
   eventIsActive: 0
   activeEvent: {fileID: 0}

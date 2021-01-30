@@ -15,6 +15,8 @@ public class Planet : MonoBehaviour
     // Zwischen 1 und 100
     public int influence;
 
+    public int followerGrowthIntervall;
+
     public float eventGenerationChance;
 
     public bool eventIsActive;
@@ -77,6 +79,52 @@ public class Planet : MonoBehaviour
         eventIsActive = true;
         EventGenerated?.Invoke(this,EventArgs.Empty);
         lastEventGeneratedTime = Time.time;
+    }
+
+    public void updateFollowerInfluence(int followerMod, int influenceMod)
+    {
+        // Follower updaten
+        if (currentFollowers + followerMod > totalPop)
+        {
+            currentFollowers = totalPop;
+        }
+        else if (currentFollowers + followerMod < 0)
+        {
+            currentFollowers = 0;
+        }
+        else
+        {
+            currentFollowers += followerMod;
+        }
+        // Influence updaten
+        if (influence + influenceMod > 100)
+        {
+            influence = 100;
+        }
+        else if (influence + influenceMod < 0)
+        {
+            influence = 0;
+        }
+        else
+        {
+            influence += influenceMod;
+        }
+    }
+
+    public IEnumerator FollowerGrowth()
+    {
+        while (true)
+        {
+            var maxIncrease = 0.05 * totalPop;
+            int increase = (influence / 100) * totalPop;
+            if (increase > (int)maxIncrease)
+            {
+                increase = (int)maxIncrease;
+            }
+            currentFollowers += increase;
+            
+            yield return new WaitForSeconds(followerGrowthIntervall);
+        }      
     }
 
     public void SetActivePlanet(bool val)

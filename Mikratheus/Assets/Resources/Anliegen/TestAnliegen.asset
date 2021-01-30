@@ -25,6 +25,6 @@ MonoBehaviour:
   denyButtonText: Nope
   denyCost: 0
   denyFollowerMod: -100
-  denyInfluence: 10
+  denyInfluence: -10
   ignoreFollowerMod: -50
   ignoreInfluence: 0

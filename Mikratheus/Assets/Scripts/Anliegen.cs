@@ -39,16 +39,21 @@ public class Anliegen : ScriptableObject
     public void Approve()
     {
         Debug.Log("Approve");
+        _planet.updateFollowerInfluence(approveFollowerMod, approveInfluence);
+        GameManager.Instance.payGodPowerCost(approveCost);
     }
 
     public void Deny()
     {
         Debug.Log("Deny");
+        _planet.updateFollowerInfluence(denyFollowerMod, denyInfluence);
+        GameManager.Instance.payGodPowerCost(denyCost);
     }
 
     public void Fail()
     {
         Debug.Log("Failed!");
+        _planet.updateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
     }
 
     public IEnumerator PleaTimeout()

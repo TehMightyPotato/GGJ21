@@ -58,6 +58,11 @@ public class GameManager : MonoBehaviour
         totalFollower = totalFollowerCount;
     }
 
+    public void payGodPowerCost(int cost)
+    {
+        godPower -= cost;
+    }
+
     public IEnumerator IncreaseGodPower()
     {
         while (true)
