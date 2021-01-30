@@ -69,6 +69,8 @@ public class Planet : MonoBehaviour
 
     private void GenerateEvent()
     {
+        activeEvent = PleaEventsLoader.Instance.GetRandomPlea();
+        activeEvent.Init(this);
         eventIsActive = true;
         EventGenerated?.Invoke(this,EventArgs.Empty);
         lastEventGeneratedTime = Time.time;

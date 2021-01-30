@@ -10,7 +10,6 @@ public class Anliegen : ScriptableObject
     public string question;
     public string sender;
     public string subject;
-    public string question;
     public int timelimitsec;
 
     // Yay
@@ -28,4 +27,34 @@ public class Anliegen : ScriptableObject
     // Timey
     public int ignoreFollowerMod;
     public int ignoreInfluence;
+
+    private Planet _planet;
+
+    public void Init(Planet planet)
+    {
+        _planet = planet;
+        _planet.StartCoroutine(PleaTimeout());
+    }
+    
+    public void Approve()
+    {
+        Debug.Log("Approve");
+    }
+
+    public void Deny()
+    {
+        Debug.Log("Deny");
+    }
+
+    public void Fail()
+    {
+        Debug.Log("Failed!");
+    }
+
+    public IEnumerator PleaTimeout()
+    {
+        yield return new WaitForSeconds(timelimitsec);
+        Fail();
+    }
+    
 }
