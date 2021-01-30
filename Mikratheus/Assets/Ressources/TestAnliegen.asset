@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
+  m_Name: TestAnliegen
+  m_EditorClassIdentifier: 
+  message: Hilfe! Meine Katze sitzt auf dem Baum fest!
+  timelimitsec: 120
+  approveCost: 1
+  approveFollowerMod: 100
+  approveInfluence: 10
+  denyCost: 0
+  denyFollowerMod: -100
+  denyInfluence: 10
+  ignoreFollowerMod: -50
+  ignoreInfluence: 0
