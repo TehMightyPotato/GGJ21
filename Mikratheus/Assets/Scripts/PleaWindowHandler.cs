@@ -20,6 +20,15 @@ public class PleaWindowHandler : MonoBehaviour
         pleaImage.sprite = plea.sprite;
         pleaText.text = plea.message;
         pleaQuestionText.text = plea.question;
+        pleaHeaderFromText.text = plea.sender;
+        pleaHeaderSubjectText.text = plea.subject;
+        pleaApproveButtonText.text = plea.approveButtonText;
+        pleaDenyButtonText.text = plea.denyButtonText;
         pleaPanel.SetActive(true);
+    }
+
+    public void ClosePleaPanel()
+    {
+        pleaPanel.SetActive(false);
     }
 }

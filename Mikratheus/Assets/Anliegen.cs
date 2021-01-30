@@ -7,6 +7,7 @@ public class Anliegen : ScriptableObject
 {
     public Sprite sprite;
     public string message;
+    public string question;
     public string sender;
     public string subject;
     public int timelimitsec;
