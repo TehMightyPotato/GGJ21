@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalPop: 564213
   currentFollowers: 1
-  influence: 50
+  influence: 20
   followerGrowthIntervall: 5
   eventGenerationChance: 0
   eventIsActive: 0

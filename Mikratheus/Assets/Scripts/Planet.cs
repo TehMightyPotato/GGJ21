@@ -37,7 +37,6 @@ public class Planet : MonoBehaviour
 
     private void Awake()
     {
-        influence = 50;
         _animator = GetComponent<Animator>();
     }
     
@@ -124,7 +123,7 @@ public class Planet : MonoBehaviour
 
             if (influence < 81 && influence >= 20)
             {
-                increase = Mathf.Clamp(((maxIncrease / 900) * Mathf.Pow(influence, 2) - 100 * influence + 1600), 1, currentFollowers);
+                increase = Mathf.Clamp(((-maxIncrease / 900) * (Mathf.Pow(influence, 2) - 100 * influence + 1600)), 0, currentFollowers);
             }
             else if (influence < 20)
             {
@@ -137,7 +136,7 @@ public class Planet : MonoBehaviour
 
             if (totalPop == 564213)
             {
-                Debug.Log(maxIncrease);
+                Debug.Log(increase);
             }
 
             currentFollowers += (int)increase;
