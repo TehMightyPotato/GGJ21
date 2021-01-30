@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,7 +13,14 @@ public class Planet : MonoBehaviour
     public float eventGenerationChance;
 
     public bool eventIsActive;
-    [SerializeField] private float lastEventGeneratedTime;
+
+    public EventHandler EventGenerated;
+    
+    //Event generation
+    [SerializeField] private float followerCountEventWeight;
+    [SerializeField] private float timeEventWeight;
+    [SerializeField] private float eventBaseProp = 0.3f;
+    private float lastEventGeneratedTime;
 
     private void Start()
     {
@@ -22,13 +29,13 @@ public class Planet : MonoBehaviour
 
     private void UpdatePlanet()
     {
-        return;
         eventGenerationChance = CalcEventGenerationChance();
         if (!eventIsActive)
         {
             var rng = Random.value;
             if (eventGenerationChance >= rng)
             {
+                Debug.Log("Generated");
                 GenerateEvent();
             }
         }
@@ -36,12 +43,24 @@ public class Planet : MonoBehaviour
 
     private float CalcEventGenerationChance()
     {
-        return 0;
+        var chanceLastEvent = 0f;
+        if (Time.time - lastEventGeneratedTime <= 600)
+        {
+            chanceLastEvent = (Time.time - lastEventGeneratedTime) / 600;
+        }
+        else
+        {
+            chanceLastEvent = 1;
+        }
+
+        return eventBaseProp + (1 - eventBaseProp) * (followerCountEventWeight * (currentFollowers / totalPop) +
+                                                      timeEventWeight * (chanceLastEvent));
     }
 
     private void GenerateEvent()
     {
+        eventIsActive = true;
+        EventGenerated?.Invoke(this,EventArgs.Empty);
         lastEventGeneratedTime = Time.time;
     }
-    
 }
