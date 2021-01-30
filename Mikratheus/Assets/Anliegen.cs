@@ -5,10 +5,18 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Anliegen/Anliegen")]
 public class Anliegen : ScriptableObject
 {
-   public string Text;
+    public string message;
+    public int timelimitsec;
 
-   public void DoStuff()
-   {
-      // do Stuff
-   }
+    // Yay
+    public int approveCost;
+    public int approveFollowerMod;
+
+    // Nay
+    public int denyCost;
+    public int denyFollowerMod;
+
+    // Timey
+    public int ignoreFollowerMod;
+
 }
