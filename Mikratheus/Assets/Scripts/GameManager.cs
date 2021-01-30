@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < planetList.Count; i++)
             {
                 Planet planetScript = planetList[i].GetComponent<Planet>();
-                var anteilFollower = planetScript.totalPop / planetScript.currentFollowers;
+                var anteilFollower = planetScript.currentFollowers / planetScript.totalPop;
                 if (anteilFollower >= followerThreshold2)
                 {
                     godPower += threshold2Increase;
