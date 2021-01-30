@@ -15,21 +15,26 @@ public class PleaWindowHandler : MonoBehaviour
     public Text pleaApproveButtonText;
     public Button pleaDenyButton;
     public Text pleaDenyButtonText;
+
+    private Anliegen _currentPlea;
     
     public void OpenPleaPanel()
     {
-        var plea = PlanetManager.Instance.currentPlanet.GetComponent<Planet>().activeEvent;
-        pleaImage.sprite = plea.sprite;
-        pleaText.text = plea.message;
-        pleaQuestionText.text = plea.question;
-        pleaHeaderFromText.text = plea.sender;
-        pleaHeaderSubjectText.text = plea.subject;
+        _currentPlea = PlanetManager.Instance.currentPlanet.GetComponent<Planet>().activeEvent;
+        pleaImage.sprite = _currentPlea.sprite;
+        pleaText.text = _currentPlea.message;
+        pleaQuestionText.text = _currentPlea.question;
+        pleaHeaderFromText.text = _currentPlea.sender;
+        pleaHeaderSubjectText.text = _currentPlea.subject;
         pleaApproveButton.onClick.RemoveAllListeners();
-        pleaApproveButton.onClick.AddListener(plea.Approve);
-        pleaApproveButtonText.text = plea.approveButtonText;
+        pleaApproveButton.onClick.AddListener(_currentPlea.Approve);
+        //hacky shit, I don't care lol
+        pleaApproveButton.onClick.AddListener(ClosePleaPanel);
+        pleaDenyButton.onClick.AddListener(ClosePleaPanel);
+        pleaApproveButtonText.text = _currentPlea.approveButtonText;
         pleaDenyButton.onClick.RemoveAllListeners();
-        pleaDenyButton.onClick.AddListener(plea.Deny);
-        pleaDenyButtonText.text = plea.denyButtonText;
+        pleaDenyButton.onClick.AddListener(_currentPlea.Deny);
+        pleaDenyButtonText.text = _currentPlea.denyButtonText;
         pleaPanel.SetActive(true);
     }
 

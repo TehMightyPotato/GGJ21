@@ -21,7 +21,8 @@ public class Planet : MonoBehaviour
 
     public bool eventIsActive;
 
-    public EventHandler EventGenerated;
+    public EventHandler EventStatusChanged;
+    public EventHandler PlanetValuesUpdate;
 
     public Anliegen activeEvent;
     
@@ -29,7 +30,7 @@ public class Planet : MonoBehaviour
     [SerializeField] private float followerCountEventWeight;
     [SerializeField] private float timeEventWeight;
     [SerializeField] private float eventBaseProp = 0.3f;
-    private float lastEventGeneratedTime;
+    private float _lastEventGeneratedTime;
 
     private void Awake()
     {
@@ -60,9 +61,9 @@ public class Planet : MonoBehaviour
     private float CalcEventGenerationChance()
     {
         var chanceLastEvent = 0f;
-        if (Time.time - lastEventGeneratedTime <= 600)
+        if (Time.time - _lastEventGeneratedTime <= 600)
         {
-            chanceLastEvent = (Time.time - lastEventGeneratedTime) / 600;
+            chanceLastEvent = (Time.time - _lastEventGeneratedTime) / 600;
         }
         else
         {
@@ -78,8 +79,7 @@ public class Planet : MonoBehaviour
         activeEvent = Instantiate(PleaEventsLoader.Instance.GetRandomPlea());
         activeEvent.Init(this);
         eventIsActive = true;
-        EventGenerated?.Invoke(this,EventArgs.Empty);
-        lastEventGeneratedTime = Time.time;
+        EventStatusChanged?.Invoke(this,EventArgs.Empty);
     }
 
     public void updateFollowerInfluence(int followerMod, int influenceMod)
@@ -124,7 +124,7 @@ public class Planet : MonoBehaviour
             }
 
             currentFollowers += (int)increase;
-
+            PlanetValuesUpdate?.Invoke(this,EventArgs.Empty);
             yield return new WaitForSeconds(followerGrowthIntervall);
         }
     }
@@ -142,5 +142,13 @@ public class Planet : MonoBehaviour
     public void PlayExitAnimation()
     {
         _animator.SetTrigger("ExitTrigger");
+    }
+
+    public void RemoveEvent()
+    {
+        activeEvent = null;
+        eventIsActive = false;
+        _lastEventGeneratedTime = Time.time;
+        EventStatusChanged?.Invoke(this,EventArgs.Empty);
     }
 }

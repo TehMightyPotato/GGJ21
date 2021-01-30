@@ -28,32 +28,39 @@ public class Anliegen : ScriptableObject
     public int ignoreFollowerMod;
     public int ignoreInfluence;
 
+    private Coroutine _timeoutRoutine;
+
     private Planet _planet;
 
     public void Init(Planet planet)
     {
         _planet = planet;
-        _planet.StartCoroutine(PleaTimeout());
+        _timeoutRoutine = _planet.StartCoroutine(PleaTimeout());
     }
     
     public void Approve()
     {
-        Debug.Log("Approve");
+        Debug.Log("Approve",_planet);
+        _planet.StopCoroutine(_timeoutRoutine);
         _planet.updateFollowerInfluence(approveFollowerMod, approveInfluence);
         GameManager.Instance.payGodPowerCost(approveCost);
+        _planet.RemoveEvent();
     }
 
     public void Deny()
     {
-        Debug.Log("Deny");
+        Debug.Log("Deny",_planet);
+        _planet.StopCoroutine(_timeoutRoutine);
         _planet.updateFollowerInfluence(denyFollowerMod, denyInfluence);
         GameManager.Instance.payGodPowerCost(denyCost);
+        _planet.RemoveEvent();
     }
 
     public void Fail()
     {
-        Debug.Log("Failed!");
+        Debug.Log("Failed!",_planet);
         _planet.updateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
+        _planet.RemoveEvent();
     }
 
     public IEnumerator PleaTimeout()

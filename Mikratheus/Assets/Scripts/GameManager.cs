@@ -8,8 +8,8 @@ using UnityEngine.EventSystems;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public int updateRate;
-    private int _currentUpdateCount;
+    public int updateRateInSeconds;
+    private float _currentUpdateTime;
     
     //Event Handler
     public UnityEvent planetUpdate;
@@ -40,13 +40,14 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_currentUpdateCount == 0)
+        if (_currentUpdateTime == 0)
         {
             planetUpdate.Invoke();
-            _currentUpdateCount = updateRate;
+            _currentUpdateTime = updateRateInSeconds;
             return;
         }
-        _currentUpdateCount -= 1;
+
+        _currentUpdateTime -= Time.deltaTime;
 
         // Total Follower berechnen
         var planetList = PlanetManager.Instance.planets;
