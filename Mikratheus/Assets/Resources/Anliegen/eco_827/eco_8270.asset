@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: eco_8270
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: Dear Ma’am or Mister,Dear Ma’am or Mister,Dear Ma’am or Mister,Dear Ma’am or Mister,
-  question: Do you give the racoons a key hint to support their activities?
+  message: "Dear Ma’am or Mister, We have a serious concern that the owl association is planning a coup against our ruler, the night queen. Therefore, we kindly ask for your help - we can not involve anyone else into this matter and are thus dependent on your grace. Sincerely, The Racoon Administration Group"
+  question: "Do you give the racoons a key hint to support their activities?"
   sender: "From:  Racoon Administration Group"
-  subject: 'Subject: Concerning Suspicious Owl Activity'
+  subject: "Subject: Concerning Suspicious Owl Activity"
   timelimitsec: 10
-  approveButtonText: I don’t like grey eminences. Unveil the conspiracy!
+  approveButtonText: "I don’t like grey eminences. Unveil the conspiracy!"
   approveCost: -15
   approveFollowerMod: 100
   approveInfluence: 20
-  denyButtonText: T
+  denyButtonText: "There will always be evil in the world, fighting symptoms accomplishes nothing."
   denyCost: -3
   denyFollowerMod: -100
   denyInfluence: -10

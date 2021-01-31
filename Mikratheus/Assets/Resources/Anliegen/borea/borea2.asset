@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: borea2
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: My king told me of his missing son. He has a bright mind: I do not think he'll be forever lost. The sky is clearing up, as I speak - the weather-winds are on their way.My king told me of his missing son. He has a bright mind: I do not think he'll be forever lost. The sky is clearing up, as I speak - the weather-winds are on their way.
-  question: Will you contribute to the clearing of the skies?
+  message: "My king told me of his missing son. He has a bright mind: I do not think he'll be forever lost. The sky is clearing up, as I speak - the weather-winds are on their way. I thank you, my lord, for giving us speed and clear sight."
+  question: "Will you contribute to the clearing of the skies?"
   sender: "From:  Huul"
-  subject: 'Subject: On our Future'
+  subject: "Subject: On our Future"
   timelimitsec: 10
-  approveButtonText: I like him. Being nice to me should be rewarded!
+  approveButtonText: "I like him. Being nice to me should be rewarded!"
   approveCost: -20
   approveFollowerMod: 100
   approveInfluence: 10
-  denyButtonText: S
+  denyButtonText: "Seems they get along fine."
   denyCost: 0
   denyFollowerMod: -100
   denyInfluence: -5

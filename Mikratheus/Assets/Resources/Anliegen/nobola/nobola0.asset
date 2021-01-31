@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: nobola0
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: Every day I hike over mountains and walk through valleys to get to work. Half the day is already over when I arrive! If only there were some clever way I could just cross the big lake without drowning due to lack of stamina..
-  question: Share a good thought?
+  message: "Every day I hike over mountains and walk through valleys to get to work. Half the day is already over when I arrive! If only there were some clever way I could just cross the big lake without drowning due to lack of stamina.."
+  question: "Share a good thought?"
   sender: "From:  Siggry"
-  subject: 'Subject: I do not have enough lifetime for this'
+  subject: "Subject: I do not have enough lifetime for this"
   timelimitsec: 10
-  approveButtonText: You're a smart guy, how about assembling the wood so that it carries you across the water?
+  approveButtonText: "You're a smart guy, how about assembling the wood so that it carries you across the water?"
   approveCost: -2
   approveFollowerMod: 100
   approveInfluence: 5
-  denyButtonText: Y
+  denyButtonText: "You might have to ask Poseidon about that."
   denyCost: -2
   denyFollowerMod: -100
   denyInfluence: -8

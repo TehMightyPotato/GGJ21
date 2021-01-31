@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: borea0
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: Oh mighty wind of winds!Oh mighty wind of winds!Oh mighty wind of winds!Oh mighty wind of winds!Oh mighty wind of winds!Oh mighty wind of winds!
-  question: Give Tihlie a useful answer?
+  message: "Oh mighty wind of winds! Oh mighty Mihinaal! Tell me, oh knower of all and every things Why thy wind is blowing Why is the ever lasting movement there Why are we never un-wind-ing?"
+  question: "Give Tihlie a useful answer?"
   sender: "From:  Tihlie"
-  subject: 'Subject: Searching for an answer'
+  subject: "Subject: Searching for an answer"
   timelimitsec: 10
-  approveButtonText: "Such is the nature of things: Not to all existents the opposite is sensible."
+  approveButtonText: "'Such is the nature of things: Not to all existents the opposite is sensible.'"
   approveCost: -10
   approveFollowerMod: 100
   approveInfluence: 10
-  denyButtonText: "
+  denyButtonText: "'It is to your best, if you find out on your own.'"
   denyCost: -1
   denyFollowerMod: -100
   denyInfluence: -3
