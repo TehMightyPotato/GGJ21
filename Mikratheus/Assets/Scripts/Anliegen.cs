@@ -42,7 +42,7 @@ public class Anliegen : ScriptableObject
 
     public void Approve()
     {
-        if (GameManager.Instance.godPower < approveCost)
+        if (GameManager.Instance.godPower < Math.Abs(approveCost))
         {
             return;
         }
@@ -57,6 +57,11 @@ public class Anliegen : ScriptableObject
 
     public void Deny()
     {
+        if (GameManager.Instance.godPower < Math.Abs(denyCost))
+        {
+            return;
+        }
+
         Debug.Log("Deny", _planet);
         _planet.StopCoroutine(_timeoutRoutine);
         _planet.UpdateFollowerInfluence(denyFollowerMod, denyInfluence);
