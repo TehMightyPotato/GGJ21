@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: konteos3
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: 51cdf7962daa9da438f960f2409cfbc9, type: 3}
   audioClip: {fileID: 8300000, guid: 5e6fc8d98e75b1d46b62d2f5331a9e21, type: 3}
   message: AH HERE I SIT ALONE ON MY STONEY SOFA AND NOTHING WILL EVER CHANGE. NO
     ONE IS INTERESTED IN US ... IS THERE ANY OTHER LAVA LIFE OUT THERE?

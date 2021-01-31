@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: konteos0
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: 51cdf7962daa9da438f960f2409cfbc9, type: 3}
   audioClip: {fileID: 8300000, guid: 948f9f6d1449b5c4fad58848bf1de520, type: 3}
   message: Uaargh GOD OF THE STORMY MAGMA OCEAN! HELP US! SOMEHOW WE SEEM TO HAVE
     ANGERED THE MONSTER OF THE DEEP, PERHABS BECAUSE WE USED TO THROW OUR WASTE INTO

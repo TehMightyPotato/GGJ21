@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: nobola2
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: f12a87975dc23514abfaed0f9d37ced5, type: 3}
   audioClip: {fileID: 8300000, guid: 96e34473bbc4e4a458e8c11729d9ce79, type: 3}
   message: 'We are a community of excellent Woodmasters and we have a problem. It
     seems, every one of us is affected by a so-called ''depression''. Neither we
