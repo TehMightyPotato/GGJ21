@@ -57,10 +57,15 @@ public class GameManager : MonoBehaviour
         totalFollower = totalFollowerCount;
     }
 
+    private void AdjustGodPowerText()
+    {
+        gpText.text = godPower + "/100";
+    }
+
     public void PayGodPowerCost(int cost)
     {
         godPower += cost;
-        gpText.text = "Godpower/Max: " + godPower.ToString() + "/100";
+        AdjustGodPowerText();
     }
 
     public IEnumerator IncreaseGodPower()
@@ -89,7 +94,7 @@ public class GameManager : MonoBehaviour
                 godPower = godPowerLimit;
             }
 
-            gpText.text = "Godpower/Max: " + godPower.ToString() + "/100";
+            AdjustGodPowerText();
 
             yield return new WaitForSeconds(godPowerIntervall);
         }

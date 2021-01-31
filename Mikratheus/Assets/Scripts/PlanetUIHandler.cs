@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class PlanetUIHandler : MonoBehaviour
 {
-    public Text planetNameText;
     public Text planetFollowerText;
     public Text planetInfluenceText;
 
@@ -45,8 +44,7 @@ public class PlanetUIHandler : MonoBehaviour
 
     private void UpdatePlanetStatUI()
     {
-        planetNameText.text = "Current Planet: " + _currentPlanet.planetName;
-        planetFollowerText.text = "Follower/Population: " + _currentPlanet.currentFollowers.ToString() + "/" + _currentPlanet.totalPop.ToString();
-        planetInfluenceText.text = "Influence/Maximum: " + _currentPlanet.influence.ToString() + "/100";
+        planetFollowerText.text = _currentPlanet.currentFollowers.ToString() + "/" + _currentPlanet.totalPop.ToString();
+        planetInfluenceText.text = _currentPlanet.influence.ToString() + "/100";
     }
 }
