@@ -13,18 +13,23 @@ MonoBehaviour:
   m_Name: eco_8274
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "FROM: little bird SUBJECT: is there anyone who listens TIME: .. DESCRIPTION Oh please, please can someone hear my woes? I’m in love, but it must not be, can’t you see? Where shall my sorrows lead? Shall I end in - ever lasting, lonely darkness? Why can’t the one, whom I see yet cannot grasp, be here with me? Ah! Were I a fox down on the earth - happy ever after"
-  question: "Lead the two lovers to each other?"
-  sender: "From:  Single"
-  subject: "Subject: "
+  message: "FROM: little bird SUBJECT: is there anyone who listens TIME: .. DESCRIPTION
+    Oh please, please can someone hear my woes? I\u2019m in love, but it must not
+    be, can\u2019t you see? Where shall my sorrows lead? Shall I end in - ever lasting,
+    lonely darkness? Why can\u2019t the one, whom I see yet cannot grasp, be here
+    with me? Ah! Were I a fox down on the earth - happy ever after"
+  question: Lead the two lovers to each other?
+  sender: 'From:  Single'
+  subject: 'Subject: '
   timelimitsec: 60
-  approveButtonText: "Let there be love!"
-  approveCost: -10
+  approveButtonText: Let there be love!
+  approveCost: -16
   approveFollowerMod: 100
   approveInfluence: 18
-  denyButtonText: "They could decide their fate themselves by going beyond the things that part them."
+  denyButtonText: They could decide their fate themselves by going beyond the things
+    that part them.
   denyCost: -5
   denyFollowerMod: -100
-  denyInfluence: -8
+  denyInfluence: -13
   ignoreFollowerMod: -50
-  ignoreInfluence: -17
+  ignoreInfluence: -12

@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: konteos4
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "Hello, higher power, if there is one. We, the few intellectuals of our people, would like to build a school to study the magma. The problem is, that the people of K'uul Tho extruded us from the society and we need your help to teach the next generation of young magma trolls. Best regards, the Magma Magisters"
-  question: "Help them change the peoples mind?"
-  sender: "From:  The Magma Magisters"
-  subject: "Subject: Education"
+  message: Hello, higher power, if there is one. We, the few intellectuals of our
+    people, would like to build a school to study the magma. The problem is, that
+    the people of K'uul Tho extruded us from the society and we need your help to
+    teach the next generation of young magma trolls. Best regards, the Magma Magisters
+  question: Help them change the peoples mind?
+  sender: 'From:  The Magma Magisters'
+  subject: 'Subject: Education'
   timelimitsec: 60
-  approveButtonText: "Of course! Education is the key for a succesfull society."
-  approveCost: -20
+  approveButtonText: Of course! Education is the key for a succesfull society.
+  approveCost: -50
   approveFollowerMod: 100
-  approveInfluence: 20
-  denyButtonText: "Nah.. I get more from the People of K'uul Tho! Screw education! RAAWWRR"
-  denyCost: -5
+  approveInfluence: 26
+  denyButtonText: Nah.. I get more from the People of K'uul Tho! Screw education!
+    RAAWWRR
+  denyCost: -15
   denyFollowerMod: -100
-  denyInfluence: -5
+  denyInfluence: -30
   ignoreFollowerMod: -50
-  ignoreInfluence: -20
+  ignoreInfluence: -15
