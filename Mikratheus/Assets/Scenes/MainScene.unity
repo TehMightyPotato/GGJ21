@@ -4966,13 +4966,13 @@ MonoBehaviour:
       m_Calls: []
   totalFollower: 0
   godPower: 0
-  godPowerBaseIncrease: 5
+  godPowerBaseIncrease: 1
   godPowerLimit: 100
-  godPowerIntervall: 0
-  followerThreshold1: 0
-  threshold1Increase: 0
-  followerThreshold2: 0
-  threshold2Increase: 0
+  godPowerIntervall: 1
+  followerThreshold1: 30
+  threshold1Increase: 1
+  followerThreshold2: 60
+  threshold2Increase: 2
 --- !u!4 &1347296116
 Transform:
   m_ObjectHideFlags: 0

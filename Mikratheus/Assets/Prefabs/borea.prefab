@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c2268112bf9bf4aa19f32546983910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: borea
+  planetName: borea
   pleaAudioClip: {fileID: 8300000, guid: 5f7eb983e2c10244a99c6290b96e7bdb, type: 3}
   totalPop: 564213
   currentFollowers: 1
@@ -104,7 +104,7 @@ MonoBehaviour:
   eventGenerationChance: 0
   eventIsActive: 0
   activeEvent: {fileID: 0}
-  growthFactor: 0.02
+  growthFactor: 0.002
   followerCountEventWeight: 0.5
   timeEventWeight: 0.5
   eventBaseProp: 0.2

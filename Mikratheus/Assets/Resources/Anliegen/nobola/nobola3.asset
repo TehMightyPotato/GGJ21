@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: nobola3
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "Here is High Priest Preswirk. We dug a hole into the planet and now the oceans are dwindling. We managed alright for some centuries now since you last helped us, but not we got said problem. Our miners dug too deep into the world’s wall and when the deciding stones were broken, a great many more stones broke away, revealing an underground lake being fed by an underground river that originated in an ocean, as it seems. The situation is growing worse and the elder council finally decided that it is time to ask you for your help. We appreciate your existence."
-  question: "Help them fix their planet hole?"
-  sender: "From:  High Priest Preswirk"
-  subject: "Subject: We dug a hole into the planet and now the oceans are dwindling."
-  timelimitsec: 10
-  approveButtonText: "Let's go, get some wood and beer mugs and plug that goddamn hole!"
+  message: "Here is High Priest Preswirk. We dug a hole into the planet and now the
+    oceans are dwindling. We managed alright for some centuries now since you last
+    helped us, but not we got said problem. Our miners dug too deep into the world\u2019s
+    wall and when the deciding stones were broken, a great many more stones broke
+    away, revealing an underground lake being fed by an underground river that originated
+    in an ocean, as it seems. The situation is growing worse and the elder council
+    finally decided that it is time to ask you for your help. We appreciate your
+    existence."
+  question: Help them fix their planet hole?
+  sender: 'From:  High Priest Preswirk'
+  subject: 'Subject: We dug a hole into the planet and now the oceans are dwindling.'
+  timelimitsec: 30
+  approveButtonText: Let's go, get some wood and beer mugs and plug that goddamn
+    hole!
   approveCost: -25
   approveFollowerMod: 100
   approveInfluence: 5
-  denyButtonText: "Darwinism over dwarfism."
+  denyButtonText: Darwinism over dwarfism.
   denyCost: 0
   denyFollowerMod: -100
   denyInfluence: 1

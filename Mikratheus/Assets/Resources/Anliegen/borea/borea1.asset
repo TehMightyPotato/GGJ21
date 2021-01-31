@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: borea1
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "Hiii I am Wendy, but my friends call me Windy Wendy. For quite some time now, I am not able to fly as high as I want to. It is probably because I cheated on ONE game of hide and seek. The others took away some of my Windy powers, so now I am just Wendy. Please if there is somebody.. help me and I tell all my friends about it and we can ALL become friends! Thank you so much for your help god above the clouds :3."
-  question: "Do I care about a little girls problem?"
-  sender: "From:   Windy Wendy"
-  subject: "Subject: Make me fly as high as the other winds"
-  timelimitsec: 10
-  approveButtonText: "I care about you Wendy! I will help you become Windy Wendy again and to fly as high as you want!"
+  message: Hiii I am Wendy, but my friends call me Windy Wendy. For quite some time
+    now, I am not able to fly as high as I want to. It is probably because I cheated
+    on ONE game of hide and seek. The others took away some of my Windy powers, so
+    now I am just Wendy. Please if there is somebody.. help me and I tell all my
+    friends about it and we can ALL become friends! Thank you so much for your help
+    god above the clouds :3.
+  question: Do I care about a little girls problem?
+  sender: 'From:   Windy Wendy'
+  subject: 'Subject: Make me fly as high as the other winds'
+  timelimitsec: 30
+  approveButtonText: I care about you Wendy! I will help you become Windy Wendy again
+    and to fly as high as you want!
   approveCost: -5
   approveFollowerMod: 100
   approveInfluence: 10
-  denyButtonText: "Guess someone should not have cheated then."
+  denyButtonText: Guess someone should not have cheated then.
   denyCost: -5
   denyFollowerMod: -100
   denyInfluence: -5

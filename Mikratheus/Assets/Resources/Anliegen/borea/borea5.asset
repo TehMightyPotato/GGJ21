@@ -13,16 +13,20 @@ MonoBehaviour:
   m_Name: borea5
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "So these are the times. It is dark here: The eastern winds are in rebellion, no, pure opposition - open war: Though brothers and sisters in nature, we do not fly in the same air any more. They are raging against us: Destroy palaces of clouds, gathering stormy lightnings, swallowing our children. My hope has wandered to you, Mihinaal, who we long dismissed."
-  question: "Do you help the winds of Borea to be united again under a peaceful sky?"
-  sender: "From:  Westwind"
-  subject: "Subject: Hope in dark times"
-  timelimitsec: 10
-  approveButtonText: "Let the storm calm down."
+  message: 'So these are the times. It is dark here: The eastern winds are in rebellion,
+    no, pure opposition - open war: Though brothers and sisters in nature, we do
+    not fly in the same air any more. They are raging against us: Destroy palaces
+    of clouds, gathering stormy lightnings, swallowing our children. My hope has
+    wandered to you, Mihinaal, who we long dismissed.'
+  question: Do you help the winds of Borea to be united again under a peaceful sky?
+  sender: 'From:  Westwind'
+  subject: 'Subject: Hope in dark times'
+  timelimitsec: 30
+  approveButtonText: Let the storm calm down.
   approveCost: -20
   approveFollowerMod: 100
   approveInfluence: 8
-  denyButtonText: "I am not here to meddle in the affairs of the wind."
+  denyButtonText: I am not here to meddle in the affairs of the wind.
   denyCost: 0
   denyFollowerMod: -100
   denyInfluence: 1
