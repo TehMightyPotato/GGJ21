@@ -1,4 +1,3 @@
-
 PLANET: Nobola
 
 TYPE:  Community
@@ -47,8 +46,12 @@ TIMEOUT
 
 -1 IP
 
----------------------------
 
+
+ICON
+
+Nobola_Woodcutter
+---------------------------
 PLANET: Nobola
 
 TYPE:  Single
@@ -109,8 +112,10 @@ TIMEOUT
 
 
 
----------------------------
+ICON
 
+Nobola_Boss
+---------------------------
 PLANET: Nobola
 
 TYPE:  Community
@@ -177,8 +182,12 @@ TIMEOUT
 
 -20 IP
 
----------------------------
 
+
+ICON
+
+Nobola_Woodcutter
+---------------------------
 PLANET: Nobola
 
 TYPE:  Revival
@@ -229,7 +238,6 @@ Let's go, get some wood and beer mugs and plug that goddamn hole!
 
 +5 IP
 
-(You gain followers on the planet of Nobola.)
 
 
 
@@ -241,16 +249,18 @@ Darwinism over dwarfism.
 
 +1 IP
 
-(Leave Nobola to itself.)
-
 
 
 TIMEOUT
 
 +1 IP
 
-(Leave Nobola to itself.)
 
+
+
+ICON
+
+Nobola_Priest
 ---------------------------
 
 PLANET: Nobola
@@ -318,3 +328,9 @@ Tombar... you need to serve your people ... with beer!
 TIMEOUT
 
 -30 IP
+
+
+
+ICON
+
+Nobola_Bartender

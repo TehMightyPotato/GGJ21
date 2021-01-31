@@ -1,6 +1,280 @@
 PLANET: Borea
 
+TYPE:  Planet
+
+FROM: Westwind
+
+SUBJECT: Hope in dark times
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+So these are the times.
+
+It is dark here: The eastern winds are in rebellion, no, pure opposition - open war: Though brothers and sisters in nature, we do not fly in the same air any more. They are raging against us: Destroy palaces of clouds, gathering stormy lightnings, swallowing our children. My hope has wandered to you, Mihinaal, who we long dismissed.
+
+
+
+QUESTION
+
+Do you help the winds of Borea to be united again under a peaceful sky?
+
+
+
+YES
+
+Let the storm calm down.
+
+-20 GP
+
++8 IP
+
+
+
+NO
+
+I am not here to meddle in the affairs of the wind.
+
+-0 GP
+
++1 IP
+
+
+
+TIMEOUT
+
++1 IP
+
+
+
+ICON
+
+Borea_Storm
+---------------------------
+PLANET: Borea
+
 TYPE:  Community
+
+FROM: Sothern wind Party Gang
+
+SUBJECT: Cloud nine
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Eyy what up Mate! Hope everything is cool with you. I'm about to throw the biggest party Borea has ever seen! You know, breathing in some good winds can make you feel especially many colors. Here's the problem: we can't get to them winds ourselves. It'd be cool if you could get us some of the good stuff - would be your ticket to the party!
+
+
+
+QUESTION
+
+Help them fly high in the sky?
+
+
+
+YES
+
+Hell yeah, haven't been to a good party in ages!
+
+-10 GP
+
++13 IP
+
+
+
+NO
+
+Geez kids, these winds are no broccoli!
+
+-1 GP
+
+-8 IP
+
+
+
+TIMEOUT
+
+-20 IP
+
+
+
+ICON
+
+Borea_Breeze
+---------------------------
+PLANET: Borea
+
+TYPE:  Revival
+
+FROM: Northwind (King)
+
+SUBJECT: My son
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+By the winds, where has my youngest, the Jetstream, gone again? Playing tag with his siblings, he must have flown out of orbit.... I would mobilise my whole wind armies to get him back.
+
+
+
+QUESTION
+
+Bring young Jetstream back home safely?
+
+
+
+YES
+
+You're missed at home, little jet stream. We wouldn't want your dad to start a war.
+
+-14 GP
+
++20 IP
+
+
+
+NO
+
+The wind made its choice, perhaps it was fate that it is now somewhere else?
+
+-0 GP
+
++1 IP
+
+
+
+TIMEOUT
+
++1 IP
+
+
+
+ICON
+
+Borea_Storm
+---------------------------
+PLANET: Borea
+
+TYPE:  Planet
+
+FROM: Huul
+
+SUBJECT: On our Future
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+My king told me of his missing son. He has a bright mind: I do not think he'll be forever lost. The sky is clearing up, as I speak - the weather-winds are on their way.
+
+I thank you, my lord, for giving us speed and clear sight.
+
+
+
+QUESTION
+
+Will you contribute to the clearing of the skies?
+
+
+
+YES
+
+I like him. Being nice to me should be rewarded!
+
+-20 GP
+
++10 IP
+
+
+
+NO
+
+Seems they get along fine.
+
++-0 GP
+
+-5 IP
+
+
+
+TIMEOUT
+
+-15 IP
+
+
+
+ICON
+
+Borea_Hope
+---------------------------
+PLANET: Borea
+
+TYPE: Single
+
+FROM:  Windy Wendy
+
+SUBJECT: Make me fly as high as the other winds
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Hiii I am Wendy, but my friends call me Windy Wendy. For quite some time now, I am not able to fly as high as I want to. It is probably because I cheated on ONE game of hide and seek. The others took away some of my Windy powers, so now I am just Wendy. Please if there is somebody.. help me and I tell all my friends about it and we can ALL become friends! Thank you so much for your help god above the clouds :3.
+
+
+
+QUESTION
+
+Do I care about a little girls problem?
+
+
+
+YES
+
+I care about you Wendy! I will help you become Windy Wendy again and to fly as high as you want!
+
+-5 GP
+
++10IP
+
+
+
+NO
+
+Guess someone should not have cheated then.
+
+-5 GP
+
+-5 IP
+
+
+
+TIMEOUT
+
+-10 IP
+
+
+
+ICON
+
+Borea_Breezea
+---------------------------
+PLANET: Borea
+
+TYPE:  Planet
 
 FROM: Tihlie
 
@@ -58,262 +332,8 @@ TIMEOUT
 
 -10 IP
 
----------------------------
 
-PLANET: Borea
 
-TYPE: Single
+ICON
 
-FROM:  Windy Wendy
-
-SUBJECT: Make me fly as high as the other winds
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-Hiii I am Wendy, but my friends call me Windy Wendy. For quite some time now, I am not able to fly as high as I want to. It is probably because I cheated on ONE game of hide and seek. The others took away some of my Windy powers, so now I am just Wendy. Please if there is somebody.. help me and I tell all my friends about it and we can ALL become friends! Thank you so much for your help god above the clouds :3.
-
-
-
-QUESTION
-
-Do I care about a little girls problem?
-
-
-
-YES
-
-I care about you Wendy! I will help you become Windy Wendy again and to fly as high as you want!
-
--5 GP
-
-+10IP
-
-
-
-NO
-
-Guess someone should not have cheated then.
-
--5 GP
-
--5 IP
-
-
-
-TIMEOUT
-
--10 IP
-
----------------------------
-
-PLANET: Borea
-
-TYPE:  Planet
-
-FROM: Huul
-
-SUBJECT: On our Future
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-My king told me of his missing son. He has a bright mind: I do not think he'll be forever lost. The sky is clearing up, as I speak - the weather-winds are on their way.
-
-I thank you, my lord, for giving us speed and clear sight.
-
-
-
-QUESTION
-
-Will you contribute to the clearing of the skies?
-
-
-
-YES
-
-I like him. Being nice to me should be rewarded!
-
--20 GP
-
-+10 IP
-
-
-
-NO
-
-Seems they get along fine.
-
-+-0 GP
-
--5 IP
-
-
-
-TIMEOUT
-
--15 IP
-
----------------------------
-
-PLANET: Borea
-
-TYPE:  Revival
-
-FROM: Northwind (King)
-
-SUBJECT: My son
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-By the winds, where has my youngest, the Jetstream, gone again? Playing tag with his siblings, he must have flown out of orbit.... I would mobilise my whole wind armies to get him back.
-
-
-
-QUESTION
-
-Bring young Jetstream back home safely?
-
-
-
-YES
-
-You're missed at home, little jet stream. We wouldn't want your dad to start a war.
-
--14 GP
-
-+20 IP
-
-
-
-NO
-
-The wind made its choice, perhaps it was fate that it is now somewhere else?
-
--5 GP
-
--20 IP
-
-
-
-TIMEOUT
-
--40 IP
-
----------------------------
-
-PLANET: Borea
-
-TYPE:  Community
-
-FROM: Sothern wind Party Gang
-
-SUBJECT: Cloud nine
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-Eyy what up Mate! Hope everything is cool with you. I'm about to throw the biggest party Borea has ever seen! You know, breathing in some good winds can make you feel especially many colors. Here's the problem: we can't get to them winds ourselves. It'd be cool if you could get us some of the good stuff - would be your ticket to the party!
-
-
-
-QUESTION
-
-Help them fly high in the sky?
-
-
-
-YES
-
-Hell yeah, haven't been to a good party in ages!
-
--10 GP
-
-+13 IP
-
-
-
-NO
-
-Geez kids, these winds are no broccoli!
-
--1 GP
-
--8 IP
-
-
-
-TIMEOUT
-
--20 IP
-
----------------------------
-
-PLANET: Borea
-
-TYPE:  Planet
-
-FROM: Westwind
-
-SUBJECT: Hope in dark times
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-So these are the times.
-
-It is dark here: The eastern winds are in rebellion, no, pure opposition - open war: Though brothers and sisters in nature, we do not fly in the same air any more. They are raging against us: Destroy palaces of clouds, gathering stormy lightnings, swallowing our children. My hope has wandered to you, Mihinaal, who we long dismissed.
-
-
-
-QUESTION
-
-Do you help the winds of Borea to be united again under a peaceful sky?
-
-
-
-YES
-
-Let the storm calm down.
-
--20 GP
-
-+8 IP
-
-(You gain followers on the planet of Borea.)
-
-
-
-NO
-
-I am not here to meddle in the affairs of the wind.
-
--0 GP
-
-+1 IP
-
-(Leave Borea to itself.)
-
-
-
-TIMEOUT
-
-+1 IP
-
-(Leave Borea to itself.)
+Borea_Hope

@@ -44,7 +44,7 @@ def to_int(gp):
     return sign * int(gp[1:-2])
 
 
-for name in ('konteos','borea','eco_827','nobola'):
+for name in ('konteos','borea','eco_827','nobola','world1'):
 
     data = ""
 
@@ -54,7 +54,10 @@ for name in ('konteos','borea','eco_827','nobola'):
     
     tasks = data.split('---------------------------')
     
-    os.mkdir(name + '\\start')
+    try:
+        os.mkdir(name + '\\start')
+    except:
+        pass
     
     for nr, task in enumerate(tasks):
     
@@ -101,6 +104,9 @@ for name in ('konteos','borea','eco_827','nobola'):
         from_             = task_lines[2][5:]
         subject           = task_lines[3][9:]
         
+        
+        print(name, from_, subject)
+        
         message           = ' '.join( task_lines[i] for i in range (6, task_lines.index('QUESTION')))
         
         question          = task_lines[ task_lines.index('QUESTION') + 1]
@@ -132,6 +138,8 @@ for name in ('konteos','borea','eco_827','nobola'):
         deny_infl         = to_int(task_lines[indx + 1])
 
         ign_infl          = to_int(task_lines[indx + 3])
+        
+        icon = task_lines[indx + 5] + ".png"
         
         
         

@@ -1,10 +1,10 @@
 PLANET: Eco 837
 
-TYPE:  Community
+TYPE:  Single
 
-FROM: Racoon Administration Group
+FROM: Arn tweog
 
-SUBJECT: Concerning Suspicious Owl Activity
+SUBJECT: Doubts
 
 TIME: ..
 
@@ -12,117 +12,58 @@ TIME: ..
 
 DESCRIPTION
 
-Dear Ma’am or Mister,
 
-We have a serious concern that the owl association is planning a coup against our ruler, the night queen. Therefore, we kindly ask for your help - we can not involve anyone else into this matter and are thus dependent on your grace.
 
-Sincerely,
-
-The Racoon Administration Group
+I am roaming, drifting about, as an eagle does. And what do I do? It is here, carried by the winds, that I realize: It is for the pleasure of hunting that I’m rising in the air day after day, moon after moon. Is it not strange that I cannot even enjoy the wide richness of the world? All I do is rising and falling, falling down to the earth, to take a small creature’s life. What worth is in such deeds? Why do I exist, if I cannot choose to do else?
 
 
 
 QUESTION
 
-Do you give the racoons a key hint to support their activities?
+Do you grant the eagle freedom from his burden?
 
 
 
 YES
 
-I don’t like grey eminences. Unveil the conspiracy!
+Lift the shackles of instinct from this poor creature.
 
--15 GP
+-12 GP
 
-+20 IP
++10 IP
 
 
 
 NO
 
-There will always be evil in the world, fighting symptoms accomplishes nothing.
+I am so confused. How could creation outsmart its creators?
 
--3 GP
 
--10 IP
+
+-2 GP
+
+-5 IP
 
 
 
 TIMEOUT
 
--30 IP
+-9 IP
 
+
+
+ICON
+
+Eco827_Owl
 ---------------------------
 
-PLANET: Eco 837
+PLANET: Eco837
 
-TYPE: Single
+TYPE:  Revival
 
-FROM: little bird
+FROM: Her Highness the Nightqueen
 
-SUBJECT: is there anyone who listens
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-
-
-Oh please, please can someone hear my woes?
-
-I’m in love, but it must not be, can’t you see?
-
-Where shall my sorrows lead?
-
-Shall I end in - ever lasting, lonely darkness?
-
-Why can’t the one, whom I see yet cannot grasp, be here with me?
-
-Ah! Were I a fox down on the earth - happy ever after
-
-
-
-QUESTION
-
-Lead the two lovers to each other?
-
-
-
-YES
-
-Let there be love!
-
--10 GP
-
-+18 IP
-
-
-
-NO
-
-They could decide their fate themselves by going beyond the things that part them.
-
--5 GP
-
--8 IP
-
-
-
-TIMEOUT
-
--17 IP
-
----------------------------
-
-PLANET: Eco 837
-
-TYPE:  Community
-
-FROM: Owl Association
-
-SUBJECT: Support for the Coup at Lun Eclipse
+SUBJECT: Silver lining / A bright light appeared
 
 TIME: ..
 
@@ -130,40 +71,47 @@ TIME: ..
 
 DESCRIPTION
 
-We, the kings of the air and rightful heirs of Tron claim our birthright! Only in the shadow of the lunar eclipse we can do it - but we cannot pull off the coup without your help! For the stars must be favorable to defeat the superiority of the enemy. Give us the power that was always ours and it will not be to your disadvantage....
+
+
+Never in my life were matters so urgent, and here I am now, praying to a god that birds, fish and all walking creatures have long neglected - or forgotten. Forgive me. My world is dark, there never has been any light brighter than a crystal in its cave or a silent moon wandering the sky. But now, a new moon has risen: Bright it is, piercing in our eyes, burning our flesh, rotting our food. Help us, oh master of the world! Forgive us for our long silence!
 
 
 
 QUESTION
 
-Should I chance the stars in their favor?
+Do you ban the bright source and save the Nightqueen’s folk?
 
 
 
 YES
 
-It is their birth right, and it benefits me.
+I've always been a fan of moonlight and melancholy thoughts.
 
--32 GP
+-35 GP
 
-+40 IP
++35 IP
 
 
 
 NO
 
-This could cause a too great shift of balance in the world.
+The world gives and the world takes away.
 
--10 GP
+-0 GP
 
--20 IP
++1 IP
 
 
 
 TIMEOUT
 
--50 IP
++1 IP
 
+
+
+ICON
+
+Eco827_Nightqueen
 ---------------------------
 
 PLANET: Eco837
@@ -222,73 +170,79 @@ TIMEOUT
 
 -15 IP
 
----------------------------
-
-PLANET: Eco837
-
-TYPE:  Revival
-
-FROM: Her Highness the Nightqueen
-
-SUBJECT: Silver lining / A bright light appeared
-
-TIME: ..
 
 
+ICON
 
-DESCRIPTION
-
-
-
-Never in my life were matters so urgent, and here I am now, praying to a god that birds, fish and all walking creatures have long neglected - or forgotten. Forgive me. My world is dark, there never has been any light brighter than a crystal in its cave or a silent moon wandering the sky. But now, a new moon has risen: Bright it is, piercing in our eyes, burning our flesh, rotting our food. Help us, oh master of the world! Forgive us for our long silence!
-
-
-
-QUESTION
-
-Do you ban the bright source and save the Nightqueen’s folk?
-
-
-
-YES
-
-I've always been a fan of moonlight and melancholy thoughts.
-
--35 GP
-
-+35 IP
-
-(You gain followers on the planet of Eco837.)
-
-
-
-NO
-
-The world gives and the world takes away.
-
--0 GP
-
-+1 IP
-
-(Leave Eco837 to itself.)
-
-
-
-TIMEOUT
-
-+1 IP
-
-(Leave Eco837 to itself.)
-
+Eco827_Bumblebee
 ---------------------------
 
 PLANET: Eco 837
 
-TYPE:  Single
+TYPE:  Community
 
-FROM: Arn tweog
+FROM: Owl Association
 
-SUBJECT: Doubts
+SUBJECT: Support for the Coup at Lun Eclipse
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+We, the kings of the air and rightful heirs of Tron claim our birthright! Only in the shadow of the lunar eclipse we can do it - but we cannot pull off the coup without your help! For the stars must be favorable to defeat the superiority of the enemy. Give us the power that was always ours and it will not be to your disadvantage....
+
+
+
+QUESTION
+
+Should I chance the stars in their favor?
+
+
+
+YES
+
+It is their birth right, and it benefits me.
+
+-32 GP
+
++40 IP
+
+
+
+NO
+
+This could cause a too great shift of balance in the world.
+
+-10 GP
+
+-20 IP
+
+
+
+TIMEOUT
+
+-50 IP
+
+
+
+ICON
+
+Eco827_Owl
+---------------------------
+
+PLANET: Eco 837
+
+<<<<<<< HEAD
+TYPE: Single
+=======
+TYPE:  Revival
+>>>>>>> e984f75bb82bb6fa8ad93c75c6f22d215b3db35e
+
+FROM: little bird
+
+SUBJECT: is there anyone who listens
 
 TIME: ..
 
@@ -298,38 +252,112 @@ DESCRIPTION
 
 
 
-I am roaming, drifting about, as an eagle does. And what do I do? It is here, carried by the winds, that I realize: It is for the pleasure of hunting that I’m rising in the air day after day, moon after moon. Is it not strange that I cannot even enjoy the wide richness of the world? All I do is rising and falling, falling down to the earth, to take a small creature’s life. What worth is in such deeds? Why do I exist, if I cannot choose to do else?
+Oh please, please can someone hear my woes?
+
+I’m in love, but it must not be, can’t you see?
+
+Where shall my sorrows lead?
+
+Shall I end in - ever lasting, lonely darkness?
+
+Why can’t the one, whom I see yet cannot grasp, be here with me?
+
+Ah! Were I a fox down on the earth - happy ever after
 
 
 
 QUESTION
 
-Do you grant the eagle freedom from his burden?
+Lead the two lovers to each other?
 
 
 
 YES
 
-Lift the shackles of instinct from this poor creature.
+Let there be love!
 
--12 GP
+-10 GP
 
-+10 IP
++18 IP
 
 
 
 NO
 
-I am so confused. How could creation outsmart its creators?
+They could decide their fate themselves by going beyond the things that part them.
 
+-5 GP
 
-
--2 GP
-
--5 IP
+-8 IP
 
 
 
 TIMEOUT
 
--9 IP
+-17 IP
+
+
+
+ICON
+
+Eco827_Sparrow
+---------------------------
+PLANET: Eco 837
+
+TYPE:  Community
+
+FROM: Racoon Administration Group
+
+SUBJECT: Concerning Suspicious Owl Activity
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Dear Ma’am or Mister,
+
+We have a serious concern that the owl association is planning a coup against our ruler, the night queen. Therefore, we kindly ask for your help - we can not involve anyone else into this matter and are thus dependent on your grace.
+
+Sincerely,
+
+The Racoon Administration Group
+
+
+
+QUESTION
+
+Do you give the racoons a key hint to support their activities?
+
+
+
+YES
+
+I don’t like grey eminences. Unveil the conspiracy!
+
+-15 GP
+
++20 IP
+
+
+
+NO
+
+There will always be evil in the world, fighting symptoms accomplishes nothing.
+
+-3 GP
+
+-10 IP
+
+
+
+TIMEOUT
+
+-30 IP
+
+
+
+ICON
+
+Eco827_Hunter

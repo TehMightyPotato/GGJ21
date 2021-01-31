@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: konteos1
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR"
-  question: "Make Magnus wish come true and grow an apple tree in his garden?"
-  sender: "From:  Magnus Amgam"
-  subject: "Subject: Craving to see a tree"
+  message: "HELLO YOU! I AM KRUSKUS, A TROLL FROM KONETOS. Oh... maybe I shouldn't shout so much, Mama always told me to be a little quieter. Anyway... King Khorin send me on an important quest to search for stones. BIG IMPORTANT STONES for his crown. He sometimes need new ones. I need to bring them to him... but I don't know the way... and how dangerous this is... I DON'T EVEN KNOW HOW THEY LOOK LIKE! I am afraid to get lost in the mines ... Mom drew me a map but I can not read maps ..."
+  question: "Show poor Kruskus the way?"
+  sender: "From:  Kruskus"
+  subject: "Subject: HELP WITH BIG TASK"
   timelimitsec: 60
-  approveButtonText: "Have some vitamins you symathic magma lump!"
+  approveButtonText: "Just follow the lights I place for you."
   approveCost: -5
   approveFollowerMod: 100
-  approveInfluence: 8
-  denyButtonText: "How can I grow apples from stone? I am a god but not a magician..."
-  denyCost: -2
+  approveInfluence: 4
+  denyButtonText: "Who still lives with his mommy at this age?"
+  denyCost: 0
   denyFollowerMod: -100
-  denyInfluence: -12
+  denyInfluence: -15
   ignoreFollowerMod: -50
-  ignoreInfluence: -20
+  ignoreInfluence: -5

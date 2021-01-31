@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: borea0
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "Oh mighty wind of winds! Oh mighty Mihinaal! Tell me, oh knower of all and every things Why thy wind is blowing Why is the ever lasting movement there Why are we never un-wind-ing?"
-  question: "Give Tihlie a useful answer?"
-  sender: "From:  Tihlie"
-  subject: "Subject: Searching for an answer"
+  message: "So these are the times. It is dark here: The eastern winds are in rebellion, no, pure opposition - open war: Though brothers and sisters in nature, we do not fly in the same air any more. They are raging against us: Destroy palaces of clouds, gathering stormy lightnings, swallowing our children. My hope has wandered to you, Mihinaal, who we long dismissed."
+  question: "Do you help the winds of Borea to be united again under a peaceful sky?"
+  sender: "From:  Westwind"
+  subject: "Subject: Hope in dark times"
   timelimitsec: 60
-  approveButtonText: "'Such is the nature of things: Not to all existents the opposite is sensible.'"
-  approveCost: -10
+  approveButtonText: "Let the storm calm down."
+  approveCost: -20
   approveFollowerMod: 100
-  approveInfluence: 10
-  denyButtonText: "'It is to your best, if you find out on your own.'"
-  denyCost: -1
+  approveInfluence: 8
+  denyButtonText: "I am not here to meddle in the affairs of the wind."
+  denyCost: 0
   denyFollowerMod: -100
-  denyInfluence: -3
+  denyInfluence: 1
   ignoreFollowerMod: -50
-  ignoreInfluence: -10
+  ignoreInfluence: 1

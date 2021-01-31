@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: eco_8274
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "Never in my life were matters so urgent, and here I am now, praying to a god that birds, fish and all walking creatures have long neglected - or forgotten. Forgive me. My world is dark, there never has been any light brighter than a crystal in its cave or a silent moon wandering the sky. But now, a new moon has risen: Bright it is, piercing in our eyes, burning our flesh, rotting our food. Help us, oh master of the world! Forgive us for our long silence!"
-  question: "Do you ban the bright source and save the Nightqueen’s folk?"
-  sender: "From:  Her Highness the Nightqueen"
-  subject: "Subject: Silver lining / A bright light appeared"
-  timelimitsec: 10
-  approveButtonText: "I've always been a fan of moonlight and melancholy thoughts."
-  approveCost: -35
+  message: "FROM: little bird SUBJECT: is there anyone who listens TIME: .. DESCRIPTION Oh please, please can someone hear my woes? I’m in love, but it must not be, can’t you see? Where shall my sorrows lead? Shall I end in - ever lasting, lonely darkness? Why can’t the one, whom I see yet cannot grasp, be here with me? Ah! Were I a fox down on the earth - happy ever after"
+  question: "Lead the two lovers to each other?"
+  sender: "From:  Single"
+  subject: "Subject: "
+  timelimitsec: 60
+  approveButtonText: "Let there be love!"
+  approveCost: -10
   approveFollowerMod: 100
-  approveInfluence: 35
-  denyButtonText: "The world gives and the world takes away."
-  denyCost: 0
+  approveInfluence: 18
+  denyButtonText: "They could decide their fate themselves by going beyond the things that part them."
+  denyCost: -5
   denyFollowerMod: -100
-  denyInfluence: 1
+  denyInfluence: -8
   ignoreFollowerMod: -50
-  ignoreInfluence: 1
+  ignoreInfluence: -17

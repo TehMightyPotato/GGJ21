@@ -1,10 +1,10 @@
 PLANET: Konetos
 
-TYPE:  Revival
+TYPE: Community
 
-FROM: The people of K'uul Tho
+FROM: the magma sailsman
 
-SUBJECT: Make planet stop transforming
+SUBJECT: we need help to cross the magma ocean
 
 TIME: ..
 
@@ -14,53 +14,55 @@ DESCRIPTION
 
 
 
-HEY! YOU! GOD! WE THE PEOPLE OF K'UUL THO NEED HELP. MAKE OUR PLANET STOP MOVING SO WE CAN HAVE PEACE. IF YOU DO SO WE WILL FOLLOW YOU FOREVER
+Uaargh GOD OF THE STORMY MAGMA OCEAN! HELP US! SOMEHOW WE SEEM TO HAVE ANGERED THE MONSTER OF THE DEEP, PERHABS BECAUSE WE USED TO THROW OUR WASTE INTO THE SEA?
+
+NOW IT IST TRYING TO DESTROY OUR STONE BOAT AND WHEN WE FALL INTO THE SEA WE MIGHT DROWN. PLEASE HELP US TO GET TO THE SHORE SAFELY.
 
 
 
 QUESTION
 
-Mhm do I wanna help those creatures?
+Safe the Adventurers from the sea monster?
 
 
 
 YES
 
-Its always good to have a magma planet on your side!
+Do you see this big wave? Use it to get to shore!
 
+-10 GP
 
-
--30 GP
-
-+60 IP
++25 IP
 
 
 
 NO
 
-NO! FIRST YOU NEED TO LEARN TO DEACTIVATE CAPS LOCK...
+Waste in the sea? I would be angry too.
 
-Sincerely Mikratheus :)
++ 10 GP
 
--2 GP
-
--10 IP
+- 10 IP
 
 
 
 TIMEOUT
 
--40 IP
+- 20 IP
 
+
+
+Icon
+
+Konetos_Dumb
 ---------------------------
-
 PLANET: Konetos
 
 TYPE:  Single
 
-FROM: Magnus Amgam
+FROM: Kruskus
 
-SUBJECT: Craving to see a tree
+SUBJECT: HELP WITH BIG TASK
 
 TIME: ..
 
@@ -68,19 +70,77 @@ TIME: ..
 
 DESCRIPTION
 
-RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR
+
+
+HELLO YOU! I AM KRUSKUS, A TROLL FROM KONETOS. Oh... maybe I shouldn't shout so much, Mama always told me to be a little quieter. Anyway... King Khorin send me on an important quest to search for stones. BIG IMPORTANT STONES for his crown. He sometimes need new ones. I need to bring them to him... but I don't know the way... and how dangerous this is... I DON'T EVEN KNOW HOW THEY LOOK LIKE! I am afraid to get lost in the mines ... Mom drew me a map but I can not read maps ...
+
+
 
 
 
 QUESTION
 
-Make Magnus wish come true and grow an apple tree in his garden?
+Show poor Kruskus the way?
 
 
 
 YES
 
-Have some vitamins you symathic magma lump!
+Just follow the lights I place for you.
+
+-5 GP
+
++4 IP
+
+
+
+NO
+
+Who still lives with his mommy at this age?
+
+-0 GP
+
+-15 IP
+
+
+
+TIMEOUT
+
+-5 IP
+
+
+
+ICON
+
+Konetos_Dumb
+---------------------------
+PLANET: Konetos
+
+TYPE:  Single
+
+FROM: Keren
+
+SUBJECT: Liquid stone everywhere
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+I shouldn't swear but ... damn that's depressing. Every time our people want to mine the particularly smooth shimmering stone, it melts into silvery liquid in my hands.
+
+
+
+QUESTION
+
+Send Keren an epiphany?
+
+
+
+YES
+
+Your wife could knit nice fireproof gloves!
 
 -5 GP
 
@@ -90,61 +150,9 @@ Have some vitamins you symathic magma lump!
 
 NO
 
-How can I grow apples from stone? I am a god but not a magician...
+It's 8 am in the morning.. I am not ready for an early epiphany
 
--2 GP
-
--12 IP
-
-
-
-TIMEOUT
-
--20 IP
-
----------------------------
-
-PLANET: Konetos
-
-TYPE: Community
-
-FROM: The Magma Magisters
-
-SUBJECT: Education
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-Hello, higher power, if there is one. We, the few intellectuals of our people, would like to build a school to study the magma. The problem is, that the people of K'uul Tho extruded us from the society and we need your help to teach the next generation of young magma trolls.
-
-Best regards, the Magma Magisters
-
-
-
-QUESTION
-
-Help them change the peoples mind?
-
-
-
-YES
-
-Of course! Education is the key for a succesfull society.
-
--20 GP
-
-+20 IP
-
-
-
-NO
-
-Nah.. I get more from the People of K'uul Tho! Screw education! RAAWWRR
-
--5 GP
+-0 GP
 
 -5 IP
 
@@ -152,13 +160,17 @@ Nah.. I get more from the People of K'uul Tho! Screw education! RAAWWRR
 
 TIMEOUT
 
--20 IP
+-10 IP
 
------- 
 
+
+ICON
+
+Konetos_Snob
+---------------------------
 PLANET: Konetos
 
-TYPE:  Revival
+TYPE:  Single
 
 FROM: UGKRAA
 
@@ -194,12 +206,191 @@ NO
 
 More than one planet of this kind is UARRHGH not necessary
 
--5 GP
+-0 GP
 
--5 IP
++1 IP
 
 
 
 TIMEOUT
 
--15 IP
++ 1 IP
+
+
+
+ICON
+
+Konetos_Dumb
+---------------------------
+PLANET: Konetos
+
+TYPE: Community
+
+FROM: The Magma Magisters
+
+SUBJECT: Education
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Hello, higher power, if there is one. We, the few intellectuals of our people, would like to build a school to study the magma. The problem is, that the people of K'uul Tho extruded us from the society and we need your help to teach the next generation of young magma trolls.
+
+Best regards, the Magma Magisters
+
+
+
+QUESTION
+
+Help them change the peoples mind?
+
+
+
+YES
+
+Of course! Education is the key for a succesfull society.
+
+- 20 GP
+
++ 20 IP
+
+
+
+NO
+
+Nah.. I get more from the People of K'uul Tho! Screw education! RAAWWRR
+
+- 5 GP
+
+- 5 IP
+
+
+
+TIMEOUT
+
+-20 IP
+
+
+
+ICON
+
+Konetos_Snob
+---------------------------
+
+PLANET: Konetos
+
+TYPE:  Revival
+
+FROM: The people of K'uul Tho
+
+SUBJECT: Make planet stop transforming
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+HEY! YOU! GOD! WE THE PEOPLE OF K'UUL THO NEED HELP. MAKE OUR PLANET STOP MOVING SO WE CAN HAVE PEACE. IF YOU DO SO WE WILL FOLLOW YOU FOREVER
+
+
+
+QUESTION
+
+Mhm do I wanna help those creatures?
+
+
+
+YES
+
+Its always good to have a magma planet on your side!
+
+
+
+- 30 GP
+
++ 60 IP
+
+
+
+NO
+
+NO! FIRST YOU NEED TO LEARN TO DEACTIVATE CAPS LOCK...
+
+Sincerely Mikratheus :)
+
+- 0 GP
+
++1 IP
+
+
+
+TIMEOUT
+
++1 IP
+
+
+
+ICON
+
+Konetos_King
+
+---------------------------
+
+PLANET: Konetos
+
+TYPE:  Single
+
+FROM: Magnus Amgam
+
+SUBJECT: Craving to see a tree
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR
+
+
+
+QUESTION
+
+Make Magnus wish come true and grow an apple tree in his garden?
+
+
+
+YES
+
+Have some vitamins you symathic magma lump!
+
+- 5 GP
+
++8 IP
+
+
+
+NO
+
+How can I grow apples from stone? I am a god but not a magician...
+
+- 2 GP
+
+- 12 IP
+
+
+
+TIMEOUT
+
+- 20 IP
+
+
+
+ICON
+
+Konetos_Dumb

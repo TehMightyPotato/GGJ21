@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
+  m_Name: konteos4
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  message: "Hello, higher power, if there is one. We, the few intellectuals of our people, would like to build a school to study the magma. The problem is, that the people of K'uul Tho extruded us from the society and we need your help to teach the next generation of young magma trolls. Best regards, the Magma Magisters"
+  question: "Help them change the peoples mind?"
+  sender: "From:  The Magma Magisters"
+  subject: "Subject: Education"
+  timelimitsec: 60
+  approveButtonText: "Of course! Education is the key for a succesfull society."
+  approveCost: -20
+  approveFollowerMod: 100
+  approveInfluence: 20
+  denyButtonText: "Nah.. I get more from the People of K'uul Tho! Screw education! RAAWWRR"
+  denyCost: -5
+  denyFollowerMod: -100
+  denyInfluence: -5
+  ignoreFollowerMod: -50
+  ignoreInfluence: -20
