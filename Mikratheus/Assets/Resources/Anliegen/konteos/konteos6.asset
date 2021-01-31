@@ -13,16 +13,18 @@ MonoBehaviour:
   m_Name: konteos6
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR"
-  question: "Make Magnus wish come true and grow an apple tree in his garden?"
-  sender: "From:  Magnus Amgam"
-  subject: "Subject: Craving to see a tree"
+  audioClip: {fileID: 8300000, guid: 5e6fc8d98e75b1d46b62d2f5331a9e21, type: 3}
+  message: RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS
+    HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR
+  question: Make Magnus wish come true and grow an apple tree in his garden?
+  sender: 'From:  Magnus Amgam'
+  subject: 'Subject: Craving to see a tree'
   timelimitsec: 60
-  approveButtonText: "Have some vitamins you symathic magma lump!"
+  approveButtonText: Have some vitamins you symathic magma lump!
   approveCost: -5
   approveFollowerMod: 100
   approveInfluence: 8
-  denyButtonText: "How can I grow apples from stone? I am a god but not a magician..."
+  denyButtonText: How can I grow apples from stone? I am a god but not a magician...
   denyCost: -2
   denyFollowerMod: -100
   denyInfluence: -12
