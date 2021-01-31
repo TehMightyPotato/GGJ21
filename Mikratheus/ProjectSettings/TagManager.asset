@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - text_planet
+  - text_follower
+  - text_influence
+  - text_gp
   layers:
   - Default
   - TransparentFX

@@ -4,8 +4,9 @@ using UnityEngine.UI;
 
 public class PlanetUIHandler : MonoBehaviour
 {
+    public Text planetNameText;
     public Text planetFollowerText;
-    public Text planetTotalPopText;
+    public Text planetInfluenceText;
 
     public GameObject speechBubble;
 
@@ -23,8 +24,9 @@ public class PlanetUIHandler : MonoBehaviour
         _currentPlanet.EventStatusChanged -= OnPlanetEventStatusChanged;
         _currentPlanet.PlanetValuesUpdate -= OnPlanetValueUpdate;
         _currentPlanet = planet;
-        planetFollowerText.text = _currentPlanet.currentFollowers.ToString();
-        planetTotalPopText.text = _currentPlanet.totalPop.ToString();
+
+        UpdatePlanetStatUI();
+
         speechBubble.SetActive(_currentPlanet.eventIsActive);
         _currentPlanet.EventStatusChanged += OnPlanetEventStatusChanged;
         _currentPlanet.PlanetValuesUpdate += OnPlanetValueUpdate;
@@ -32,12 +34,19 @@ public class PlanetUIHandler : MonoBehaviour
 
     private void OnPlanetValueUpdate(object sender, EventArgs e)
     {
-        planetFollowerText.text = _currentPlanet.currentFollowers.ToString();
-        planetTotalPopText.text = _currentPlanet.totalPop.ToString();
+        UpdatePlanetStatUI();
     }
 
     private void OnPlanetEventStatusChanged(object sender, EventArgs e)
     {
         speechBubble.SetActive(_currentPlanet.eventIsActive);
+    }
+
+
+    private void UpdatePlanetStatUI()
+    {
+        planetNameText.text = "Current Planet: " + _currentPlanet.planetName;
+        planetFollowerText.text = "Follower/Population: " + _currentPlanet.currentFollowers.ToString() + "/" + _currentPlanet.totalPop.ToString();
+        planetInfluenceText.text = "Influence/Maximum: " + _currentPlanet.influence.ToString() + "/100";
     }
 }

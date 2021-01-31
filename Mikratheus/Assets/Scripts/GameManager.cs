@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public int updateRateInSeconds;
     [SerializeField] private float _currentUpdateTime;
+
+    public Text gpText;  
 
     //Event Handler
     public UnityEvent planetUpdate;
@@ -84,6 +87,8 @@ public class GameManager : MonoBehaviour
             {
                 godPower = godPowerLimit;
             }
+
+            gpText.text = "Godpower/Max: " + godPower.ToString() + "/100";
 
             yield return new WaitForSeconds(godPowerIntervall);
         }
