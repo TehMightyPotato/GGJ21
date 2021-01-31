@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do you save the supervisor and his workers?"
   sender: "From:  Supervisor Torn of the Cthuli-Mines"
   subject: "Subject: The mine is collapsing"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "I am a graceful god."
   approveCost: -20
   approveFollowerMod: 100

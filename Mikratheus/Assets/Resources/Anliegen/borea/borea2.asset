@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Will you contribute to the clearing of the skies?"
   sender: "From:  Huul"
   subject: "Subject: On our Future"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "I like him. Being nice to me should be rewarded!"
   approveCost: -20
   approveFollowerMod: 100

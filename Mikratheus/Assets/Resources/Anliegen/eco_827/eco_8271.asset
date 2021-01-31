@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Lead the two lovers to each other?"
   sender: "From:  little bird"
   subject: "Subject: is there anyone who listens"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Let there be love!"
   approveCost: -10
   approveFollowerMod: 100

@@ -89,7 +89,7 @@ for name in ('konteos','borea','eco_827','nobola'):
         deny_fol_mod      = -100
         ign_fol_mod       = -50
         
-        time_limit_sec    = 10
+        time_limit_sec    = 60
         
         
         dir_suffix = ""

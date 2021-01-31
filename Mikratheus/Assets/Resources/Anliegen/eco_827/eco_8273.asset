@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Let the moon shine even brighter?"
   sender: "From:  Bumblebee Bribs"
   subject: "Subject: It is so beautiful!!"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "The world shall be a merry place!"
   approveCost: -12
   approveFollowerMod: 100

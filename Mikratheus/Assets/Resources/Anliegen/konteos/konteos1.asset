@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Make Magnus wish come true and grow an apple tree in his garden?"
   sender: "From:  Magnus Amgam"
   subject: "Subject: Craving to see a tree"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Have some vitamins you symathic magma lump!"
   approveCost: -5
   approveFollowerMod: 100

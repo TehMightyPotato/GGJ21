@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Bring young Jetstream back home safely?"
   sender: "From:  Northwind (King)"
   subject: "Subject: My son"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "You're missed at home, little jet stream. We wouldn't want your dad to start a war."
   approveCost: -14
   approveFollowerMod: 100

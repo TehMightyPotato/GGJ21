@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Should I chance the stars in their favor?"
   sender: "From:  Owl Association"
   subject: "Subject: Support for the Coup at Lun Eclipse"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "It is their birth right, and it benefits me."
   approveCost: -32
   approveFollowerMod: 100

@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do I care about a little girls problem?"
   sender: "From:   Windy Wendy"
   subject: "Subject: Make me fly as high as the other winds"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "I care about you Wendy! I will help you become Windy Wendy again and to fly as high as you want!"
   approveCost: -5
   approveFollowerMod: 100

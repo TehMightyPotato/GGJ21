@@ -264,7 +264,7 @@ TIMEOUT
 
 PLANET: Borea
 
-TYPE:  Revival
+TYPE:  Planet
 
 FROM: Westwind
 

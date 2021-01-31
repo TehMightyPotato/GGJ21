@@ -226,7 +226,7 @@ TIMEOUT
 
 PLANET: Eco837
 
-TYPE:  World
+TYPE:  Revival
 
 FROM: Her Highness the Nightqueen
 

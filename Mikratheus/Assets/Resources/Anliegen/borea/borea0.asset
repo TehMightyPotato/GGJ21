@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Give Tihlie a useful answer?"
   sender: "From:  Tihlie"
   subject: "Subject: Searching for an answer"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "'Such is the nature of things: Not to all existents the opposite is sensible.'"
   approveCost: -10
   approveFollowerMod: 100

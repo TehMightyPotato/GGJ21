@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do you give the racoons a key hint to support their activities?"
   sender: "From:  Racoon Administration Group"
   subject: "Subject: Concerning Suspicious Owl Activity"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "I don’t like grey eminences. Unveil the conspiracy!"
   approveCost: -15
   approveFollowerMod: 100
