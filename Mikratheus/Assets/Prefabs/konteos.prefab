@@ -95,9 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c2268112bf9bf4aa19f32546983910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetName: konteos
+  pleaAudioClip: {fileID: 8300000, guid: 5f7eb983e2c10244a99c6290b96e7bdb, type: 3}
   totalPop: 3458768
-  currentFollowers: 453
-  influence: 50
+  currentFollowers: 1
+  influence: 20
   followerGrowthIntervall: 1
   eventGenerationChance: 0
   eventIsActive: 0
@@ -116,7 +118,7 @@ Animator:
   m_GameObject: {fileID: 2003278652654998725}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 19a87779548fb7443b56bee1b70246ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: c54e33cb63ee5784da08fff400dbf51c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

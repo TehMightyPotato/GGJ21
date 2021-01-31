@@ -51,12 +51,12 @@ public class PlanetManager : MonoBehaviour
         }
 
         var oldPlanet = currentPlanet.GetComponent<Planet>();
+        oldPlanet.PlayExitAnimation(true);
         oldPlanet.SetActivePlanet(false);
-        oldPlanet.PlayExitAnimation();
         currentPlanet = planets[lastIndex + 1];
         var newPlanet = currentPlanet.GetComponent<Planet>();
         newPlanet.SetActivePlanet(true);
-        newPlanet.PlayEntryAnimation();
+        newPlanet.PlayEntryAnimation(true);
         OnPlanetChanged();
     }
 
@@ -69,12 +69,12 @@ public class PlanetManager : MonoBehaviour
         }
 
         var oldPlanet = currentPlanet.GetComponent<Planet>();
+        oldPlanet.PlayExitAnimation(false);
         oldPlanet.SetActivePlanet(false);
-        oldPlanet.PlayExitAnimation();
         currentPlanet = planets[lastIndex - 1];
         var newPlanet = currentPlanet.GetComponent<Planet>();
         newPlanet.SetActivePlanet(true);
-        newPlanet.PlayEntryAnimation();
+        newPlanet.PlayEntryAnimation(false);
         OnPlanetChanged();
     }
 
@@ -101,22 +101,19 @@ public class PlanetManager : MonoBehaviour
         // ist safe weil totalPopulation nie = 0 
         var averageReputation = totalFollowers / totalPopulation;
 
-        var averageInfluence = (0.5 - totalInfluence / planets.Count) / 0.5;
+        var averageInfluence = (0.5 - totalInfluence / (planets.Count * 100)) / 0.5;
 
         if (averageInfluence < 0)
         {
             averageInfluence *= -1;
         }
 
-        var spawnNewPlanetProp = 0.6 * averageReputation + 0.3 * averageInfluence + 0.1 * GameManager.Instance.godPower;
-        if (spawnNewPlanetProp + Random.Range(0f, 0.51f) > 1f)
+        var spawnNewPlanetProp = 0.6 * averageReputation + 0.3 * averageInfluence + 0.1 * (GameManager.Instance.godPower / 100f);
+        if (spawnNewPlanetProp + Random.Range(0f, 0.9f) > 1f)
         {
-            Debug.Log("Spawned new Planet");
             SpawnNewPlanet();
             return;
         }
-
-        Debug.Log("Did not spawn new Planet");
     }
 
     private void SpawnNewPlanet()

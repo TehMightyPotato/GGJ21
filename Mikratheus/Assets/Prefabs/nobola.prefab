@@ -95,9 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c2268112bf9bf4aa19f32546983910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetName: nobola
+  pleaAudioClip: {fileID: 8300000, guid: 5f7eb983e2c10244a99c6290b96e7bdb, type: 3}
   totalPop: 35478
-  currentFollowers: 45678
-  influence: 50
+  currentFollowers: 1
+  influence: 20
   followerGrowthIntervall: 1
   eventGenerationChance: 0
   eventIsActive: 0
@@ -116,7 +118,7 @@ Animator:
   m_GameObject: {fileID: 4928252418570275058}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2343ce220c69f03428d4ed64606b9b95, type: 2}
+  m_Controller: {fileID: 9100000, guid: 28ca56e0d8841b048b6f58e6bede6870, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

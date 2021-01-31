@@ -95,9 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c2268112bf9bf4aa19f32546983910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetName: eco_827
+  pleaAudioClip: {fileID: 8300000, guid: 5f7eb983e2c10244a99c6290b96e7bdb, type: 3}
   totalPop: 5437853
-  currentFollowers: 4523
-  influence: 50
+  currentFollowers: 1
+  influence: 20
   followerGrowthIntervall: 1
   eventGenerationChance: 0
   eventIsActive: 0
@@ -116,7 +118,7 @@ Animator:
   m_GameObject: {fileID: 94444660314797605}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cc71ad908f9496046a7cc6d569f5a82f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2a27cee5e68aabe498a63011f7185fd3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

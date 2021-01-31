@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class Planet : MonoBehaviour
 {
-
+    [FormerlySerializedAs("name")] public string planetName;
+    public AudioClip pleaAudioClip;
     private Animator _animator;
     public int totalPop;
 
@@ -78,8 +80,9 @@ public class Planet : MonoBehaviour
 
     private void GenerateEvent()
     {
-        activeEvent = Instantiate(PleaEventsLoader.Instance.GetRandomPlea());
+        activeEvent = Instantiate(PleaEventsLoader.Instance.GetRandomPlea(planetName));
         activeEvent.Init(this);
+        AudioManager.Instance.PlayAudioClip(pleaAudioClip);
         eventIsActive = true;
         EventStatusChanged?.Invoke(this,EventArgs.Empty);
     }
@@ -159,14 +162,14 @@ public class Planet : MonoBehaviour
         _animator.SetBool("IsActivePlanet",val);
     }
 
-    public void PlayEntryAnimation()
+    public void PlayEntryAnimation(bool next)
     {
-        _animator.SetTrigger("EntryTrigger");
+        _animator.SetTrigger(next ? "EntryTriggerNext" : "EntryTriggerPrev");
     }
 
-    public void PlayExitAnimation()
+    public void PlayExitAnimation(bool next)
     {
-        _animator.SetTrigger("ExitTrigger");
+        _animator.SetTrigger(next ? "ExitTriggerNext" : "ExitTriggerPrev");
     }
 
     public void RemoveEvent()

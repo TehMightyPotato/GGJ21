@@ -43,6 +43,10 @@ public class Anliegen : ScriptableObject
     
     public void Approve()
     {
+        if (GameManager.Instance.godPower < approveCost)
+        {
+            return;
+        }
         Debug.Log("Approve",_planet);
         _planet.StopCoroutine(_timeoutRoutine);
         _planet.UpdateFollowerInfluence(approveFollowerMod, approveInfluence);
