@@ -59,7 +59,8 @@ public class GameManager : MonoBehaviour
 
     public void PayGodPowerCost(int cost)
     {
-        godPower += cost;
+        godPower -= cost;
+        gpText.text = "Godpower/Max: " + godPower.ToString() + "/100";
     }
 
     public IEnumerator IncreaseGodPower()

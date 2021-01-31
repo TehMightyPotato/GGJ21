@@ -45,6 +45,7 @@ public class Planet : MonoBehaviour
     {
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
         StartCoroutine(FollowerGrowth());
+        GenerateEvent(PleaEventsLoader.Instance.GetStartPleaForPlanet(planetName));
     }
 
     private void UpdatePlanet()
@@ -55,8 +56,7 @@ public class Planet : MonoBehaviour
             var rng = Random.value;
             if (eventGenerationChance >= rng)
             {
-                Debug.Log("Generated");
-                GenerateEvent();
+                GenerateEvent(PleaEventsLoader.Instance.GetRandomPlea(planetName));
             }
         }
     }
@@ -77,9 +77,9 @@ public class Planet : MonoBehaviour
                                                       timeEventWeight * (chanceLastEvent));
     }
 
-    private void GenerateEvent()
+    private void GenerateEvent(Anliegen plea)
     {
-        activeEvent = Instantiate(PleaEventsLoader.Instance.GetRandomPlea(planetName));
+        activeEvent = Instantiate(plea);
         activeEvent.Init(this);
         AudioManager.Instance.PlayAudioClip(pleaAudioClip);
         eventIsActive = true;

@@ -1,6 +1,6 @@
 PLANET: Konetos
 
-TYPE:  Planet
+TYPE:  Revival
 
 FROM: The people of K'uul Tho
 
@@ -154,7 +154,7 @@ TIMEOUT
 
 -20 IP
 
----------------------------
+------ 
 
 PLANET: Konetos
 
