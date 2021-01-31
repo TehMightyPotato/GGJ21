@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: eco_8273
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "Hmmhm ladida what a wonderful shiny night. Hmm where should I fly this time - it's quiet? Oh would only the moon shine a little brighter here for me to see the nightly shapes under that gloomy tree.."
-  question: "Let the moon shine even brighter?"
-  sender: "From:  Bumblebee Bribs"
-  subject: "Subject: It is so beautiful!!"
+  message: "We, the kings of the air and rightful heirs of Tron claim our birthright! Only in the shadow of the lunar eclipse we can do it - but we cannot pull off the coup without your help! For the stars must be favorable to defeat the superiority of the enemy. Give us the power that was always ours and it will not be to your disadvantage...."
+  question: "Should I chance the stars in their favor?"
+  sender: "From:  Owl Association"
+  subject: "Subject: Support for the Coup at Lun Eclipse"
   timelimitsec: 10
-  approveButtonText: "The world shall be a merry place!"
-  approveCost: -12
+  approveButtonText: "It is their birth right, and it benefits me."
+  approveCost: -32
   approveFollowerMod: 100
-  approveInfluence: 5
-  denyButtonText: "Too dangerous: It could harm the ecosystem."
-  denyCost: -2
+  approveInfluence: 40
+  denyButtonText: "This could cause a too great shift of balance in the world."
+  denyCost: -10
   denyFollowerMod: -100
-  denyInfluence: -5
+  denyInfluence: -20
   ignoreFollowerMod: -50
-  ignoreInfluence: -15
+  ignoreInfluence: -50

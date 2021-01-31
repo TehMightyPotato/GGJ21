@@ -1,10 +1,10 @@
 PLANET: Eco 837
 
-TYPE:  Community
+TYPE:  Single
 
-FROM: Racoon Administration Group
+FROM: Arn tweog
 
-SUBJECT: Concerning Suspicious Owl Activity
+SUBJECT: Doubts
 
 TIME: ..
 
@@ -12,46 +12,230 @@ TIME: ..
 
 DESCRIPTION
 
-Dear Ma’am or Mister,
 
-We have a serious concern that the owl association is planning a coup against our ruler, the night queen. Therefore, we kindly ask for your help - we can not involve anyone else into this matter and are thus dependent on your grace.
 
-Sincerely,
-
-The Racoon Administration Group
+I am roaming, drifting about, as an eagle does. And what do I do? It is here, carried by the winds, that I realize: It is for the pleasure of hunting that I’m rising in the air day after day, moon after moon. Is it not strange that I cannot even enjoy the wide richness of the world? All I do is rising and falling, falling down to the earth, to take a small creature’s life. What worth is in such deeds? Why do I exist, if I cannot choose to do else?
 
 
 
 QUESTION
 
-Do you give the racoons a key hint to support their activities?
+Do you grant the eagle freedom from his burden?
 
 
 
 YES
 
-I don’t like grey eminences. Unveil the conspiracy!
+Lift the shackles of instinct from this poor creature.
 
--15 GP
+-12 GP
 
-+20 IP
++10 IP
 
 
 
 NO
 
-There will always be evil in the world, fighting symptoms accomplishes nothing.
+I am so confused. How could creation outsmart its creators?
 
--3 GP
 
--10 IP
+
+-2 GP
+
+-5 IP
 
 
 
 TIMEOUT
 
--30 IP
+-9 IP
 
+
+
+ICON
+
+Eco827_Owl
+---------------------------
+
+PLANET: Eco837
+
+TYPE:  Revival
+
+FROM: Her Highness the Nightqueen
+
+SUBJECT: Silver lining / A bright light appeared
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+Never in my life were matters so urgent, and here I am now, praying to a god that birds, fish and all walking creatures have long neglected - or forgotten. Forgive me. My world is dark, there never has been any light brighter than a crystal in its cave or a silent moon wandering the sky. But now, a new moon has risen: Bright it is, piercing in our eyes, burning our flesh, rotting our food. Help us, oh master of the world! Forgive us for our long silence!
+
+
+
+QUESTION
+
+Do you ban the bright source and save the Nightqueen’s folk?
+
+
+
+YES
+
+I've always been a fan of moonlight and melancholy thoughts.
+
+-35 GP
+
++35 IP
+
+(You gain followers on the planet of Eco837.)
+
+
+
+NO
+
+The world gives and the world takes away.
+
+-0 GP
+
++1 IP
+
+(Leave Eco837 to itself.)
+
+
+
+TIMEOUT
+
++1 IP
+
+(Leave Eco837 to itself.)
+
+
+
+ICON
+
+Eco827_Nightqueen
+---------------------------
+
+PLANET: Eco837
+
+TYPE:  Single
+
+FROM: Bumblebee Bribs
+
+SUBJECT: It is so beautiful!!
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+Hmmhm ladida what a wonderful shiny night.
+
+Hmm where should I fly this time - it's quiet?
+
+Oh would only the moon shine a little brighter here for me
+
+to see the nightly shapes under that gloomy tree..
+
+
+
+QUESTION
+
+Let the moon shine even brighter?
+
+
+
+YES
+
+The world shall be a merry place!
+
+-12 GP
+
++5 IP
+
+
+
+NO
+
+Too dangerous: It could harm the ecosystem.
+
+-2 GP
+
+-5 IP
+
+
+
+TIMEOUT
+
+-15 IP
+
+
+
+ICON
+
+Eco827_Bumblebee
+---------------------------
+
+PLANET: Eco 837
+
+TYPE:  Community
+
+FROM: Owl Association
+
+SUBJECT: Support for the Coup at Lun Eclipse
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+We, the kings of the air and rightful heirs of Tron claim our birthright! Only in the shadow of the lunar eclipse we can do it - but we cannot pull off the coup without your help! For the stars must be favorable to defeat the superiority of the enemy. Give us the power that was always ours and it will not be to your disadvantage....
+
+
+
+QUESTION
+
+Should I chance the stars in their favor?
+
+
+
+YES
+
+It is their birth right, and it benefits me.
+
+-32 GP
+
++40 IP
+
+
+
+NO
+
+This could cause a too great shift of balance in the world.
+
+-10 GP
+
+-20 IP
+
+
+
+TIMEOUT
+
+-50 IP
+
+
+
+ICON
+
+Eco827_Owl
 ---------------------------
 
 PLANET: Eco 837
@@ -114,65 +298,19 @@ TIMEOUT
 
 -17 IP
 
----------------------------
 
+
+ICON
+
+Eco827_Sparrow
+---------------------------
 PLANET: Eco 837
 
 TYPE:  Community
 
-FROM: Owl Association
+FROM: Racoon Administration Group
 
-SUBJECT: Support for the Coup at Lun Eclipse
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-We, the kings of the air and rightful heirs of Tron claim our birthright! Only in the shadow of the lunar eclipse we can do it - but we cannot pull off the coup without your help! For the stars must be favorable to defeat the superiority of the enemy. Give us the power that was always ours and it will not be to your disadvantage....
-
-
-
-QUESTION
-
-Should I chance the stars in their favor?
-
-
-
-YES
-
-It is their birth right, and it benefits me.
-
--32 GP
-
-+40 IP
-
-
-
-NO
-
-This could cause a too great shift of balance in the world.
-
--10 GP
-
--20 IP
-
-
-
-TIMEOUT
-
--50 IP
-
----------------------------
-
-PLANET: Eco837
-
-TYPE:  Single
-
-FROM: Bumblebee Bribs
-
-SUBJECT: It is so beautiful!!
+SUBJECT: Concerning Suspicious Owl Activity
 
 TIME: ..
 
@@ -180,156 +318,48 @@ TIME: ..
 
 DESCRIPTION
 
+Dear Ma’am or Mister,
 
+We have a serious concern that the owl association is planning a coup against our ruler, the night queen. Therefore, we kindly ask for your help - we can not involve anyone else into this matter and are thus dependent on your grace.
 
-Hmmhm ladida what a wonderful shiny night.
+Sincerely,
 
-Hmm where should I fly this time - it's quiet?
-
-Oh would only the moon shine a little brighter here for me
-
-to see the nightly shapes under that gloomy tree..
-
-
-
-QUESTION
-
-Let the moon shine even brighter?
-
-
-
-YES
-
-The world shall be a merry place!
-
--12 GP
-
-+5 IP
-
-
-
-NO
-
-Too dangerous: It could harm the ecosystem.
-
--2 GP
-
--5 IP
-
-
-
-TIMEOUT
-
--15 IP
-
----------------------------
-
-PLANET: Eco837
-
-TYPE:  World
-
-FROM: Her Highness the Nightqueen
-
-SUBJECT: Silver lining / A bright light appeared
-
-TIME: ..
-
-
-
-DESCRIPTION
-
-
-
-Never in my life were matters so urgent, and here I am now, praying to a god that birds, fish and all walking creatures have long neglected - or forgotten. Forgive me. My world is dark, there never has been any light brighter than a crystal in its cave or a silent moon wandering the sky. But now, a new moon has risen: Bright it is, piercing in our eyes, burning our flesh, rotting our food. Help us, oh master of the world! Forgive us for our long silence!
+The Racoon Administration Group
 
 
 
 QUESTION
 
-Do you ban the bright source and save the Nightqueen’s folk?
+Do you give the racoons a key hint to support their activities?
 
 
 
 YES
 
-I've always been a fan of moonlight and melancholy thoughts.
+I don’t like grey eminences. Unveil the conspiracy!
 
--35 GP
+-15 GP
 
-+35 IP
-
-(You gain followers on the planet of Eco837.)
++20 IP
 
 
 
 NO
 
-The world gives and the world takes away.
+There will always be evil in the world, fighting symptoms accomplishes nothing.
 
--0 GP
+-3 GP
 
-+1 IP
-
-(Leave Eco837 to itself.)
+-10 IP
 
 
 
 TIMEOUT
 
-+1 IP
-
-(Leave Eco837 to itself.)
-
----------------------------
-
-PLANET: Eco 837
-
-TYPE:  Single
-
-FROM: Arn tweog
-
-SUBJECT: Doubts
-
-TIME: ..
+-30 IP
 
 
 
-DESCRIPTION
+ICON
 
-
-
-I am roaming, drifting about, as an eagle does. And what do I do? It is here, carried by the winds, that I realize: It is for the pleasure of hunting that I’m rising in the air day after day, moon after moon. Is it not strange that I cannot even enjoy the wide richness of the world? All I do is rising and falling, falling down to the earth, to take a small creature’s life. What worth is in such deeds? Why do I exist, if I cannot choose to do else?
-
-
-
-QUESTION
-
-Do you grant the eagle freedom from his burden?
-
-
-
-YES
-
-Lift the shackles of instinct from this poor creature.
-
--12 GP
-
-+10 IP
-
-
-
-NO
-
-I am so confused. How could creation outsmart its creators?
-
-
-
--2 GP
-
--5 IP
-
-
-
-TIMEOUT
-
--9 IP
+Eco827_Hunter

@@ -1,0 +1,163 @@
+
+PLANET: World 1
+
+TYPE:  Revival
+
+FROM: cumulative request from the AI's of World 1
+
+SUBJECT: threat
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+In the situation of greatest need, we turn away from the rationality that has brought us to this situation and call out to the universe whether there is not a higher power than our civilisation that is able to help us?
+
+The lizard people have sent us a message: they lay claim to their old planet, which they once inhabited - long before the AIs found their home here.
+
+
+
+QUESTION
+
+Helping the AIs to win?
+
+
+
+YES
+
+For World 1! For the humanoids!
+
+-12GP
+
++10 IP
+
+
+
+NO
+
+It's not so bad. Ask them if they want to live in peaceful coexistence.
+
+-0 GP
+
++1IP
+
+
+
+TIMEOUT
+
++1IP
+
+
+ICON
+
+World1
+---------------------------
+PLANET: World 1
+
+TYPE:  Community
+
+FROM: CTB 5-Group of World 1 archeologists
+
+SUBJECT: expedition to World 1 - strange objects appeared
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Good day other higher form of life - in case you exist. We have encounterd a phenomenon that we currently can not explain. On the surface of World 1, formerly "Earth", we have come across strange protective suits tht seem to make no sense. Analysis has shown that they do not even protect against dangerous radiation, only against UV radiation, which has become irellevsnt to our life form. However, we have to admit that these suits look fancier than ours - I wonder if it would be safe to keep them with us?
+
+
+
+QUESTION
+
+Explain them what "Fashion" actually is?
+
+
+
+YES
+
+Take them with you, you can use them to individualize yourself.
+
+-20 GP
+
++15IP
+
+
+
+NO
+
+Could be dangerous, better leave it where you found it.
+
+-0 GP
+
++0 IP
+
+
+
+TIMEOUT
+
+-0 IP
+
+
+ICON
+
+World1
+---------------------------
+PLANET: World 1
+
+TYPE:  Single
+
+FROM: SB-129
+
+SUBJECT: journey to the moon
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+In my latest studies I found plans from the early stage of humans, who planed a trip to the moon. An interesting idea - the moon was never our priority, because we were focused on the problems of World 1. Now that we fixed most of it, I think a journey to the moon is possible. My calculations are not finished yet and the other AI's I talked to called me a mad robot. So I am kind of dependent on some godly help.
+
+
+
+QUESTION
+
+Do I help an AI accomplish a trip to the moon?
+
+
+
+YES
+
+I love the thought of a big dream in an AI universe
+
+-5 GP
+
++20 IP
+
+
+
+NO
+
+I can not help everybody and an AI should be able to solve this problem on it's own
+
+-0 GP
+
+-0 IP
+
+
+
+TIMEOUT
+
+-0 IP
+
+
+ICON
+
+World1

@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
-  m_Name: borea2
+  m_Name: konteos3
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "My king told me of his missing son. He has a bright mind: I do not think he'll be forever lost. The sky is clearing up, as I speak - the weather-winds are on their way. I thank you, my lord, for giving us speed and clear sight."
-  question: "Will you contribute to the clearing of the skies?"
-  sender: "From:  Huul"
-  subject: "Subject: On our Future"
+  message: "AH HERE I SIT ALONE ON MY STONEY SOFA AND NOTHING WILL EVER CHANGE. NO ONE IS INTERESTED IN US ... IS THERE ANY OTHER LAVA LIFE OUT THERE?"
+  question: "Send sign"
+  sender: "From:  UGKRAA"
+  subject: "Subject: stone"
   timelimitsec: 10
-  approveButtonText: "I like him. Being nice to me should be rewarded!"
-  approveCost: -20
+  approveButtonText: "Here, have a vision of the severals other worlds. But no lava, sorry bro."
+  approveCost: -9
   approveFollowerMod: 100
   approveInfluence: 10
-  denyButtonText: "Seems they get along fine."
+  denyButtonText: "More than one planet of this kind is UARRHGH not necessary"
   denyCost: 0
   denyFollowerMod: -100
-  denyInfluence: -5
+  denyInfluence: 1
   ignoreFollowerMod: -50
-  ignoreInfluence: -15
+  ignoreInfluence: 1

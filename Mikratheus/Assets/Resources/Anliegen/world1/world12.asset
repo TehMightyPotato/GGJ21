@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
+  m_Name: world12
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  message: "In my latest studies I found plans from the early stage of humans, who planed a trip to the moon. An interesting idea - the moon was never our priority, because we were focused on the problems of World 1. Now that we fixed most of it, I think a journey to the moon is possible. My calculations are not finished yet and the other AI's I talked to called me a mad robot. So I am kind of dependent on some godly help."
+  question: "Do I help an AI accomplish a trip to the moon?"
+  sender: "From:  SB-129"
+  subject: "Subject: journey to the moon"
+  timelimitsec: 10
+  approveButtonText: "I love the thought of a big dream in an AI universe"
+  approveCost: -5
+  approveFollowerMod: 100
+  approveInfluence: 20
+  denyButtonText: "I can not help everybody and an AI should be able to solve this problem on it's own"
+  denyCost: 0
+  denyFollowerMod: -100
+  denyInfluence: 0
+  ignoreFollowerMod: -50
+  ignoreInfluence: 0
