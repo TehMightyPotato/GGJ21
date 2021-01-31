@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,13 +16,14 @@ public class PleaWindowHandler : MonoBehaviour
     public Text pleaDenyButtonText;
 
     private Anliegen _currentPlea;
-    
+
     public void OpenPleaPanel()
     {
         if (_currentPlea != null)
         {
             _currentPlea.PleaComplete -= OnPleaComplete;
         }
+
         _currentPlea = PlanetManager.Instance.currentPlanet.GetComponent<Planet>().activeEvent;
         pleaImage.sprite = _currentPlea.sprite;
         pleaText.text = _currentPlea.message;

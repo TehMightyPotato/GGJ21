@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Anliegen/Anliegen")]
 public class Anliegen : ScriptableObject
 {
     public Sprite sprite;
-    public string message;
-    public string question;
+    [TextArea] public string message;
+    [TextArea] public string question;
     public string sender;
     public string subject;
     public int timelimitsec;
 
     // Yay
-    public string approveButtonText;
+    [TextArea] public string approveButtonText;
     public int approveCost;
     public int approveFollowerMod;
     public int approveInfluence;
 
     // Nay
-    public string denyButtonText;
+    [TextArea] public string denyButtonText;
     public int denyCost;
     public int denyFollowerMod;
     public int denyInfluence;
@@ -40,10 +39,15 @@ public class Anliegen : ScriptableObject
         _planet = planet;
         _timeoutRoutine = _planet.StartCoroutine(PleaTimeout());
     }
-    
+
     public void Approve()
     {
-        Debug.Log("Approve",_planet);
+        if (GameManager.Instance.godPower < approveCost)
+        {
+            return;
+        }
+
+        Debug.Log("Approve", _planet);
         _planet.StopCoroutine(_timeoutRoutine);
         _planet.UpdateFollowerInfluence(approveFollowerMod, approveInfluence);
         GameManager.Instance.PayGodPowerCost(approveCost);
@@ -53,7 +57,7 @@ public class Anliegen : ScriptableObject
 
     public void Deny()
     {
-        Debug.Log("Deny",_planet);
+        Debug.Log("Deny", _planet);
         _planet.StopCoroutine(_timeoutRoutine);
         _planet.UpdateFollowerInfluence(denyFollowerMod, denyInfluence);
         GameManager.Instance.PayGodPowerCost(denyCost);
@@ -63,7 +67,7 @@ public class Anliegen : ScriptableObject
 
     public void Fail()
     {
-        Debug.Log("Failed!",_planet);
+        Debug.Log("Failed!", _planet);
         _planet.UpdateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
         _planet.RemoveEvent();
         OnPleaComplete();
@@ -71,7 +75,7 @@ public class Anliegen : ScriptableObject
 
     private void OnPleaComplete()
     {
-        PleaComplete?.Invoke(this,EventArgs.Empty);
+        PleaComplete?.Invoke(this, EventArgs.Empty);
     }
 
     public IEnumerator PleaTimeout()
@@ -79,5 +83,4 @@ public class Anliegen : ScriptableObject
         yield return new WaitForSeconds(timelimitsec);
         Fail();
     }
-    
 }
