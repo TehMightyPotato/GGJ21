@@ -19,12 +19,12 @@ public class PlanetManager : MonoBehaviour
     {
         _currentTimeSinceNewPlanetSpawnCheck = timeToCheckForNewPlanetSpawn;
         Instance = this;
+    }
+
+    private void Start()
+    {
         currentPlanet = planets[0];
         currentPlanet.GetComponent<Planet>().SetActivePlanet(true);
-        for (int i = 1; i < planets.Count; i++)
-        {
-            planets[i].GetComponent<Planet>().SetActivePlanet(false);
-        }
     }
 
     private void FixedUpdate()

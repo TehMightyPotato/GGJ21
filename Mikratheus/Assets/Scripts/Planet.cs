@@ -38,7 +38,7 @@ public class Planet : MonoBehaviour
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
+        _animator = gameObject.GetComponent<Animator>();
     }
 
     private void Start()

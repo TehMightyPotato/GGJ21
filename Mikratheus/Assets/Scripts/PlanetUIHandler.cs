@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +12,12 @@ public class PlanetUIHandler : MonoBehaviour
 
     private Planet _currentPlanet;
 
-    private void Start()
-    {
+    private IEnumerator Start()
+    { 
+        while(PlanetManager.Instance.currentPlanet == null)
+        {
+            yield return new WaitForEndOfFrame();
+        }
         PlanetManager.Instance.PlanetChanged += OnPlanetChanged;
         _currentPlanet = PlanetManager.Instance.currentPlanet.GetComponent<Planet>();
         OnPlanetChanged(this, _currentPlanet);
