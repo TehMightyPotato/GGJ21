@@ -25,7 +25,7 @@ public class PleaWindowHandler : MonoBehaviour
         }
 
         _currentPlea = PlanetManager.Instance.currentPlanet.GetComponent<Planet>().activeEvent;
-        // AudioManager.Instance.PlayAudioClip(_currentPlea.audioClip);
+        AudioManager.Instance.PlayAudioClip(_currentPlea.audioClip, 0.5f);
         pleaImage.sprite = _currentPlea.sprite;
         pleaText.text = _currentPlea.message;
         pleaQuestionText.text = _currentPlea.question;
