@@ -13,16 +13,18 @@ MonoBehaviour:
   m_Name: konteos3
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "AH HERE I SIT ALONE ON MY STONEY SOFA AND NOTHING WILL EVER CHANGE. NO ONE IS INTERESTED IN US ... IS THERE ANY OTHER LAVA LIFE OUT THERE?"
-  question: "Send sign"
-  sender: "From:  UGKRAA"
-  subject: "Subject: stone"
-  timelimitsec: 10
-  approveButtonText: "Here, have a vision of the severals other worlds. But no lava, sorry bro."
+  message: AH HERE I SIT ALONE ON MY STONEY SOFA AND NOTHING WILL EVER CHANGE. NO
+    ONE IS INTERESTED IN US ... IS THERE ANY OTHER LAVA LIFE OUT THERE?
+  question: Send sign
+  sender: 'From:  UGKRAA'
+  subject: 'Subject: stone'
+  timelimitsec: 30
+  approveButtonText: Here, have a vision of the severals other worlds. But no lava,
+    sorry bro.
   approveCost: -9
   approveFollowerMod: 100
   approveInfluence: 10
-  denyButtonText: "More than one planet of this kind is UARRHGH not necessary"
+  denyButtonText: More than one planet of this kind is UARRHGH not necessary
   denyCost: -5
   denyFollowerMod: -100
   denyInfluence: -5

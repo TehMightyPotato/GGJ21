@@ -104,7 +104,7 @@ MonoBehaviour:
   eventGenerationChance: 0
   eventIsActive: 0
   activeEvent: {fileID: 0}
-  growthFactor: 0.02
+  growthFactor: 0.002
   followerCountEventWeight: 0.5
   timeEventWeight: 0.5
   eventBaseProp: 0.2
