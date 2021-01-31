@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: eco_8273
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 986b67af5c4e4b94aa08a87d5723e9cf, type: 3}
-  audioClip: {fileID: 8300000, guid: e2c72af239e037e4ea8905e59e0e4d4a, type: 3}
+  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
   message: We, the kings of the air and rightful heirs of Tron claim our birthright!
     Only in the shadow of the lunar eclipse we can do it - but we cannot pull off
     the coup without your help! For the stars must be favorable to defeat the superiority
@@ -24,7 +23,7 @@ MonoBehaviour:
   subject: 'Subject: Support for the Coup at Lun Eclipse'
   timelimitsec: 60
   approveButtonText: It is their birth right, and it benefits me.
-  approveCost: -32
+  approveCost: -42
   approveFollowerMod: 100
   approveInfluence: 40
   denyButtonText: This could cause a too great shift of balance in the world.
@@ -32,4 +31,4 @@ MonoBehaviour:
   denyFollowerMod: -100
   denyInfluence: -20
   ignoreFollowerMod: -50
-  ignoreInfluence: -50
+  ignoreInfluence: -43

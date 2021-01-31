@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: eco_8272
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 56608c48c6d09e643a5ece2b91ff6c2b, type: 3}
-  audioClip: {fileID: 8300000, guid: 9d3f24e857e6b7048bdc859032b56e05, type: 3}
+  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
   message: Hmmhm ladida what a wonderful shiny night. Hmm where should I fly this
     time - it's quiet? Oh would only the moon shine a little brighter here for me
     to see the nightly shapes under that gloomy tree..
@@ -22,12 +21,12 @@ MonoBehaviour:
   subject: 'Subject: It is so beautiful!!'
   timelimitsec: 60
   approveButtonText: The world shall be a merry place!
-  approveCost: -12
+  approveCost: -5
   approveFollowerMod: 100
-  approveInfluence: 5
+  approveInfluence: 15
   denyButtonText: 'Too dangerous: It could harm the ecosystem.'
   denyCost: -2
   denyFollowerMod: -100
-  denyInfluence: -5
+  denyInfluence: -15
   ignoreFollowerMod: -50
-  ignoreInfluence: -15
+  ignoreInfluence: -20

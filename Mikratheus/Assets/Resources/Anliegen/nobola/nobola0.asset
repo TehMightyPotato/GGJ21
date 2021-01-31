@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: nobola0
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: f12a87975dc23514abfaed0f9d37ced5, type: 3}
-  audioClip: {fileID: 8300000, guid: 96e34473bbc4e4a458e8c11729d9ce79, type: 3}
+  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
   message: Every day I hike over mountains and walk through valleys to get to work.
     Half the day is already over when I arrive! If only there were some clever way
     I could just cross the big lake without drowning due to lack of stamina..
@@ -23,12 +22,12 @@ MonoBehaviour:
   timelimitsec: 60
   approveButtonText: You're a smart guy, how about assembling the wood so that it
     carries you across the water?
-  approveCost: -2
+  approveCost: -12
   approveFollowerMod: 100
-  approveInfluence: 5
+  approveInfluence: 10
   denyButtonText: You might have to ask Poseidon about that.
-  denyCost: -2
+  denyCost: -12
   denyFollowerMod: -100
   denyInfluence: -8
   ignoreFollowerMod: -50
-  ignoreInfluence: -1
+  ignoreInfluence: -11

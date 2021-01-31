@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: borea2
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 4dedde3ed559ef4489b3d59e60ccc90d, type: 3}
-  audioClip: {fileID: 8300000, guid: 2ee26bd88125af644b86c6e0271a4e58, type: 3}
+  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
   message: By the winds, where has my youngest, the Jetstream, gone again? Playing
     tag with his siblings, he must have flown out of orbit.... I would mobilise my
     whole wind armies to get him back.
@@ -23,9 +22,9 @@ MonoBehaviour:
   timelimitsec: 60
   approveButtonText: You're missed at home, little jet stream. We wouldn't want your
     dad to start a war.
-  approveCost: -14
+  approveCost: -24
   approveFollowerMod: 100
-  approveInfluence: 20
+  approveInfluence: 16
   denyButtonText: The wind made its choice, perhaps it was fate that it is now somewhere
     else?
   denyCost: 0
