@@ -238,7 +238,6 @@ Let's go, get some wood and beer mugs and plug that goddamn hole!
 
 +5 IP
 
-(You gain followers on the planet of Nobola.)
 
 
 
@@ -250,15 +249,12 @@ Darwinism over dwarfism.
 
 +1 IP
 
-(Leave Nobola to itself.)
-
 
 
 TIMEOUT
 
 +1 IP
 
-(Leave Nobola to itself.)
 
 
 
