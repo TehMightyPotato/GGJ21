@@ -15,7 +15,15 @@ public class AudioManager : MonoBehaviour
     public void PlayAudioClip(AudioClip clip)
     {
         var source = GetNextFreeAudioSource();
+        source.volume = 1;
+        source.clip = clip;
+        source.Play();
+    }
 
+    public void PlayAudioClip(AudioClip clip, float volume)
+    {
+        var source = GetNextFreeAudioSource();
+        source.volume = volume;
         source.clip = clip;
         source.Play();
     }
