@@ -7,6 +7,7 @@ public class PlanetUIHandler : MonoBehaviour
 {
     public Text planetFollowerText;
     public Text planetInfluenceText;
+    public Image influenceImage;
 
     public GameObject speechBubble;
 
@@ -50,6 +51,20 @@ public class PlanetUIHandler : MonoBehaviour
     private void UpdatePlanetStatUI()
     {
         planetFollowerText.text = _currentPlanet.currentFollowers.ToString() + "/" + _currentPlanet.totalPop.ToString();
-        planetInfluenceText.text = _currentPlanet.influence.ToString() + "/100";
+        // planetInfluenceText.text = _currentPlanet.influence.ToString() + "/100";
+        influenceImage.fillAmount = _currentPlanet.influence / 100f;
+        if (influenceImage.fillAmount < 0.2f)
+        {
+            influenceImage.color = new Color(255, 0, 0);
+        }
+
+        else if (influenceImage.fillAmount > 0.8f)
+        {
+            influenceImage.color = new Color(255, 0, 0);
+        }
+        else
+        {
+            influenceImage.color = new Color(0, 255, 0);
+        }
     }
 }
