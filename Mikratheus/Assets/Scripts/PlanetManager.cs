@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class PlanetManager : MonoBehaviour
@@ -32,12 +29,12 @@ public class PlanetManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (planetsToSpawn.Count <= 0) return;
         if (_currentTimeSinceNewPlanetSpawnCheck <= 0)
         {
             CheckForNewSpawn();
             _currentTimeSinceNewPlanetSpawnCheck = timeToCheckForNewPlanetSpawn;
         }
-
         _currentTimeSinceNewPlanetSpawnCheck -= Time.deltaTime;
     }
 
@@ -112,7 +109,6 @@ public class PlanetManager : MonoBehaviour
         if (spawnNewPlanetProp + Random.Range(0f, 0.9f) > 1f)
         {
             SpawnNewPlanet();
-            return;
         }
     }
 

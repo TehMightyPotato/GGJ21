@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
     public List<AudioSource> sources;
-    
+
     private void Awake()
     {
         Instance = this;
@@ -34,5 +32,4 @@ public class AudioManager : MonoBehaviour
 
         return null;
     }
-    
 }

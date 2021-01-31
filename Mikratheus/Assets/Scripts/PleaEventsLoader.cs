@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -10,7 +7,7 @@ public class PleaEventsLoader : MonoBehaviour
     public static PleaEventsLoader Instance;
 
     public Dictionary<string, Anliegen[]> pleasDict;
-    
+
     private void Awake()
     {
         Instance = this;

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -28,9 +27,9 @@ public class Planet : MonoBehaviour
     public EventHandler PlanetValuesUpdate;
 
     public Anliegen activeEvent;
-    
+
     [SerializeField] private float growthFactor;
-    
+
     //Event generation
     [SerializeField] private float followerCountEventWeight;
     [SerializeField] private float timeEventWeight;
@@ -41,7 +40,7 @@ public class Planet : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
     }
-    
+
     private void Start()
     {
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
@@ -84,7 +83,7 @@ public class Planet : MonoBehaviour
         activeEvent.Init(this);
         AudioManager.Instance.PlayAudioClip(pleaAudioClip);
         eventIsActive = true;
-        EventStatusChanged?.Invoke(this,EventArgs.Empty);
+        EventStatusChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void UpdateFollowerInfluence(int followerMod, int influenceMod)
@@ -102,6 +101,7 @@ public class Planet : MonoBehaviour
         {
             currentFollowers += followerMod;
         }
+
         // Influence updaten
         if (influence + influenceMod > 100)
         {
@@ -121,20 +121,21 @@ public class Planet : MonoBehaviour
     {
         while (true)
         {
-            var maxIncrease = growthFactor * totalPop * (1 + 3 * (float)currentFollowers / (float)totalPop);
+            var maxIncrease = growthFactor * totalPop * (1 + 3 * (float) currentFollowers / (float) totalPop);
             float increase = 0;
 
             if (influence < 81 && influence >= 20)
             {
-                increase = Mathf.Clamp(((-maxIncrease / 900) * (Mathf.Pow(influence, 2) - 100 * influence + 1600)), 0, currentFollowers);
+                increase = Mathf.Clamp(((-maxIncrease / 900) * (Mathf.Pow(influence, 2) - 100 * influence + 1600)), 0,
+                    currentFollowers);
             }
             else if (influence < 20)
             {
-                increase = (((20-influence)*5) / 100f) * -maxIncrease;
+                increase = (((20 - influence) * 5) / 100f) * -maxIncrease;
             }
             else if (influence > 80)
             {
-                increase = (((influence - 80)*5) / 100f) * -maxIncrease;
+                increase = (((influence - 80) * 5) / 100f) * -maxIncrease;
             }
 
             if (totalPop == 564213)
@@ -142,7 +143,7 @@ public class Planet : MonoBehaviour
                 Debug.Log(increase);
             }
 
-            currentFollowers += (int)increase;
+            currentFollowers += (int) increase;
             if (currentFollowers > totalPop)
             {
                 currentFollowers = totalPop;
@@ -152,14 +153,14 @@ public class Planet : MonoBehaviour
                 currentFollowers = 0;
             }
 
-            PlanetValuesUpdate?.Invoke(this,EventArgs.Empty);
+            PlanetValuesUpdate?.Invoke(this, EventArgs.Empty);
             yield return new WaitForSeconds(followerGrowthIntervall);
         }
     }
 
     public void SetActivePlanet(bool val)
     {
-        _animator.SetBool("IsActivePlanet",val);
+        _animator.SetBool("IsActivePlanet", val);
     }
 
     public void PlayEntryAnimation(bool next)
@@ -177,6 +178,6 @@ public class Planet : MonoBehaviour
         activeEvent = null;
         eventIsActive = false;
         _lastEventGeneratedTime = Time.time;
-        EventStatusChanged?.Invoke(this,EventArgs.Empty);
+        EventStatusChanged?.Invoke(this, EventArgs.Empty);
     }
 }
