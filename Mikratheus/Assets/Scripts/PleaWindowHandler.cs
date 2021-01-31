@@ -32,10 +32,10 @@ public class PleaWindowHandler : MonoBehaviour
         pleaHeaderSubjectText.text = _currentPlea.subject;
         pleaApproveButton.onClick.RemoveAllListeners();
         pleaApproveButton.onClick.AddListener(_currentPlea.Approve);
-        pleaApproveButtonText.text = _currentPlea.approveButtonText;
+        pleaApproveButtonText.text = _currentPlea.approveButtonText + " [" + _currentPlea.approveCost + "] GP";
         pleaDenyButton.onClick.RemoveAllListeners();
         pleaDenyButton.onClick.AddListener(_currentPlea.Deny);
-        pleaDenyButtonText.text = _currentPlea.denyButtonText;
+        pleaDenyButtonText.text = _currentPlea.denyButtonText + " [" + _currentPlea.denyCost + "] GP";
         pleaPanel.SetActive(true);
         _currentPlea.PleaComplete += OnPleaComplete;
     }

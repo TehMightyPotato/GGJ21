@@ -4307,9 +4307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954fe672a67eba14fb0841f84d5a1f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNameText: {fileID: 0}
+  planetNameText: {fileID: 1442018309}
   planetFollowerText: {fileID: 322159877}
-  planetInfluenceText: {fileID: 0}
+  planetInfluenceText: {fileID: 1822202512}
   speechBubble: {fileID: 1701396709}
 --- !u!114 &1111956042
 MonoBehaviour:
@@ -5157,7 +5157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updateRateInSeconds: 5
   _currentUpdateTime: 0
-  gpText: {fileID: 0}
+  gpText: {fileID: 2074847466}
   planetUpdate:
     m_PersistentCalls:
       m_Calls: []
