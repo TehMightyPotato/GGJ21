@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: eco_8275
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: f77563f77735f7e48a9e8be990287914, type: 3}
+  audioClip: {fileID: 8300000, guid: ba65067d1d9490448bd1c218e4270249, type: 3}
   message: "Dear Ma\u2019am or Mister, We have a serious concern that the owl association
     is planning a coup against our ruler, the night queen. Therefore, we kindly ask
     for your help - we can not involve anyone else into this matter and are thus

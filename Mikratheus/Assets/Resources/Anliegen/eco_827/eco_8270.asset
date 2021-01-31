@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: eco_8270
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: 986b67af5c4e4b94aa08a87d5723e9cf, type: 3}
+  audioClip: {fileID: 8300000, guid: e2c72af239e037e4ea8905e59e0e4d4a, type: 3}
   message: "I am roaming, drifting about, as an eagle does. And what do I do? It
     is here, carried by the winds, that I realize: It is for the pleasure of hunting
     that I\u2019m rising in the air day after day, moon after moon. Is it not strange

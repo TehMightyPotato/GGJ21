@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: eco_8271
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: 8c08a9c1c7e1e254c8faa0f2c90e4aec, type: 3}
+  audioClip: {fileID: 8300000, guid: a4164ebdc80baf44ba03a13cdd629473, type: 3}
   message: "Oh please, please can someone hear my woes? I\u2019m in love, but it
     must not be, can\u2019t you see? Where shall my sorrows lead? Shall I end in
     - ever lasting, lonely darkness? Why can\u2019t the one, whom I see yet cannot

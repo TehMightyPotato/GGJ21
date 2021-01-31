@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: nobola3
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: 7e30c0d5bd0aaac49bea93a2d85f8295, type: 3}
+  audioClip: {fileID: 8300000, guid: 3691bbd567648eb44a4c719da2752c2b, type: 3}
   message: "Here is High Priest Preswirk. We dug a hole into the planet and now the
     oceans are dwindling. We managed alright for some centuries now since you last
     helped us, but not we got said problem. Our miners dug too deep into the world\u2019s
