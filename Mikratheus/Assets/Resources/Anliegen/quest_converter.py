@@ -1,4 +1,4 @@
-
+import os
 
 TEMPLATE = """
 %YAML 1.1
@@ -54,6 +54,8 @@ for name in ('konteos','borea','eco_827','nobola'):
     
     tasks = data.split('---------------------------')
     
+    os.mkdir(name + '\\start')
+    
     for nr, task in enumerate(tasks):
     
     
@@ -88,6 +90,12 @@ for name in ('konteos','borea','eco_827','nobola'):
         ign_fol_mod       = -50
         
         time_limit_sec    = 10
+        
+        
+        dir_suffix = ""
+        
+        if "Revival" in task_lines[1]:
+            dir_suffix = "\\start"
         
         
         from_             = task_lines[2][5:]
@@ -127,7 +135,7 @@ for name in ('konteos','borea','eco_827','nobola'):
         
         
         
-        with open(name + "\\" + quest_name + '.asset','w') as f:
+        with open(name + dir_suffix + "\\" + quest_name + '.asset','w') as f:
             f.write(TEMPLATE.format(
                 quest_name,
                   message.replace('"', "'"),
