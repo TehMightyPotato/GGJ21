@@ -6,6 +6,7 @@ using UnityEngine;
 public class Anliegen : ScriptableObject
 {
     public Sprite sprite;
+    public AudioClip audioClip;
     [TextArea] public string message;
     [TextArea] public string question;
     public string sender;

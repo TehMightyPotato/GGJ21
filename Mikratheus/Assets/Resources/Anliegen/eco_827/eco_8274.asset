@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: eco_8274
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: "FROM: little bird SUBJECT: is there anyone who listens TIME: .. DESCRIPTION Oh please, please can someone hear my woes? I’m in love, but it must not be, can’t you see? Where shall my sorrows lead? Shall I end in - ever lasting, lonely darkness? Why can’t the one, whom I see yet cannot grasp, be here with me? Ah! Were I a fox down on the earth - happy ever after"
+  message: "Oh please, please can someone hear my woes? I’m in love, but it must not be, can’t you see? Where shall my sorrows lead? Shall I end in - ever lasting, lonely darkness? Why can’t the one, whom I see yet cannot grasp, be here with me? Ah! Were I a fox down on the earth - happy ever after"
   question: "Lead the two lovers to each other?"
-  sender: "From:  Single"
-  subject: "Subject: "
+  sender: "From:  little bird"
+  subject: "Subject: is there anyone who listens"
   timelimitsec: 60
   approveButtonText: "Let there be love!"
   approveCost: -10
