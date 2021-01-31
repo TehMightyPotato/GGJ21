@@ -107,7 +107,7 @@ MonoBehaviour:
   growthFactor: 0.002
   followerCountEventWeight: 0.5
   timeEventWeight: 0.5
-  eventBaseProp: 0.2
+  eventBaseProp: 0.17
 --- !u!95 &94444660314797601
 Animator:
   serializedVersion: 3
