@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Share a good thought?"
   sender: "From:  Siggry"
   subject: "Subject: I do not have enough lifetime for this"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "You're a smart guy, how about assembling the wood so that it carries you across the water?"
   approveCost: -2
   approveFollowerMod: 100

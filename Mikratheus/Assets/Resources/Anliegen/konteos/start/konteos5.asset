@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Mhm do I wanna help those creatures?"
   sender: "From:  The people of K'uul Tho"
   subject: "Subject: Make planet stop transforming"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Its always good to have a magma planet on your side!"
   approveCost: -30
   approveFollowerMod: 100

@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do you ban the bright source and save the Nightqueen’s folk?"
   sender: "From:  Her Highness the Nightqueen"
   subject: "Subject: Silver lining / A bright light appeared"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "I've always been a fan of moonlight and melancholy thoughts."
   approveCost: -35
   approveFollowerMod: 100

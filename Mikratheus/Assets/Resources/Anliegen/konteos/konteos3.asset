@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Send sign"
   sender: "From:  UGKRAA"
   subject: "Subject: stone"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Here, have a vision of the severals other worlds. But no lava, sorry bro."
   approveCost: -9
   approveFollowerMod: 100

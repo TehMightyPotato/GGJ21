@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Show poor Kruskus the way?"
   sender: "From:  Kruskus"
   subject: "Subject: HELP WITH BIG TASK"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Just follow the lights I place for you."
   approveCost: -5
   approveFollowerMod: 100

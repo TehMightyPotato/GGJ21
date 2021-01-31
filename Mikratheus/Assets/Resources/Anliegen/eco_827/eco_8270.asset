@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do you grant the eagle freedom from his burden?"
   sender: "From:  Arn tweog"
   subject: "Subject: Doubts"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Lift the shackles of instinct from this poor creature."
   approveCost: -12
   approveFollowerMod: 100

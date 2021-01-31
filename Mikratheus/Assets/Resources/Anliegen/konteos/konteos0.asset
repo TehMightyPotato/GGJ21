@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Safe the Adventurers from the sea monster?"
   sender: "From:  the magma sailsman"
   subject: "Subject: we need help to cross the magma ocean"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Do you see this big wave? Use it to get to shore!"
   approveCost: -10
   approveFollowerMod: 100

@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do I help an AI accomplish a trip to the moon?"
   sender: "From:  SB-129"
   subject: "Subject: journey to the moon"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "I love the thought of a big dream in an AI universe"
   approveCost: -5
   approveFollowerMod: 100

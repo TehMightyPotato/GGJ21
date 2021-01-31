@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Help them change the peoples mind?"
   sender: "From:  The Magma Magisters"
   subject: "Subject: Education"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Of course! Education is the key for a succesfull society."
   approveCost: -20
   approveFollowerMod: 100

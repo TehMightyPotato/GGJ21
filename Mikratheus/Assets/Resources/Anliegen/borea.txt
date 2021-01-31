@@ -274,7 +274,7 @@ Borea_Breezea
 ---------------------------
 PLANET: Borea
 
-TYPE:  Community
+TYPE:  Planet
 
 FROM: Tihlie
 

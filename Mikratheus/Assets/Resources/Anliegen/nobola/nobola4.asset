@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Encourage the dwarf to close his tavern?"
   sender: "From:  Tombar owner of the Nobola tavern"
   subject: "Subject: Evening Prayer"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Indeed: These seem like reasons heavy enough to close your respected, esteemed, crowded tavern with a successful, rich history lasting now already hundreds of long years."
   approveCost: -2
   approveFollowerMod: 100

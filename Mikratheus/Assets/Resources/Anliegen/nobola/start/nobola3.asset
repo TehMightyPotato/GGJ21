@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Help them fix their planet hole?"
   sender: "From:  High Priest Preswirk"
   subject: "Subject: We dug a hole into the planet and now the oceans are dwindling."
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Let's go, get some wood and beer mugs and plug that goddamn hole!"
   approveCost: -25
   approveFollowerMod: 100

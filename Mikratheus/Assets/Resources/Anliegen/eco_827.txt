@@ -234,7 +234,11 @@ Eco827_Owl
 
 PLANET: Eco 837
 
+<<<<<<< HEAD
 TYPE: Single
+=======
+TYPE:  Revival
+>>>>>>> e984f75bb82bb6fa8ad93c75c6f22d215b3db35e
 
 FROM: little bird
 

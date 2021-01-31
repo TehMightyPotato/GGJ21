@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Send Keren an epiphany?"
   sender: "From:  Keren"
   subject: "Subject: Liquid stone everywhere"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Your wife could knit nice fireproof gloves!"
   approveCost: -5
   approveFollowerMod: 100

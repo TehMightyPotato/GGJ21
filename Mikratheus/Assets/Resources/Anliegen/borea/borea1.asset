@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Help them fly high in the sky?"
   sender: "From:  Sothern wind Party Gang"
   subject: "Subject: Cloud nine"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Hell yeah, haven't been to a good party in ages!"
   approveCost: -10
   approveFollowerMod: 100

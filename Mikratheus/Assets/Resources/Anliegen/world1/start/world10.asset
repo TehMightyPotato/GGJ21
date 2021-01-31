@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Helping the AIs to win?"
   sender: "From:  cumulative request from the AI's of World 1"
   subject: "Subject: threat"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "For World 1! For the humanoids!"
   approveCost: -12
   approveFollowerMod: 100

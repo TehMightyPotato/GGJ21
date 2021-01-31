@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do you help the winds of Borea to be united again under a peaceful sky?"
   sender: "From:  Westwind"
   subject: "Subject: Hope in dark times"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Let the storm calm down."
   approveCost: -20
   approveFollowerMod: 100

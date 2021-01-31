@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Explain them what 'Fashion' actually is?"
   sender: "From:  CTB 5-Group of World 1 archeologists"
   subject: "Subject: expedition to World 1 - strange objects appeared"
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "Take them with you, you can use them to individualize yourself."
   approveCost: -20
   approveFollowerMod: 100

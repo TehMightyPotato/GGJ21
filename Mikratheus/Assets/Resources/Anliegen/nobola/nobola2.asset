@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "Do I play the therapist for those Woodmasters?"
   sender: "From:  Society of Woodmasters, Loc. Underhill"
   subject: "Subject: We do not know."
-  timelimitsec: 10
+  timelimitsec: 60
   approveButtonText: "You can't handle your trees becoming fuel for those ovens. Take some time out."
   approveCost: -8
   approveFollowerMod: 100
