@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void PayGodPowerCost(int cost)
     {
-        godPower -= cost;
+        godPower += cost;
     }
 
     public IEnumerator IncreaseGodPower()

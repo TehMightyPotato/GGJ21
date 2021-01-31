@@ -93,9 +93,9 @@ public class Planet : MonoBehaviour
         {
             currentFollowers = totalPop;
         }
-        else if (currentFollowers + followerMod < 0)
+        else if (currentFollowers + followerMod < 1)
         {
-            currentFollowers = 0;
+            currentFollowers = 1;
         }
         else
         {
@@ -133,7 +133,7 @@ public class Planet : MonoBehaviour
             {
                 increase = (((20 - influence) * 5) / 100f) * -maxIncrease;
             }
-            else if (influence > 80)
+            else //if (influence > 80)
             {
                 increase = (((influence - 80) * 5) / 100f) * -maxIncrease;
             }
@@ -148,9 +148,9 @@ public class Planet : MonoBehaviour
             {
                 currentFollowers = totalPop;
             }
-            else if (currentFollowers < 0)
+            else if (currentFollowers < 1)
             {
-                currentFollowers = 0;
+                currentFollowers = 1;
             }
 
             PlanetValuesUpdate?.Invoke(this, EventArgs.Empty);
