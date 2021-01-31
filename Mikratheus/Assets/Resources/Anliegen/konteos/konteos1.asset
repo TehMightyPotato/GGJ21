@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: konteos1
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
+  sprite: {fileID: 21300000, guid: 51cdf7962daa9da438f960f2409cfbc9, type: 3}
   audioClip: {fileID: 8300000, guid: 5e6fc8d98e75b1d46b62d2f5331a9e21, type: 3}
   message: HELLO YOU! I AM KRUSKUS, A TROLL FROM KONETOS. Oh... maybe I shouldn't
     shout so much, Mama always told me to be a little quieter. Anyway... King Khorin

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: borea4
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  audioClip: {fileID: 8300000, guid: 2ee26bd88125af644b86c6e0271a4e58, type: 3}
+  sprite: {fileID: 21300000, guid: d85311fcfb6e3434e9ba7a94a6f880b4, type: 3}
+  audioClip: {fileID: 8300000, guid: 63b98f9f31d20ad4aa5952a488f2a793, type: 3}
   message: Hiii I am Wendy, but my friends call me Windy Wendy. For quite some time
     now, I am not able to fly as high as I want to. It is probably because I cheated
     on ONE game of hide and seek. The others took away some of my Windy powers, so
