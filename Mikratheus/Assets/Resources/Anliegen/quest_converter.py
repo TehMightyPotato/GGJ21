@@ -16,16 +16,16 @@ MonoBehaviour:
   m_Name: {0}
   m_EditorClassIdentifier: 
   sprite: {{fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}}
-  message: {1}
-  question: {2}
+  message: "{1}"
+  question: "{2}"
   sender: "From: {3}"
-  subject: 'Subject: {4}'
+  subject: "Subject: {4}"
   timelimitsec: {5}
-  approveButtonText: {6}
+  approveButtonText: "{6}"
   approveCost: {7}
   approveFollowerMod: {8}
   approveInfluence: {9}
-  denyButtonText: {10}
+  denyButtonText: "{10}"
   denyCost: {11}
   denyFollowerMod: {12}
   denyInfluence: {13}
@@ -33,6 +33,7 @@ MonoBehaviour:
   ignoreInfluence: {15}
 """
 
+data = []
 
 def to_int(gp):
 
@@ -66,6 +67,7 @@ for name in ('konteos','borea','eco_827','nobola'):
         
         for line in task_lines:
             line = line.strip()
+            
             if len(line) > 0 and line[0] == '(':
                 to_remove.append(line)
              
@@ -91,20 +93,30 @@ for name in ('konteos','borea','eco_827','nobola'):
         from_             = task_lines[2][5:]
         subject           = task_lines[3][9:]
         
-        message           = ''.join( task_lines[6] for i in range (6, task_lines.index('QUESTION')))
+        message           = ' '.join( task_lines[i] for i in range (6, task_lines.index('QUESTION')))
         
         question          = task_lines[ task_lines.index('QUESTION') + 1]
+        
+        
+        appr_text         = ""
 
-        appr_text         = task_lines[ task_lines.index('QUESTION') + 3]
-        appr_cost         = to_int(task_lines[ task_lines.index('QUESTION') + 4])
-        appr_infl         = to_int(task_lines[ task_lines.index('QUESTION') + 5])
+        indx = task_lines.index('YES') + 1
+        
+        while task_lines[indx][0] not in ('-','+'):
+            appr_text += task_lines[indx]
+            indx += 1
+        
+        
+        appr_cost         = to_int(task_lines[ task_lines.index('NO') - 2])
+        appr_infl         = to_int(task_lines[ task_lines.index('NO') - 1])
+
 
         deny_text         = ""
 
-        indx = task_lines.index('QUESTION') + 7
+        indx = task_lines.index('NO') + 1
         
         while task_lines[indx][0] not in ('-','+'):
-            deny_text += task_lines[indx][0]
+            deny_text += task_lines[indx]
             indx += 1
         
         
@@ -118,16 +130,16 @@ for name in ('konteos','borea','eco_827','nobola'):
         with open(name + "\\" + quest_name + '.asset','w') as f:
             f.write(TEMPLATE.format(
                 quest_name,
-                  message,
-                  question,
+                  message.replace('"', "'"),
+                  question.replace('"', "'"),
                   from_,
                   subject,
                   time_limit_sec,
-                  appr_text,
+                  appr_text.replace('"', "'"),
                   appr_cost,
                   appr_fol_mod,
                   appr_infl,
-                  deny_text,
+                  deny_text.replace('"', "'"),
                   deny_cost,
                   deny_fol_mod,
                   deny_infl,

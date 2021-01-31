@@ -13,16 +13,20 @@ MonoBehaviour:
   m_Name: borea4
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: Eyy what up Mate! Hope everything is cool with you. I'm about to throw the biggest party Borea has ever seen! You know, breathing in some good winds can make you feel especially many colors. Here's the problem: we can't get to them winds ourselves. It'd be cool if you could get us some of the good stuff - would be your ticket to the party!
+  message: 'Eyy what up Mate! Hope everything is cool with you. I''m about to throw
+    the biggest party Borea has ever seen! You know, breathing in some good winds
+    can make you feel especially many colors. Here''s the problem: we can''t get
+    to them winds ourselves. It''d be cool if you could get us some of the good stuff
+    - would be your ticket to the party!'
   question: Help them fly high in the sky?
-  sender: "From:  Sothern wind Party Gang"
+  sender: 'From:  Sothern wind Party Gang'
   subject: 'Subject: Cloud nine'
-  timelimitsec: 10
+  timelimitsec: 30
   approveButtonText: Hell yeah, haven't been to a good party in ages!
   approveCost: -10
   approveFollowerMod: 100
   approveInfluence: 13
-  denyButtonText: G
+  denyButtonText: Geez kids, these winds are no broccoli!
   denyCost: -1
   denyFollowerMod: -100
   denyInfluence: -8

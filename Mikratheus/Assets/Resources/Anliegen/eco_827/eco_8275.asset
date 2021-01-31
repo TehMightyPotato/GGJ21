@@ -13,16 +13,21 @@ MonoBehaviour:
   m_Name: eco_8275
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: I am roaming, drifting about, as an eagle does. And what do I do? It is here, carried by the winds, that I realize: It is for the pleasure of hunting that I’m rising in the air day after day, moon after moon. Is it not strange that I cannot even enjoy the wide richness of the world? All I do is rising and falling, falling down to the earth, to take a small creature’s life. What worth is in such deeds? Why do I exist, if I cannot choose to do else?
+  message: "I am roaming, drifting about, as an eagle does. And what do I do? It
+    is here, carried by the winds, that I realize: It is for the pleasure of hunting
+    that I\u2019m rising in the air day after day, moon after moon. Is it not strange
+    that I cannot even enjoy the wide richness of the world? All I do is rising and
+    falling, falling down to the earth, to take a small creature\u2019s life. What
+    worth is in such deeds? Why do I exist, if I cannot choose to do else?"
   question: Do you grant the eagle freedom from his burden?
-  sender: "From:  Arn tweog"
+  sender: 'From:  Arn tweog'
   subject: 'Subject: Doubts'
-  timelimitsec: 10
+  timelimitsec: 30
   approveButtonText: Lift the shackles of instinct from this poor creature.
   approveCost: -12
   approveFollowerMod: 100
   approveInfluence: 10
-  denyButtonText: I
+  denyButtonText: I am so confused. How could creation outsmart its creators?
   denyCost: -2
   denyFollowerMod: -100
   denyInfluence: -5
