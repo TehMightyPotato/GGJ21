@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
-  m_Name: TestAnliegen
+  m_Name: konteos1
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: Hilfe! Meine Katze sitzt auf dem Baum fest!
-  question: Soll ich dieser Katze herunterhelfen?
-  sender: "From: Katzenfreund R\xFCdiger"
-  subject: 'Subject: Katze auf dem Baum'
+  message: RAAR EHM. MAGNUS ONLY SEE MAGMA EVERYDAY .. EAT MAGMA EVERY DAY. CAN MORPHUS HAVE A NICE APPLE TREE FOR HIS MAGMAGARDEN? THANKRRAAR
+  question: Make Magnus wish come true and grow an apple tree in his garden?
+  sender: "From:  Magnus Amgam"
+  subject: 'Subject: Craving to see a tree'
   timelimitsec: 10
-  approveButtonText: Na Klar!
-  approveCost: 1
+  approveButtonText: Have some vitamins you symathic magma lump!
+  approveCost: -5
   approveFollowerMod: 100
-  approveInfluence: 10
-  denyButtonText: Nope
-  denyCost: 0
+  approveInfluence: 8
+  denyButtonText: H
+  denyCost: -2
   denyFollowerMod: -100
-  denyInfluence: -10
+  denyInfluence: -12
   ignoreFollowerMod: -50
-  ignoreInfluence: 0
-   
+  ignoreInfluence: -20

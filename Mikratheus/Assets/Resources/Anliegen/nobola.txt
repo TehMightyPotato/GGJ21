@@ -1,0 +1,320 @@
+
+PLANET: Nobola
+
+TYPE:  Community
+
+FROM: Siggry
+
+SUBJECT: I do not have enough lifetime for this
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+Every day I hike over mountains and walk through valleys to get to work. Half the day is already over when I arrive! If only there were some clever way I could just cross the big lake without drowning due to lack of stamina..
+
+
+
+QUESTION
+
+Share a good thought?
+
+
+
+YES
+
+You're a smart guy, how about assembling the wood so that it carries you across the water?
+
+-2 GP
+
++5 IP
+
+
+
+NO
+
+You might have to ask Poseidon about that.
+
+-2 GP
+
+-8 IP
+
+
+
+TIMEOUT
+
+-1 IP
+
+---------------------------
+
+PLANET: Nobola
+
+TYPE:  Single
+
+FROM: Supervisor Torn of the Cthuli-Mines
+
+SUBJECT: The mine is collapsing
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+OH GOD! The walls are shaking, the stones are coming down.
+
+And there are still people in here! Lead them the way -
+
+please let my people leave the mine in one piece.
+
+I do not know what to do in this quickly-evolving situation,
+
+the standard procedures don’t seem to suffice.
+
+If you hear me, please, help me and my people.
+
+
+
+QUESTION
+
+Do you save the supervisor and his workers?
+
+
+
+YES
+
+I am a graceful god.
+
+-20 GP
+
++20 IP
+
+
+
+NO
+
+They're tough, and I need to rest.
+
+-5 GP
+
+-0 IP
+
+
+
+TIMEOUT
+
+-0 IP
+
+
+
+---------------------------
+
+PLANET: Nobola
+
+TYPE:  Community
+
+FROM: Society of Woodmasters, Loc. Underhill
+
+SUBJECT: We do not know.
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+We are a community of excellent Woodmasters and we have a problem.
+
+It seems, every one of us is affected by a so-called 'depression'.
+
+Neither we nor our doctor nor our priest nor our superior master is able to explain this, therefore, we ask you for an explanation and a solution.
+
+To allow you to make an informed analysis and decision, we provide you with all informations available to us:
+
+a) We are ensuring a healthy growth of our local trees.
+
+b) We plant them, raise them, fell them.
+
+c) The felled trees are sent into the smithies for burning.
+
+d) We never see our trees again.
+
+We would appreciate an answer.
+
+
+
+QUESTION
+
+Do I play the therapist for those Woodmasters?
+
+
+
+YES
+
+You can't handle your trees becoming fuel for those ovens. Take some time out.
+
+-8 GP
+
++12 IP
+
+
+
+NO
+
+No solution comes to my mind. Try continuing your job.
+
+-2 GP
+
+-0 IP
+
+
+
+TIMEOUT
+
+-20 IP
+
+---------------------------
+
+PLANET: Nobola
+
+TYPE:  Revival
+
+FROM: High Priest Preswirk
+
+SUBJECT: We dug a hole into the planet and now the oceans are dwindling.
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+Here is High Priest Preswirk.
+
+
+
+We dug a hole into the planet and now the oceans are dwindling.
+
+(In case you didn’t read the heading, if you did, ignore this.)
+
+
+
+We managed alright for some centuries now since you last helped us, but not we got said problem. Our miners dug too deep into the world’s wall and when the deciding stones were broken, a great many more stones broke away, revealing an underground lake being fed by an underground river that originated in an ocean, as it seems.
+
+The situation is growing worse and the elder council finally decided that it is time to ask you for your help.
+
+
+
+We appreciate your existence.
+
+
+
+QUESTION
+
+Help them fix their planet hole?
+
+
+
+YES
+
+Let's go, get some wood and beer mugs and plug that goddamn hole!
+
+-25 GP
+
++5 IP
+
+(You gain followers on the planet of Nobola.)
+
+
+
+NO
+
+Darwinism over dwarfism.
+
+-0 GP
+
++1 IP
+
+(Leave Nobola to itself.)
+
+
+
+TIMEOUT
+
++1 IP
+
+(Leave Nobola to itself.)
+
+---------------------------
+
+PLANET: Nobola
+
+TYPE:  Single
+
+FROM: Tombar owner of the Nobola tavern
+
+SUBJECT: Evening Prayer
+
+TIME: ..
+
+
+
+DESCRIPTION
+
+
+
+First of all, I am thankful for the solid workplace and the good beer at closing time.
+
+But why Bass always drinks too much, that I do not know.
+
+Also, the community’s steady decline has not stopped today, I think:
+
+Today, too, they were louder and ruder than in my youth.
+
+I ponder the thought of closing my tavern and moving on.
+
+A traveller played annoying songs tonight.
+
+The beer was good as ever.
+
+Sometimes I wish for simple answers from a higher power.
+
+Amen
+
+
+
+QUESTION
+
+Encourage the dwarf to close his tavern?
+
+
+
+YES
+
+Indeed: These seem like reasons heavy enough to close your respected, esteemed, crowded tavern with a successful, rich history lasting now already hundreds of long years.
+
+-2 GP
+
++0 IP
+
+
+
+NO
+
+Tombar... you need to serve your people ... with beer!
+
+-5 GP
+
++10 IP
+
+
+
+TIMEOUT
+
+-30 IP

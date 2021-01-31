@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
-  m_Name: TestAnliegen
+  m_Name: nobola3
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 31ad314fb4577bf4bb5fd52757498fc9, type: 3}
-  message: Hilfe! Meine Katze sitzt auf dem Baum fest!
-  question: Soll ich dieser Katze herunterhelfen?
-  sender: "From: Katzenfreund R\xFCdiger"
-  subject: 'Subject: Katze auf dem Baum'
+  message: Here is High Priest Preswirk.Here is High Priest Preswirk.Here is High Priest Preswirk.Here is High Priest Preswirk.Here is High Priest Preswirk.
+  question: Help them fix their planet hole?
+  sender: "From:  High Priest Preswirk"
+  subject: 'Subject: We dug a hole into the planet and now the oceans are dwindling.'
   timelimitsec: 10
-  approveButtonText: Na Klar!
-  approveCost: 1
+  approveButtonText: Let's go, get some wood and beer mugs and plug that goddamn hole!
+  approveCost: -25
   approveFollowerMod: 100
-  approveInfluence: 10
-  denyButtonText: Nope
+  approveInfluence: 5
+  denyButtonText: D
   denyCost: 0
   denyFollowerMod: -100
-  denyInfluence: -10
+  denyInfluence: 1
   ignoreFollowerMod: -50
-  ignoreInfluence: 0
-   
+  ignoreInfluence: 1
