@@ -11,52 +11,72 @@ namespace Assets.Scripts
 {
     public class QG_Quest
     {
-        public string _name;
+        public string name;
 
-        private QG_EventPool _start;
+        public QG_EventPool start;
 
-        private List<QG_EventPool> _eventPools;
+        public List<QG_EventPool> eventPools;
 
-        private QG_EventPool _currentPool;
-        private QG_Event _currentEvent;
+        public List<QG_EventPool> currentPoolsQueue;
+        public HashSet<QG_Event> currentEvents;
 
-        private QG_EventPool _end;
+        public QG_EventPool end;
 
-        public QG_Quest(string name, QG_EventPool start, List<QG_EventPool> eventPools)
+        public QG_Quest(string name_, QG_EventPool start, List<QG_EventPool> eventPools)
         {
-            _name = name;
+            name = name_;
+            this.start = start;
+            this.eventPools = eventPools;
+            currentPoolsQueue = new List<QG_EventPool>();
+            currentEvents = new HashSet<QG_Event>();
 
-            _eventPools = eventPools;
-            _currentPool = _start = start;
+            currentPoolsQueue.Add(start);
 
-            foreach (QG_EventPool p in _eventPools)
+            foreach (QG_EventPool p in this.eventPools)
             {
                 foreach (QG_Event e in p.pool)
                 {
-                    e._quest = this;
+                    e.quest = this;
                 }
             }
         }
 
-        public void EventUpdate(String ending)
+        public void EventUpdate(QG_Event event_, String ending)
         {
-            _currentEvent.ending = ending;
-            int endingIndex = _currentEvent.endings.FindIndex(str => str.Equals(ending));
-            _currentPool = _currentEvent.endingEventPools[endingIndex];
-            _currentEvent = null;
+            event_.ending = ending;
+
+            int endingIndex = event_.endings.FindIndex(str => str.Equals(ending));
+            QG_EventPool newPool = event_.endingEventPools[endingIndex];
+            newPool.isActive = true;
+
+            currentPoolsQueue.Add(newPool);
         }
 
         // returns null if no event in pool
         public QG_Event NextEvent()
         {
-            Debug.Log(_name);
-            int curPoolCount = _currentPool.pool.Count();
-
-            if (curPoolCount == 0)
+            if (currentPoolsQueue.Count() == 0)
                 return null;
 
-            _currentEvent = _currentPool.pool[Random.Range(0, curPoolCount)];
-            return _currentEvent;
+            for (int i = 0; i < currentPoolsQueue.Count(); i++)
+            {
+                QG_EventPool curPool = currentPoolsQueue[i];
+
+                int curPoolCount = curPool.pool.Count();
+
+                if (curPoolCount == 0)
+                    continue; // quest is ended
+
+                currentPoolsQueue[i].isActive = false;
+                currentPoolsQueue.RemoveAt(i);
+
+                QG_Event nextEvent = curPool.pool[Random.Range(0, curPoolCount)];
+                currentEvents.Add(nextEvent);
+                QG_QuestUIHandler.Instance.DrawQuest(this); // --------------
+                return nextEvent;
+            }
+
+            return null;
         }
 
     }

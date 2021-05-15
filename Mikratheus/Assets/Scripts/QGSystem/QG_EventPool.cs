@@ -13,5 +13,7 @@ namespace Assets.Scripts.QGSystem
     public class QG_EventPool : ScriptableObject
     {
         public List<QG_Event> pool;
+
+        public bool isActive = false;
     }
 }

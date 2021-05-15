@@ -81,7 +81,7 @@ public class Planet : MonoBehaviour
     {
         activeEvent = Instantiate(plea);
         activeEvent.Init(plea, this);
-        Debug.Log(activeEvent._quest._name);
+        Debug.Log(activeEvent.quest.name);
         AudioManager.Instance.PlayAudioClip(pleaAudioClip);
         eventIsActive = true;
         EventStatusChanged?.Invoke(this, EventArgs.Empty);

@@ -17,7 +17,7 @@ namespace Assets.Scripts.QGSystem
 
         public float intensity;
 
-        public QG_Quest _quest;
+        public QG_Quest quest;
 
         public void QG_InitFrom(QG_Event e) {
 
@@ -25,7 +25,7 @@ namespace Assets.Scripts.QGSystem
             ending = e.ending;
             endingEventPools = e.endingEventPools;
             intensity = e.intensity;
-            _quest = e._quest;
+            quest = e.quest;
         }
 
         public bool IsFinished()

@@ -56,7 +56,7 @@ public class Plea : QG_Event
         GameManager.Instance.PayGodPowerCost(approveCost);
         _planet.RemoveEvent();
 
-        _quest.EventUpdate("accepted");
+        quest.EventUpdate(this, "accepted");
 
         OnPleaComplete();
     }
@@ -74,7 +74,7 @@ public class Plea : QG_Event
         GameManager.Instance.PayGodPowerCost(denyCost);
         _planet.RemoveEvent();
 
-        _quest.EventUpdate("denied");
+        quest.EventUpdate(this, "denied");
 
         OnPleaComplete();
     }
@@ -85,7 +85,7 @@ public class Plea : QG_Event
         _planet.UpdateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
         _planet.RemoveEvent();
 
-        _quest.EventUpdate("timeout");
+        quest.EventUpdate(this, "timeout");
 
         OnPleaComplete();
     }
