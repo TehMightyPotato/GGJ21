@@ -16,6 +16,13 @@ public class VideoPlayerThingy : MonoBehaviour
 
     public IEnumerator SceneChangeRoutine()
     {
+        while (!Input.GetKey(KeyCode.A))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        videoPlayer.Play();
+
         yield return new WaitForSeconds(1);
         while (videoPlayer.isPlaying)
         {

@@ -26,7 +26,7 @@ public class Planet : MonoBehaviour
     public EventHandler EventStatusChanged;
     public EventHandler PlanetValuesUpdate;
 
-    public Anliegen activeEvent;
+    public Plea activeEvent;
 
     [SerializeField] private float growthFactor;
 
@@ -45,7 +45,7 @@ public class Planet : MonoBehaviour
     {
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
         StartCoroutine(FollowerGrowth());
-        GenerateEvent(PleaEventsLoader.Instance.GetStartPleaForPlanet(planetName));
+        GenerateEvent(PleaManager.Instance.GetStartPleaForPlanet(planetName));
     }
 
     private void UpdatePlanet()
@@ -56,7 +56,7 @@ public class Planet : MonoBehaviour
             var rng = Random.value;
             if (eventGenerationChance >= rng)
             {
-                GenerateEvent(PleaEventsLoader.Instance.GetRandomPlea(planetName));
+                GenerateEvent(PleaManager.Instance.GetRandomPlea(planetName));
             }
         }
     }
@@ -77,10 +77,11 @@ public class Planet : MonoBehaviour
                                                       timeEventWeight * (chanceLastEvent));
     }
 
-    private void GenerateEvent(Anliegen plea)
+    private void GenerateEvent(Plea plea)
     {
         activeEvent = Instantiate(plea);
-        activeEvent.Init(this);
+        activeEvent.Init(plea, this);
+        Debug.Log(activeEvent._quest._name);
         AudioManager.Instance.PlayAudioClip(pleaAudioClip);
         eventIsActive = true;
         EventStatusChanged?.Invoke(this, EventArgs.Empty);

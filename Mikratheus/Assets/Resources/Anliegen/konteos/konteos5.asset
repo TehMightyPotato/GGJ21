@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: konteos5
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: accepted
+  endingEventPools:
+  - {fileID: 11400000, guid: 545b99fdd09ae2c40aa925fe33d42c1e, type: 2}
+  - {fileID: 11400000, guid: dc67e221525ad0e49be6b2e8bae573a9, type: 2}
+  - {fileID: 11400000, guid: dc67e221525ad0e49be6b2e8bae573a9, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 41b7ad14e87f5cb4083890285c0a21ac, type: 3}
   audioClip: {fileID: 8300000, guid: 07610bd209b5e8d4b8aad2bf3b8e047c, type: 3}
   message: HEY! YOU! GOD! WE THE PEOPLE OF K'UUL THO NEED HELP. MAKE OUR PLANET STOP

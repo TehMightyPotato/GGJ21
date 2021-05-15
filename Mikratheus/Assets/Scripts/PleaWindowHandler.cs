@@ -15,7 +15,7 @@ public class PleaWindowHandler : MonoBehaviour
     public Button pleaDenyButton;
     public Text pleaDenyButtonText;
 
-    private Anliegen _currentPlea;
+    private Plea _currentPlea;
 
     public void OpenPleaPanel()
     {

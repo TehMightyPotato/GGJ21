@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: konteos2
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: 2f34ad27dceec664daa2fb053582d143, type: 2}
+  - {fileID: 11400000, guid: 2f34ad27dceec664daa2fb053582d143, type: 2}
+  - {fileID: 11400000, guid: 2f34ad27dceec664daa2fb053582d143, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 7111e26cc0b5a704d91082b62cf31731, type: 3}
   audioClip: {fileID: 8300000, guid: 948f9f6d1449b5c4fad58848bf1de520, type: 3}
   message: I shouldn't swear but ... damn that's depressing. Every time our people

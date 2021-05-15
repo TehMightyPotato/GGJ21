@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Assets.Scripts.QGSystem;
+using System;
 using System.Collections;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Anliegen/Anliegen")]
-public class Anliegen : ScriptableObject
+public class Plea : QG_Event
 {
     public Sprite sprite;
     public AudioClip audioClip;
@@ -35,8 +36,9 @@ public class Anliegen : ScriptableObject
 
     private Planet _planet;
 
-    public void Init(Planet planet)
+    public void Init(QG_Event event_, Planet planet)
     {
+        QG_InitFrom(event_);
         _planet = planet;
         _timeoutRoutine = _planet.StartCoroutine(PleaTimeout());
     }
@@ -53,6 +55,9 @@ public class Anliegen : ScriptableObject
         _planet.UpdateFollowerInfluence(approveFollowerMod, approveInfluence);
         GameManager.Instance.PayGodPowerCost(approveCost);
         _planet.RemoveEvent();
+
+        _quest.EventUpdate("accepted");
+
         OnPleaComplete();
     }
 
@@ -68,6 +73,9 @@ public class Anliegen : ScriptableObject
         _planet.UpdateFollowerInfluence(denyFollowerMod, denyInfluence);
         GameManager.Instance.PayGodPowerCost(denyCost);
         _planet.RemoveEvent();
+
+        _quest.EventUpdate("denied");
+
         OnPleaComplete();
     }
 
@@ -76,6 +84,9 @@ public class Anliegen : ScriptableObject
         Debug.Log("Failed!", _planet);
         _planet.UpdateFollowerInfluence(ignoreFollowerMod, ignoreInfluence);
         _planet.RemoveEvent();
+
+        _quest.EventUpdate("timeout");
+
         OnPleaComplete();
     }
 

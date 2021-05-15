@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: borea0
   m_EditorClassIdentifier: 
+  endings:
+  - denied
+  - accepted
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 4dedde3ed559ef4489b3d59e60ccc90d, type: 3}
   audioClip: {fileID: 8300000, guid: 2ee26bd88125af644b86c6e0271a4e58, type: 3}
   message: 'So these are the times. It is dark here: The eastern winds are in rebellion,
