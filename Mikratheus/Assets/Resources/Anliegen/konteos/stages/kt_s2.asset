@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pool:
   - {fileID: 11400000, guid: 0fc7c1b0296d14a4bbd63ddb4df95b5d, type: 2}
+  isActive: 1
+  name_: s2

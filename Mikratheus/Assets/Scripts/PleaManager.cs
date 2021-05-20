@@ -46,7 +46,7 @@ public class PleaManager : MonoBehaviour
     public Plea GetRandomPlea(string planet)
     {
         if (questDict.ContainsKey(planet))
-            return (Plea) questDict[planet].NextEvent();
+            return (Plea)questDict[planet].NextEvent();
 
         var pleasForPlanet = _pleasDict[planet];
         return pleasForPlanet[Random.Range(0, pleasForPlanet.Length)];

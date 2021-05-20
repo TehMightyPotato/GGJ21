@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.QGSystem;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -46,6 +47,8 @@ public class Planet : MonoBehaviour
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
         StartCoroutine(FollowerGrowth());
         GenerateEvent(PleaManager.Instance.GetStartPleaForPlanet(planetName));
+
+        QG_QuestUIHandler.Instance.DrawQuest(PleaManager.Instance.questDict[planetName]); // ------------------
     }
 
     private void UpdatePlanet()

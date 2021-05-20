@@ -17,8 +17,10 @@ namespace Assets.Scripts
 
         public List<QG_EventPool> eventPools;
 
-        public List<QG_EventPool> currentPoolsQueue;
-        public HashSet<QG_Event> currentEvents;
+        public List<QG_EventPool> poolsQueue = new List<QG_EventPool>();
+
+        public List<QG_EventPool> currentPools = new List<QG_EventPool>();
+        public List<QG_Event> currentEvents = new List<QG_Event>();
 
         public QG_EventPool end;
 
@@ -27,10 +29,8 @@ namespace Assets.Scripts
             name = name_;
             this.start = start;
             this.eventPools = eventPools;
-            currentPoolsQueue = new List<QG_EventPool>();
-            currentEvents = new HashSet<QG_Event>();
 
-            currentPoolsQueue.Add(start);
+            poolsQueue.Add(start);
 
             foreach (QG_EventPool p in this.eventPools)
             {
@@ -43,36 +43,50 @@ namespace Assets.Scripts
 
         public void EventUpdate(QG_Event event_, String ending)
         {
+
+            currentEvents.Remove(event_);
+
+            // pool update
+
+            QG_EventPool pool = currentPools.Find(p => p.pool.Contains(event_));
+            pool.activeEvents--;
+
+            if (!pool.isActive())
+                currentPools.Remove(pool);
+
+            // event ending update
+
             event_.ending = ending;
 
             int endingIndex = event_.endings.FindIndex(str => str.Equals(ending));
             QG_EventPool newPool = event_.endingEventPools[endingIndex];
-            newPool.isActive = true;
 
-            currentPoolsQueue.Add(newPool);
+            poolsQueue.Add(newPool);
         }
 
         // returns null if no event in pool
         public QG_Event NextEvent()
         {
-            if (currentPoolsQueue.Count() == 0)
+            if (poolsQueue.Count() == 0)
                 return null;
 
-            for (int i = 0; i < currentPoolsQueue.Count(); i++)
+            for (int i = 0; i < poolsQueue.Count(); i++)
             {
-                QG_EventPool curPool = currentPoolsQueue[i];
+                QG_EventPool nextPool = poolsQueue[i];
 
-                int curPoolCount = curPool.pool.Count();
+                int curPoolCount = nextPool.pool.Count();
 
                 if (curPoolCount == 0)
                     continue; // quest is ended
 
-                currentPoolsQueue[i].isActive = false;
-                currentPoolsQueue.RemoveAt(i);
+                poolsQueue.RemoveAt(i);
 
-                QG_Event nextEvent = curPool.pool[Random.Range(0, curPoolCount)];
+                QG_Event nextEvent = nextPool.pool[Random.Range(0, curPoolCount)];
+                nextPool.activeEvents ++;
+
+                currentPools.Add(nextPool);
                 currentEvents.Add(nextEvent);
-                QG_QuestUIHandler.Instance.DrawQuest(this); // --------------
+
                 return nextEvent;
             }
 

@@ -14,6 +14,13 @@ namespace Assets.Scripts.QGSystem
     {
         public List<QG_Event> pool;
 
-        public bool isActive = false;
+        public int activeEvents = 0;
+
+        public string name_;
+
+        public bool isActive()
+        {
+            return activeEvents > 0;
+        }
     }
 }

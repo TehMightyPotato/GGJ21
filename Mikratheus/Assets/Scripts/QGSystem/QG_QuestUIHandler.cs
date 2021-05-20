@@ -17,7 +17,7 @@ namespace Assets.Scripts.QGSystem
         public GameObject uiNodePrefab;
         public GameObject uiLinePrefab;
 
-        private Vector3 _origin = new Vector3(-2, 0, 0);
+        private Vector3 _origin = new Vector3(-2, 0, 2);
 
         private Dictionary<QG_EventPool, Vector3> nodePosRegistry = new Dictionary<QG_EventPool, Vector3>();
 
@@ -28,6 +28,8 @@ namespace Assets.Scripts.QGSystem
 
         public void DrawQuest(QG_Quest quest)
         {
+            Debug.Log("Begin Draw Quest");
+
             int poolsCount = quest.eventPools.Count();
 
             HashSet<QG_EventPool> wavesAhead = new HashSet<QG_EventPool>(quest.eventPools);
@@ -36,24 +38,32 @@ namespace Assets.Scripts.QGSystem
             HashSet<QG_EventPool> wave = new HashSet<QG_EventPool>();
             wave.Add(quest.start);
 
-            HashSet<QG_EventPool> waveBehind = new HashSet<QG_EventPool>();
+            HashSet<QG_EventPool> wavesBehind = new HashSet<QG_EventPool>();
 
             int waveCount = 0;
 
+            // ------------ node draw ------------
+
             while (wave.Count() != 0)
             {
-                HashSet<QG_EventPool> newWave = new HashSet<QG_EventPool>();
-
                 DrawNodesVert(waveCount, wave);
+
+                HashSet<QG_EventPool> newWave = new HashSet<QG_EventPool>();
 
                 foreach (QG_EventPool pool in wave)
                 {
+
                     foreach (QG_Event event_ in pool.pool)
                     {
                         foreach (QG_EventPool p in event_.endingEventPools)
-                            if (!waveBehind.Contains(p))
+                        {
+                            if (!wavesBehind.Contains(p) && !wave.Contains(p))
+                            {
                                 newWave.Add(p);
+                            }
+                        }
                     }
+
                 }
 
                 foreach (QG_EventPool p in newWave)
@@ -61,18 +71,39 @@ namespace Assets.Scripts.QGSystem
                         wavesAhead.Remove(p);
 
                 foreach (QG_EventPool p in wave)
-                    waveBehind.Add(p);
+                    wavesBehind.Add(p);
 
                 wave = newWave;
 
                 waveCount++;
             }
 
-        }
+            // ------------ arrow draw ------------
+
+
+            foreach (QG_EventPool p1 in quest.eventPools)
+            {
+                List<QG_EventPool> outPools = new List<QG_EventPool>();
+
+                foreach (QG_Event event_ in p1.pool)
+                {
+                    foreach (QG_EventPool p2 in event_.endingEventPools)
+                    {
+                        if (!outPools.Contains(p2))
+                        {
+                            DrawArrow(nodePosRegistry[p1], nodePosRegistry[p2]);
+                            outPools.Add(p2);
+                        }
+                    }
+                }
+            }
+
+
+    }
 
         private void DrawNodesVert(int horizDist, HashSet<QG_EventPool> nodes)
         {
-            Debug.Log(horizDist);
+            //Debug.Log(horizDist);
 
             float HORIZ_GAP = 0.7f;
             float VERT_GAP = 0.7f;
@@ -84,41 +115,47 @@ namespace Assets.Scripts.QGSystem
             if (nodesCount == 0)
                 return;
 
-            if (nodesCount == 1)
+            else if (nodesCount == 1)
                 DrawNode(nodes.ElementAt(0), x, _origin.y, horizDist);
-
-            else if (nodesCount % 2 == 1)
-            {
-                int i;
-
-                for (i = 0; i < (nodesCount - 1) / 2 - 1; i++)
-                {
-                    DrawNode(nodes.ElementAt(i), x, _origin.y + (i + 1) * VERT_GAP, horizDist);
-                }
-
-                i++;
-                DrawNode(nodes.ElementAt(i), x, _origin.y, nodesCount);
-
-                for (i = i + 1; i < nodesCount - 1; i++)
-                {
-                    DrawNode(nodes.ElementAt(i), x, _origin.y - (i + 1) * VERT_GAP, horizDist);
-                }
-            }
 
             else
             {
-                int i;
-
-                for (i = 0; i < nodesCount / 2 - 1; i++)
-                {
-                    DrawNode(nodes.ElementAt(i), x, _origin.y + (i + 1) * VERT_GAP, horizDist);
-                }
-
-                for (i = i + 1; i < nodesCount - 1; i++)
-                {
-                    DrawNode(nodes.ElementAt(i), x, _origin.y - (i + 1) * VERT_GAP, horizDist);
-                }
+                for (int i = 0; i < nodesCount; i++)
+                    DrawNode(nodes.ElementAt(i), x, _origin.y + i * VERT_GAP, horizDist);
             }
+
+            //else if (nodesCount % 2 == 1)
+            //{
+            //    int i;
+
+            //    for (i = 0; i < (nodesCount - 1) / 2 - 1; i++)
+            //    {
+            //        DrawNode(nodes.ElementAt(i), x, _origin.y + (i + 1) * VERT_GAP, horizDist);
+            //    }
+
+            //    i++;
+            //    DrawNode(nodes.ElementAt(i), x, _origin.y, nodesCount);
+
+            //    for (i = i + 1; i < nodesCount - 1; i++)
+            //    {
+            //        DrawNode(nodes.ElementAt(i), x, _origin.y - (i + 1) * VERT_GAP, horizDist);
+            //    }
+            //}
+
+            //else
+            //{
+            //    int i;
+
+            //    for (i = 0; i < nodesCount / 2 - 1; i++)
+            //    {
+            //        DrawNode(nodes.ElementAt(i), x, _origin.y + (i + 1) * VERT_GAP, horizDist);
+            //    }
+
+            //    for (i = i + 1; i < nodesCount - 1; i++)
+            //    {
+            //        DrawNode(nodes.ElementAt(i), x, _origin.y - (i + 1) * VERT_GAP, horizDist);
+            //    }
+            //}
 
         }
 
@@ -129,8 +166,8 @@ namespace Assets.Scripts.QGSystem
             GameObject newUINode = Instantiate(uiNodePrefab, uiQuestPanel.transform) as GameObject;
             newUINode.transform.Translate(pos);
 
-            newUINode.GetComponent<Image>().color = node.isActive ? Color.yellow : Color.gray;
-            newUINode.GetComponent<TextMesh>().text = n.ToString();
+            newUINode.GetComponent<Image>().color = node.isActive() ? Color.yellow : Color.gray;
+            newUINode.GetComponent<TextMesh>().text = node.name_;
 
             // start / invisible
             // active

@@ -15,3 +15,5 @@ MonoBehaviour:
   pool:
   - {fileID: 11400000, guid: f9637fa9df1577348a82c8a6d0e14c42, type: 2}
   - {fileID: 11400000, guid: c48d3c88d89b49f48bf52d46178636e0, type: 2}
+  isActive: 0
+  name_: s3b

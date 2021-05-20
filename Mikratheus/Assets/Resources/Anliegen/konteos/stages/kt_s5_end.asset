@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: kt_s5_end
   m_EditorClassIdentifier: 
   pool: []
+  isActive: 0
+  name_: s5
