@@ -24,6 +24,30 @@ namespace Assets.Scripts
 
         public QG_EventPool end;
 
+        public override string ToString()
+        {
+            string s = "";
+
+            s += "---------------\n";
+
+            s += "quest name: " + name + "\n";
+
+            s += "active event pools:\n";
+            foreach (QG_EventPool pool in currentPools)
+            {
+                s += "    " + pool.name + " (" + pool.activeEvents + "): ";
+                foreach (QG_Event e in pool.pool)
+                {
+                    s += e.name + ", ";
+                }
+                s += "\n";
+            }
+
+            s += "---------------\n";
+
+            return s;
+        }
+
         public QG_Quest(string name_, QG_EventPool start, List<QG_EventPool> eventPools)
         {
             name = name_;
@@ -34,6 +58,8 @@ namespace Assets.Scripts
 
             foreach (QG_EventPool p in this.eventPools)
             {
+                p.activeEvents = 0;
+
                 foreach (QG_Event e in p.pool)
                 {
                     e.quest = this;
@@ -43,7 +69,6 @@ namespace Assets.Scripts
 
         public void EventUpdate(QG_Event event_, String ending)
         {
-
             currentEvents.Remove(event_);
 
             // pool update

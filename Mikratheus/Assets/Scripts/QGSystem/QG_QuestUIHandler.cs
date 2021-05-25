@@ -17,7 +17,12 @@ namespace Assets.Scripts.QGSystem
         public GameObject uiNodePrefab;
         public GameObject uiLinePrefab;
 
-        private Vector3 _origin = new Vector3(-2, 0, 2);
+        private QG_Quest curQuest;
+
+        private Vector3 _origin = new Vector3(-1.8f, 0, 2);
+
+        private float HORIZ_GAP = 0.7f;
+        private float VERT_GAP = 0.7f;
 
         private Dictionary<QG_EventPool, Vector3> nodePosRegistry = new Dictionary<QG_EventPool, Vector3>();
 
@@ -26,17 +31,30 @@ namespace Assets.Scripts.QGSystem
             Instance = this;
         }
 
+        private void ClearPreviousDrawing()
+        {
+            foreach (Transform child in uiQuestPanel.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
         public void DrawQuest(QG_Quest quest)
         {
+            ClearPreviousDrawing();
+
             Debug.Log("Begin Draw Quest");
+            Debug.Log(quest);
 
-            int poolsCount = quest.eventPools.Count();
+            curQuest = quest;
 
-            HashSet<QG_EventPool> wavesAhead = new HashSet<QG_EventPool>(quest.eventPools);
-            wavesAhead.Remove(quest.start);
+            int poolsCount = curQuest.eventPools.Count();
+
+            HashSet<QG_EventPool> wavesAhead = new HashSet<QG_EventPool>(curQuest.eventPools);
+            wavesAhead.Remove(curQuest.start);
 
             HashSet<QG_EventPool> wave = new HashSet<QG_EventPool>();
-            wave.Add(quest.start);
+            wave.Add(curQuest.start);
 
             HashSet<QG_EventPool> wavesBehind = new HashSet<QG_EventPool>();
 
@@ -80,8 +98,9 @@ namespace Assets.Scripts.QGSystem
 
             // ------------ arrow draw ------------
 
+            DrawArrow(new Vector3(_origin.x - HORIZ_GAP, 0, 0), nodePosRegistry[curQuest.start]);
 
-            foreach (QG_EventPool p1 in quest.eventPools)
+            foreach (QG_EventPool p1 in curQuest.eventPools)
             {
                 List<QG_EventPool> outPools = new List<QG_EventPool>();
 
@@ -104,9 +123,6 @@ namespace Assets.Scripts.QGSystem
         private void DrawNodesVert(int horizDist, HashSet<QG_EventPool> nodes)
         {
             //Debug.Log(horizDist);
-
-            float HORIZ_GAP = 0.7f;
-            float VERT_GAP = 0.7f;
 
             float x = _origin.x + horizDist * HORIZ_GAP;
 
@@ -166,27 +182,41 @@ namespace Assets.Scripts.QGSystem
             GameObject newUINode = Instantiate(uiNodePrefab, uiQuestPanel.transform) as GameObject;
             newUINode.transform.Translate(pos);
 
-            newUINode.GetComponent<Image>().color = node.isActive() ? Color.yellow : Color.gray;
-            newUINode.GetComponent<TextMesh>().text = node.name_;
+            Color nodeColor;
 
-            // start / invisible
-            // active
-            // inactive
-            // end
+            if (node.isActive())
+                nodeColor = Color.green;
+            else if (curQuest.poolsQueue.Contains(node))
+                nodeColor = Color.yellow;
+            else
+                nodeColor = Color.gray;
+
+            if (node.pool.Count() == 0)
+                nodeColor = Color.black;
+
+            newUINode.GetComponent<Image>().color = nodeColor;
+            newUINode.GetComponent<TextMesh>().text = node.name_;
         }
 
         private void DrawArrow(Vector3 start, Vector3 end)
         {
 
             GameObject newUILine = Instantiate(uiLinePrefab, uiQuestPanel.transform) as GameObject;
+
+            newUILine.transform.Translate(start);
+
             LineRenderer lineRenderer = newUILine.GetComponent<LineRenderer>();
-            lineRenderer.startColor = Color.gray;
+            lineRenderer.startColor = Color.black;
             lineRenderer.endColor = Color.black;
             lineRenderer.startWidth = 0.05f;
             lineRenderer.endWidth = 0.05f;
-            lineRenderer.SetPosition(0, start);
-            lineRenderer.SetPosition(1, end);
-            lineRenderer.useWorldSpace = true;
+            //List<Vector3> pos = new List<Vector3>();
+            //pos.Add(start);
+            //pos.Add(end);
+            //lineRenderer.SetPositions(pos.ToArray());
+            lineRenderer.SetPosition(0, new Vector3(0, 0, 0));
+            lineRenderer.SetPosition(1, (end - start) * 100);
+            lineRenderer.useWorldSpace = false;
 
         }
 

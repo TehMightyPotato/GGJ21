@@ -19,15 +19,6 @@ namespace Assets.Scripts.QGSystem
 
         public QG_Quest quest;
 
-        public void QG_InitFrom(QG_Event e) {
-
-            endings = e.endings;
-            ending = e.ending;
-            endingEventPools = e.endingEventPools;
-            intensity = e.intensity;
-            quest = e.quest;
-        }
-
         public bool IsFinished()
         {
             return ending != null;

@@ -4708,7 +4708,7 @@ MonoBehaviour:
   uiQuestPanel: {fileID: 363801822}
   uiNodePrefab: {fileID: 408211238794816468, guid: 2c1f530c4d910c948b23c7a7563f5073,
     type: 3}
-  uiLinePrefab: {fileID: 3464357214643347567, guid: 238e627db00a51340a64ea81afa30e8f,
+  uiLinePrefab: {fileID: 3769798555375810704, guid: 2758b42e8a03d5c478154ef42bc3e3c6,
     type: 3}
 --- !u!1001 &1166632424
 PrefabInstance:

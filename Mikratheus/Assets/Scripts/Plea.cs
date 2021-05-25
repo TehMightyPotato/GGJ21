@@ -36,11 +36,13 @@ public class Plea : QG_Event
 
     private Planet _planet;
 
-    public void Init(QG_Event event_, Planet planet)
+    public void Init(Planet planet)
     {
-        QG_InitFrom(event_);
         _planet = planet;
         _timeoutRoutine = _planet.StartCoroutine(PleaTimeout());
+
+        QG_QuestUIHandler.Instance.DrawQuest(
+            PleaManager.Instance.questDict[_planet.planetName]);
     }
 
     public void Approve()
@@ -92,6 +94,9 @@ public class Plea : QG_Event
 
     private void OnPleaComplete()
     {
+        QG_QuestUIHandler.Instance.DrawQuest(
+            PleaManager.Instance.questDict[_planet.planetName]);
+
         PleaComplete?.Invoke(this, EventArgs.Empty);
     }
 

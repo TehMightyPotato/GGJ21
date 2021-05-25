@@ -47,8 +47,6 @@ public class Planet : MonoBehaviour
         GameManager.Instance.planetUpdate.AddListener(UpdatePlanet);
         StartCoroutine(FollowerGrowth());
         GenerateEvent(PleaManager.Instance.GetStartPleaForPlanet(planetName));
-
-        QG_QuestUIHandler.Instance.DrawQuest(PleaManager.Instance.questDict[planetName]); // ------------------
     }
 
     private void UpdatePlanet()
@@ -82,9 +80,15 @@ public class Planet : MonoBehaviour
 
     private void GenerateEvent(Plea plea)
     {
-        activeEvent = Instantiate(plea);
-        activeEvent.Init(plea, this);
-        Debug.Log(activeEvent.quest.name);
+        if (plea == null)
+        {
+            Debug.Log("quest ended");
+            return;
+        }
+
+        activeEvent = plea;
+        activeEvent.Init(this);
+
         AudioManager.Instance.PlayAudioClip(pleaAudioClip);
         eventIsActive = true;
         EventStatusChanged?.Invoke(this, EventArgs.Empty);
@@ -162,9 +166,15 @@ public class Planet : MonoBehaviour
         }
     }
 
-    public void SetActivePlanet(bool val)
+    public void SetActivePlanet(bool isActive)
     {
-        _animator.SetBool("IsActivePlanet", val);
+        _animator.SetBool("IsActivePlanet", isActive);
+
+        if (isActive)
+        {
+            QG_QuestUIHandler.Instance.DrawQuest(
+                PleaManager.Instance.questDict[planetName]);
+        }
     }
 
     public void PlayEntryAnimation(bool next)

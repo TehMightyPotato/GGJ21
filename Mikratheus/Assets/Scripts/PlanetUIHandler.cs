@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.QGSystem;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
