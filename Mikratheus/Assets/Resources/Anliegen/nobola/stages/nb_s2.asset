@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec030ebf986a034b8bc3b768e265a31, type: 3}
+  m_Name: nb_s2
+  m_EditorClassIdentifier: 
+  pool:
+  - {fileID: 11400000, guid: a5233b051ffa9424b9cd5b78b9de1bd2, type: 2}
+  - {fileID: 11400000, guid: 29b00742f09f63245af36ca5ca6ffb88, type: 2}
+  activeEvents: 0
+  name_: s2

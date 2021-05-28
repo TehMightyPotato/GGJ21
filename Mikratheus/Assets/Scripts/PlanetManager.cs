@@ -108,7 +108,7 @@ public class PlanetManager : MonoBehaviour
         var spawnNewPlanetProp = 0.6 * averageReputation + 0.3 * averageInfluence + 0.1 * (GameManager.Instance.godPower / 100f);
         if (spawnNewPlanetProp + Random.Range(0f, 0.9f) > 1f)
         {
-            //SpawnNewPlanet();
+            SpawnNewPlanet();
         }
     }
 

@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: nobola1
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: 572ff021b2b0dea43adc178a3c8cc1f5, type: 2}
+  - {fileID: 11400000, guid: 572ff021b2b0dea43adc178a3c8cc1f5, type: 2}
+  - {fileID: 11400000, guid: 572ff021b2b0dea43adc178a3c8cc1f5, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 02411c7e3c971ef4390f36a63c17cfee, type: 3}
   audioClip: {fileID: 8300000, guid: ebffe17fc1102e241aa3773dd98584ed, type: 3}
   message: "OH GOD! The walls are shaking, the stones are coming down. And there

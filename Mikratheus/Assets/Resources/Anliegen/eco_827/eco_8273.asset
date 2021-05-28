@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: eco_8273
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: 1d4892d689381804a898d3405d4ca231, type: 2}
+  - {fileID: 11400000, guid: 1d4892d689381804a898d3405d4ca231, type: 2}
+  - {fileID: 11400000, guid: 1d4892d689381804a898d3405d4ca231, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 986b67af5c4e4b94aa08a87d5723e9cf, type: 3}
   audioClip: {fileID: 8300000, guid: e2c72af239e037e4ea8905e59e0e4d4a, type: 3}
   message: We, the kings of the air and rightful heirs of Tron claim our birthright!

@@ -46,6 +46,9 @@ public class PlanetUIHandler : MonoBehaviour
     private void OnPlanetEventStatusChanged(object sender, EventArgs e)
     {
         speechBubble.SetActive(_currentPlanet.eventIsActive);
+
+        QG_QuestUIHandler.Instance.DrawQuest(
+            PleaManager.Instance.questDict[_currentPlanet.planetName]);
     }
 
 

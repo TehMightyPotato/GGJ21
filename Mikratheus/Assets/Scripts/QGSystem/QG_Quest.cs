@@ -57,14 +57,7 @@ namespace Assets.Scripts
             poolsQueue.Add(start);
 
             foreach (QG_EventPool p in this.eventPools)
-            {
-                p.activeEvents = 0;
-
-                foreach (QG_Event e in p.pool)
-                {
-                    e.quest = this;
-                }
-            }
+                p.init(this);
         }
 
         public void EventUpdate(QG_Event event_, String ending)
@@ -76,6 +69,8 @@ namespace Assets.Scripts
             QG_EventPool pool = currentPools.Find(p => p.pool.Contains(event_));
             pool.activeEvents--;
 
+            pool.used = true;
+
             if (!pool.isActive())
                 currentPools.Remove(pool);
 
@@ -85,6 +80,8 @@ namespace Assets.Scripts
 
             int endingIndex = event_.endings.FindIndex(str => str.Equals(ending));
             QG_EventPool newPool = event_.endingEventPools[endingIndex];
+
+            pool.connUsed[newPool] = true;
 
             poolsQueue.Add(newPool);
         }

@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: borea5
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: 9f61e4c8d512cbc4da045ab541c4607f, type: 2}
+  - {fileID: 11400000, guid: 63993bb8e72830e49a99a08a2565cd86, type: 2}
+  - {fileID: 11400000, guid: 63993bb8e72830e49a99a08a2565cd86, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 4ba3a1234bcc58640b1203aaad5af6da, type: 3}
   audioClip: {fileID: 8300000, guid: aa3688105786f8e41859ab626a35edc7, type: 3}
   message: Oh mighty wind of winds! Oh mighty Mihinaal! Tell me, oh knower of all

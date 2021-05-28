@@ -43,8 +43,8 @@ namespace Assets.Scripts.QGSystem
         {
             ClearPreviousDrawing();
 
-            Debug.Log("Begin Draw Quest");
-            Debug.Log(quest);
+            //Debug.Log("Begin Draw Quest");
+            //Debug.Log(quest);
 
             curQuest = quest;
 
@@ -98,7 +98,7 @@ namespace Assets.Scripts.QGSystem
 
             // ------------ arrow draw ------------
 
-            DrawArrow(new Vector3(_origin.x - HORIZ_GAP, 0, 0), nodePosRegistry[curQuest.start]);
+            DrawArrow(new Vector3(_origin.x - HORIZ_GAP, 0, 0), nodePosRegistry[curQuest.start], true);
 
             foreach (QG_EventPool p1 in curQuest.eventPools)
             {
@@ -110,7 +110,7 @@ namespace Assets.Scripts.QGSystem
                     {
                         if (!outPools.Contains(p2))
                         {
-                            DrawArrow(nodePosRegistry[p1], nodePosRegistry[p2]);
+                            DrawArrow(nodePosRegistry[p1], nodePosRegistry[p2], p1.connUsed[p2]);
                             outPools.Add(p2);
                         }
                     }
@@ -136,42 +136,11 @@ namespace Assets.Scripts.QGSystem
 
             else
             {
+                float yOffset = - (horizDist - 1) * HORIZ_GAP / 2;
+
                 for (int i = 0; i < nodesCount; i++)
-                    DrawNode(nodes.ElementAt(i), x, _origin.y + i * VERT_GAP, horizDist);
+                    DrawNode(nodes.ElementAt(i), x, _origin.y + yOffset + i * VERT_GAP, horizDist);
             }
-
-            //else if (nodesCount % 2 == 1)
-            //{
-            //    int i;
-
-            //    for (i = 0; i < (nodesCount - 1) / 2 - 1; i++)
-            //    {
-            //        DrawNode(nodes.ElementAt(i), x, _origin.y + (i + 1) * VERT_GAP, horizDist);
-            //    }
-
-            //    i++;
-            //    DrawNode(nodes.ElementAt(i), x, _origin.y, nodesCount);
-
-            //    for (i = i + 1; i < nodesCount - 1; i++)
-            //    {
-            //        DrawNode(nodes.ElementAt(i), x, _origin.y - (i + 1) * VERT_GAP, horizDist);
-            //    }
-            //}
-
-            //else
-            //{
-            //    int i;
-
-            //    for (i = 0; i < nodesCount / 2 - 1; i++)
-            //    {
-            //        DrawNode(nodes.ElementAt(i), x, _origin.y + (i + 1) * VERT_GAP, horizDist);
-            //    }
-
-            //    for (i = i + 1; i < nodesCount - 1; i++)
-            //    {
-            //        DrawNode(nodes.ElementAt(i), x, _origin.y - (i + 1) * VERT_GAP, horizDist);
-            //    }
-            //}
 
         }
 
@@ -194,11 +163,14 @@ namespace Assets.Scripts.QGSystem
             if (node.pool.Count() == 0)
                 nodeColor = Color.black;
 
+            if (node.used)
+                newUINode.transform.Find("Inner").gameObject.SetActive(true);
+
             newUINode.GetComponent<Image>().color = nodeColor;
-            newUINode.GetComponent<TextMesh>().text = node.name_;
+            newUINode.transform.Find("Text").gameObject.GetComponent<Text>().text = node.name_;
         }
 
-        private void DrawArrow(Vector3 start, Vector3 end)
+        private void DrawArrow(Vector3 start, Vector3 end, bool used)
         {
 
             GameObject newUILine = Instantiate(uiLinePrefab, uiQuestPanel.transform) as GameObject;
@@ -206,8 +178,18 @@ namespace Assets.Scripts.QGSystem
             newUILine.transform.Translate(start);
 
             LineRenderer lineRenderer = newUILine.GetComponent<LineRenderer>();
-            lineRenderer.startColor = Color.black;
-            lineRenderer.endColor = Color.black;
+
+            if (used)
+            {
+                lineRenderer.startColor = Color.gray;
+                lineRenderer.endColor = Color.gray;
+            }
+            else
+            {
+                lineRenderer.startColor = Color.black;
+                lineRenderer.endColor = Color.black;
+            }
+
             lineRenderer.startWidth = 0.05f;
             lineRenderer.endWidth = 0.05f;
             //List<Vector3> pos = new List<Vector3>();

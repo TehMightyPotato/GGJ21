@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec030ebf986a034b8bc3b768e265a31, type: 3}
+  m_Name: br_s2
+  m_EditorClassIdentifier: 
+  pool:
+  - {fileID: 11400000, guid: 5bc28803aa03fed4f956d868a2110d7f, type: 2}
+  - {fileID: 11400000, guid: 87fbf36e92fc0eb438fcb19cd4aba5d9, type: 2}
+  - {fileID: 11400000, guid: 063173f2fbfe65845b6478e345038913, type: 2}
+  - {fileID: 11400000, guid: f93c744693b4147499f349e3ac315fa9, type: 2}
+  - {fileID: 11400000, guid: 1a25cf4edbed53e4a8a955163a39e841, type: 2}
+  activeEvents: 0
+  name_: s2

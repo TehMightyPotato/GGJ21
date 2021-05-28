@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: nobola2
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: 1ef0447f26dbc7b43b88577ff47e0990, type: 2}
+  - {fileID: 11400000, guid: 1ef0447f26dbc7b43b88577ff47e0990, type: 2}
+  - {fileID: 11400000, guid: 1ef0447f26dbc7b43b88577ff47e0990, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: f12a87975dc23514abfaed0f9d37ced5, type: 3}
   audioClip: {fileID: 8300000, guid: 96e34473bbc4e4a458e8c11729d9ce79, type: 3}
   message: 'We are a community of excellent Woodmasters and we have a problem. It

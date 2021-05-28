@@ -82,7 +82,7 @@ public class Planet : MonoBehaviour
     {
         if (plea == null)
         {
-            Debug.Log("quest ended");
+            //Debug.Log("quest ended");
             return;
         }
 
@@ -148,7 +148,7 @@ public class Planet : MonoBehaviour
 
             if (totalPop == 564213)
             {
-                Debug.Log(increase);
+                //Debug.Log(increase);
             }
 
             currentFollowers += (int) increase;

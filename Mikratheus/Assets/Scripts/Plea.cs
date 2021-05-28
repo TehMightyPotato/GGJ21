@@ -40,9 +40,6 @@ public class Plea : QG_Event
     {
         _planet = planet;
         _timeoutRoutine = _planet.StartCoroutine(PleaTimeout());
-
-        QG_QuestUIHandler.Instance.DrawQuest(
-            PleaManager.Instance.questDict[_planet.planetName]);
     }
 
     public void Approve()

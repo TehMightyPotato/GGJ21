@@ -10,8 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
-  m_Name: eco_8271
+  m_Name: eco_827_start
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: bdbe2ec26159b72469423cddcbb76a5a, type: 2}
+  - {fileID: 11400000, guid: e64e6d76f2468cd47a5b9abd3e6cf88f, type: 2}
+  - {fileID: 11400000, guid: e64e6d76f2468cd47a5b9abd3e6cf88f, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: 68e884aeb56ff1e46a4e72b399ae511f, type: 3}
   audioClip: {fileID: 8300000, guid: b3d111be049a1c345968ef4425ea728f, type: 3}
   message: 'Never in my life were matters so urgent, and here I am now, praying to

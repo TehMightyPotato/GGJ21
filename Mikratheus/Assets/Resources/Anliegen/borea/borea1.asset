@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f32daaea4cd3e488effe414c4c2517, type: 3}
   m_Name: borea1
   m_EditorClassIdentifier: 
+  endings:
+  - accepted
+  - denied
+  - timeout
+  ending: 
+  endingEventPools:
+  - {fileID: 11400000, guid: 9f61e4c8d512cbc4da045ab541c4607f, type: 2}
+  - {fileID: 11400000, guid: 9f61e4c8d512cbc4da045ab541c4607f, type: 2}
+  - {fileID: 11400000, guid: 9f61e4c8d512cbc4da045ab541c4607f, type: 2}
+  intensity: 0
   sprite: {fileID: 21300000, guid: d85311fcfb6e3434e9ba7a94a6f880b4, type: 3}
   audioClip: {fileID: 8300000, guid: 63b98f9f31d20ad4aa5952a488f2a793, type: 3}
   message: 'Eyy what up Mate! Hope everything is cool with you. I''m about to throw
